@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<title>我的课程表</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<meta name="keywords" content="课程表">
+	<meta name="description" content="网页课程表">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<!--[if lt IE9]> 
+    <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+
+	<style type="text/css">
+	*{
+		padding:0;
+		margin:0;
+	}
+
+	html,body{
+		width:100%;
+		height:100%;
+        background: #FFDEAD;
+	}
+	article,aside,dialog,footer,header,section,footer,nav,figure,menu{
+		display:block
+	}
+    .header{
+        text-align: center;
+        background: 
+    }
+    .main{
+        margin-top:20px;
+    }
+
+    table{
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse:collapse;
+        border:2px solid #FF4500;
+    }
+    th,td{
+        height:50px;
+        width:100px;
+        text-align: center;
+        border:2px solid #FF4500;
+
+    }
+    .left{
+        background: #FFDEAD;
+    }
+    
+   
+
+	</style>
+</head>
+<body>
+    <header class="header">
+        <h1>课程表</h1>
+    </header>
+    <section class="main">
+        <div>
+            <table>
+                <caption><h3>我的课程表</h3></caption>
+                <colgroup class="left" span="9"></colgroup>
+                <thead>
+                    <tr>
+                        <th>节次</th>
+                        <th>星期一</th>
+                        <th>星期二</th>
+                        <th>星期三</th>
+                        <th>星期四</th>
+                        <th>星期五</th>
+                        <th>星期六</th>
+                        <th>星期日</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>第1节</th>
+                        <td rowspan="2">网络编程 黄玮 6-308</td>
+                        <td rowspan="2">操作系统 李文杰 28-B105</td>
+                        <td rowspan="2">计算机组成与结构 王莉 28-B105</td>
+                        <td></td>
+                        <td rowspan="2">软件安全</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>第2节</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>第3节</th>
+                        <td rowspan="2">网络攻击与防御技术 唐树刚 5-303</td>
+                        <td rowspan="2">专业英语与写作 侯春燕 28-B105</td>
+                        <td rowspan="2">数据库系统 莫秀良 28-A210</td>
+                        <td></td>
+                        <td rowspan="2">数据库系统 莫秀良 28-A210</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <th>第4节</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                     <tr>
+                        <th>第5节</th>
+                        <td rowspan="2">计算机组成与结构 王莉 28-B105</td>
+                        <td></td>
+                        <td></td> 
+                        <td rowspan="2">网络编程 黄玮 5-305 </td>
+                        <td rowspan="2">操作系统 李文杰 28-B105</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>第6节</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                     <tr>
+                        <th>第7节</th>
+                        <td></td>
+                        <td rowspan="2">网络编程 黄玮 5-305 </td>
+                        <td></td> 
+                        <td rowspan="2">网络编程 黄玮 5-305 </td>
+                        <td rowspan="2">计算机组成与结构 王莉 28-B105</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>第8节</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th colspan="8">未安排时间课程</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">课程名称</th>
+                        <th colspan="2">教学周次</th>
+                        <th colspan="2">上课老师</th>
+                        <th colspan="2">备注</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">数据库课程设计</td>
+                        <td colspan="2"></td>
+                        <td colspan="2">莫秀良，刘里</td>
+                        <td colspan="2"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
