@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8ffa914f-6eda-4c3b-a016-bd7419e4de14" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/README.md" afterPath="$PROJECT_DIR$/student/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/duzhicai_homework/duzhicai_homework.md" afterPath="$PROJECT_DIR$/student/duzhicai_homework/duzhicai_homework.md" />
     </list>
     <ignored path="camp201701.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="duzhicai_homework.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="duzhicai_homework.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/student/duzhicai_homework/duzhicai_homework.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-60">
-              <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
+            <state relative-caret-position="416">
+              <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -52,12 +51,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/student/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="153">
-                <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <first_editor relative-caret-position="85">
+                <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -75,8 +74,8 @@
       <list>
         <option value="$PROJECT_DIR$/student/duzhicai_homework.md" />
         <option value="$PROJECT_DIR$/student/duzhicai_homework/timetables.html" />
-        <option value="$PROJECT_DIR$/student/README.md" />
         <option value="$PROJECT_DIR$/student/duzhicai_homework/duzhicai_homework.md" />
+        <option value="$PROJECT_DIR$/student/README.md" />
       </list>
     </option>
   </component>
@@ -237,12 +236,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481204544936</updated>
-      <workItem from="1481204547076" duration="6023000" />
+      <workItem from="1481204547076" duration="6252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6023000" />
+    <option name="totallyTimeSpent" value="6252000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="723" extended-state="6" />
@@ -291,22 +290,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/student/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="153">
-            <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-            <folding />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/student/duzhicai_homework/duzhicai_homework.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="86" column="6" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/student/duzhicai_homework/duzhicai_homework.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/student/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
