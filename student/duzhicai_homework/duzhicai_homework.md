@@ -2,7 +2,8 @@
 
 [搜狐新闻](http://news.sohu.com/20161207/n475233676.shtml)
 
-1. 导航
+1.导航
+
 ```
 <div id="nav" class="area"></div>
 
@@ -10,7 +11,8 @@
 ```
 
 
-2. 新闻主要内容
+2.新闻主要内容
+
 ```
 <div class="content-wrapper grid-675"></div>
 
@@ -18,14 +20,16 @@
 ```
 
 
-3. 主要内容之外的侧边栏 
+3.主要内容之外的侧边栏 
+
 ```
 <div class="rightar-apper grid-300></div>
 
 <aside></aside>
 ```
 
-4. 页脚
+4.页脚
+
 ```
 <div class="content-footer"></div>
 
@@ -36,7 +40,8 @@
 
 [中信信用卡在线申请](https://creditcard.ecitic.com/citiccard/cardishop/jsp/userInfo.jsp)
 
-1. 警示标语
+1.警示标语
+
 ```
 <div class="r_d">
         <span class="lll"></span>
@@ -51,7 +56,8 @@
 </p>
 ```
 
-2. 表单
+2.表单
+
 ```
 <dl class="c">
     	<dt><span class="c_p_c_a">中文姓名：</span></dt>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ffa914f-6eda-4c3b-a016-bd7419e4de14" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/README.md" afterPath="$PROJECT_DIR$/student/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/student/duzhicai_homework/duzhicai_homework.md" afterPath="$PROJECT_DIR$/student/duzhicai_homework/duzhicai_homework.md" />
     </list>
     <ignored path="camp201701.iws" />
@@ -34,8 +35,8 @@
       <file leaf-file-name="duzhicai_homework.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/student/duzhicai_homework/duzhicai_homework.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-604">
-              <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+            <state relative-caret-position="-60">
+              <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -55,8 +56,8 @@
         <entry file="file://$PROJECT_DIR$/student/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <first_editor relative-caret-position="153">
+                <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -74,6 +75,7 @@
       <list>
         <option value="$PROJECT_DIR$/student/duzhicai_homework.md" />
         <option value="$PROJECT_DIR$/student/duzhicai_homework/timetables.html" />
+        <option value="$PROJECT_DIR$/student/README.md" />
         <option value="$PROJECT_DIR$/student/duzhicai_homework/duzhicai_homework.md" />
       </list>
     </option>
@@ -175,6 +177,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -233,12 +237,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1481204544936</updated>
-      <workItem from="1481204547076" duration="5722000" />
+      <workItem from="1481204547076" duration="6023000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5722000" />
+    <option name="totallyTimeSpent" value="6023000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="723" extended-state="6" />
@@ -279,17 +283,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/student/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/student/duzhicai_homework/timetables.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -298,10 +291,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/student/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="153">
+            <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/student/duzhicai_homework/duzhicai_homework.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-604">
-          <caret line="20" column="14" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        <state relative-caret-position="-60">
+          <caret line="58" column="2" selection-start-line="58" selection-start-column="2" selection-end-line="58" selection-end-column="2" />
           <folding />
         </state>
       </provider>
