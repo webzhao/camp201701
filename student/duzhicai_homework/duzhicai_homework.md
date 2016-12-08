@@ -2,21 +2,29 @@
 
 [搜狐新闻](http://news.sohu.com/20161207/n475233676.shtml)
 
-1. `<div id="nav" class="area"></div>
+1. ```
+<div id="nav" class="area"></div>
 
-<nav></nav>`
+<nav></nav>
+```
 
-2. `<div class="content-wrapper grid-675"></div>
+2. ```
+<div class="content-wrapper grid-675"></div>
 
-<article></article>`
+<article></article>
+```
 
-3. `<div class="rightar-apper grid-300></div>
+3. ```
+<div class="rightar-apper grid-300></div>
 
-<aside></aside>`
+<aside></aside>
+```
 
-4. `<div class="content-footer"></div>
+4. ```
+<div class="content-footer"></div>
 
-<footer></footer>`
+<footer></footer>
+```
 
 ###表单设计
 
