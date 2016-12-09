@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+	<title>我的简历</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp">
+	<meta name="keywords" content="简历">
+	<meta name="description" content="网页简历">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<!--[if lt IE9]> 
+    <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+
+	<style type="text/css">
+	*{
+		padding:0;
+		margin:0;
+	}
+
+	html,body{
+		width:100%;
+		height:100%;
+		background:#ccc;
+		/*font-family: '微软雅黑';*/
+	}
+	article,aside,dialog,footer,header,section,footer,nav,figure,menu{
+		display:block
+	}
+    
+    .header{
+    	width:100%;
+    	height:50px;
+    	line-height: 50px;
+    	background: #cce;
+    	position: fixed;
+    	top:0px;
+        z-index: 10;
+    	/*padding-left:3%;*/
+    }
+    ul li{
+    	list-style: none;
+    }
+    .nav ul li{
+    	display: inline-block;
+    	text-align: center;
+    	width:10%;
+    }
+    .nav ul{
+    	padding-left: 3%;
+    }
+    a{
+    	text-decoration: none;
+    	display:block;
+    	height:100%;
+    }
+    .container{
+    	width: 65%;
+    	height:auto;
+    	/*height:30px;*/
+    	margin-top: 80px;
+    	margin-left: auto;
+    	margin-right: auto;
+    	background:#fff;
+    	padding:30px;
+    }
+    h3{
+    	text-decoration: underline;
+    }
+    .sec{
+    	padding-top: 20px;
+    	padding-bottom: 10px;
+    	letter-spacing:1px;
+    	border-bottom: 1px solid #cce;
+        position: relative;
+    }
+    .area{
+    	padding-top: 20px;
+    }
+    .sec li{
+    	line-height: 22px;
+    }
+    
+    .sec2 li{
+    	list-style-type: circle;
+    }
+    .sec2 ul{
+    	padding-left:100px;
+    }
+    .u{
+    	margin-top: 10px;
+    }
+    a:link,a:visited,a:hover,a:active{
+    	color: #000;
+    }
+    a:hover{
+    	background: #eee;
+    }
+    .img{
+        position: absolute;
+        right:10px;
+        top:-20px;
+
+    }
+
+	</style>
+</head>
+<body>
+	<header class="header" id="header">
+		<nav class="nav">
+			<ul>
+				<li class="first"><a href="#my">基本信息</a></li>
+				<li><a href="#skill">个人技能</a></li>
+				<li><a href="#project">项目经历</a></li>
+				<li><a href="#intership">实习经历</a></li>
+				<li><a href="#train">培训经历</a></li>
+				<li><a href="#edu">教育经历</a></li>
+				<li><a href="#judge">自我评价</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+        <section class="area" id="my">
+        	<h3 >基本信息</h3>
+        	<div class="sec">
+        		<ul>
+        			<li>姓&nbsp;&nbsp;名：哒哒哒</li>
+                    <li>专&nbsp;&nbsp;业：信息安全</li>
+                    <li>外&nbsp;&nbsp;语：四级</li>
+        			<li>联系方式：11111111111</li>
+        			<li>电子邮箱：11111111111</li>
+        			<li>求职意向：前端</li>
+        			
+        			<li>政治面貌：预备党员</li>
+        	    </ul>
+                <!-- <div class="img"><img src="image/1.jpg" width="100"></div> -->
+                <div class="img">图片</div>
+        	</div>
+            
+        </section>
+         <section class="area" id="skill">
+        	<h3>个人技能</h3>
+        	<div class="sec sec2">
+        		<ul>
+        			<li>HTML/CSS 熟练掌握 能够熟练地进行网页布局</li>
+        			<li>AJAX/JSON 熟练掌握 能够很好地进行数据交换</li>
+        			<li>javascript、jquery 熟练掌握 能够熟练使用并进行DOM操作</li>
+        			<li>php 熟练掌握 能够熟练使用ThinkPHP搭建后台</li>
+        			<li>能熟练使用日常办公软件</li>
+        	    </ul>
+        	</div>
+        </section>
+        <section class="area" id="project">
+        	<h3>项目经历</h3>
+        	<div class="sec sec2" style="border-bottom: 0">
+        		<h4>2016.07-2016.09：人事考核系统</h4>
+        		<ul class="u">
+        			<li>是公司内部用于人事考核的系统</li>
+        			<li>利用ThinkPHP搭建后台，bootstrap搭建页面</li>
+        	    </ul>
+        	</div>
+        	<div class="sec sec2" style="border-bottom: 0">
+        		<h4>2016.09-2016.10：电梯后台管理系统</h4>
+        		<ul class="u">
+        			<li>是用于管理各个机构的电梯以及电梯任务的系统</li>
+        			<li>利用ThinkPHP搭建网站后台。bootstrap搭建页面，实现与APP相对应的各项功能</li>
+        	    </ul>
+        	</div>
+        	<div class="sec sec2">
+        		<h4>2016.107-2016.11：分销后台管理系统</h4>
+        		<ul class="u">
+        			<li>是用于管理公司业务的系统</li>
+        			<li>利用ThinkPHP搭建网站后台。bootstrap搭建页面，其中也有运用到EasyUI，实现与APP相对应的功能</li>
+        	    </ul>
+        	</div>
+        </section>
+         <section class="area" id="intership">
+        	<h3>实习经历</h3>
+        	<div class="sec sec2">
+        		<h4>2016.07-至今：美拓科技</h4>
+        		<ul class="u">
+        			<li>前端工程师实习岗</li>
+        			<li>主要负责编写后台以及一些单独的页面</li>
+        	    </ul>
+        	</div>
+        </section>
+        <section class="area" id="train">
+        	<h3>培训经历</h3>
+        	<div class="sec sec2">
+        		<h4>2014.07：中软国际</h4>
+        		<ul class="u">
+        			<li>接受前端有关于HTML、CSS知识的培训</li>
+        			<li>培训结束后分小组进行项目有关电商网站前台的项目，我主要负责注册登录板块</li>
+        	    </ul>
+        	</div>
+        </section>
+        <section class="area" id="edu">
+        	<h3>教育经历</h3>
+        	<div class="sec sec2">
+        		<h4>2013.09-至今：天津理工大学</h4>
+        		<ul class="u">
+        			<li>2013-2014：人民奖学金</li>
+        			<li>2014-2014：励志奖学金</li>
+        			<li>2014-2015：人民奖学金</li>
+        			<li>2014-2015：励志奖学金</li>
+        			<li>2015-2016：优秀共青团员</li>
+        	    </ul>
+        	</div>
+        </section>
+        <section class="area" id="judge">
+        	<h3>自我评价</h3>
+        	<p style="margin-top: 10px;text-indent: 2em">有较强的学习能力，富有责任心，能够很好的与团队合作，通过在校期间担任学委一职的经历也使我能够很好的约束自己并且与他人进行良好的沟通，另外，通过在企业实习也使我在开发方面增长了不少经验。我愿意接受新的事务，不断挑战，不断完善自我。</p>
+        </section>
+	</div>
+</body>
+<script type="text/javascript">
+</script>
+</html>
