@@ -74,3 +74,14 @@
 1. 最后发现`label`已经分好了。感觉没有必要再包一层`p`了。
 
 2. pattern="^\d{6}$ "代表什么呢？
+
+## 收获
+
+1. 对制作form有了基本的概念。
+2. NEW!：`fieldset`
+3. 基本检验：
+	* pattern
+	* required
+	* maxlength
+4. 基本提醒：
+	* placeholder

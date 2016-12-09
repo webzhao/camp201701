@@ -84,14 +84,14 @@
                     </label>
                 </p>
                 <p>
-                    <label>手机动态验证码
+                    <label for="inputCode">手机动态验证码
                         <button type="button">获得手机验证码</button>
                         <input id="inputCode" type="text" placeholder="输入验证码" maxlength="6" required="required">
                     </label>
                 </p>
                 <p>
                     <label>
-                        <input type="checkbox ">本人已阅读并同意并遵守<a href="# " target="CB ">《中国银行股份有限公司信用卡领用合约》</a>法律文件。
+                        <input type="checkbox">本人已阅读并同意并遵守<a href="# " target="CB ">《中国银行股份有限公司信用卡领用合约》</a>法律文件。
                     </label>
                 </p>
                 <button type="submit ">下一步</button>
@@ -126,7 +126,7 @@
                 <fieldset>
                     <legend>您的个人信息</legend>
                     <p>
-                        <label><span class="redstar ">＊</span>姓
+                        <label><span  class="redstar ">＊</span>姓
                             <input name="appiFirstName " pattern="^[\u4e00-\u9fa5a-zA-Z]{1,5}$ " placeholder="请输入1-5个中/英文字符 " type="text " required="required " disabled="disabled " value="杨 " maxlength="5 " />
                         </label>
                     </p>
@@ -146,7 +146,7 @@
                     </p>
                     <p>
                         <label><span class="redstar ">＊</span>姓名拼音
-                            <input name="appiMcKnowAsName1 " placeholder="姓和名之间以空格隔开 " type="text " required="required " value=" " maxlength="28 " />
+                            <input name="appiMcKnowAsName1 " placeholder="姓和名之间以空格隔开" type="text " required="required " value="" maxlength="28 " />
                         </label>
                     </p>
                     <p>
@@ -168,13 +168,13 @@
                     </p>
                     <p>
                         <label>证件有效期至
-                            <input name="appiMcIdEnd " placeholder="请输入证件有效期 " type="date" value=" " />
+                            <input name="appiMcIdEnd " placeholder="请输入证件有效期 " type="date" value="" />
                         </label>
                     </p>
                     <p>
                         <label>是否长期
                             <select name="appiMcIdLongFlag ">
-                                <option value=" ">否</option>
+                                <option value="">否</option>
                                 <option value="1 ">是</option>
                             </select>
                         </label>
@@ -249,18 +249,18 @@
                     </p>
                     <p>
                         <label><span class="redstar ">＊</span>住宅详细地址
-                            <input name="appiMcAddr1 " placeholder="街道/小区/楼/室等 " type="text " required="required " value=" " maxlength="24 " />
+                            <input name="appiMcAddr1 " placeholder="街道/小区/楼/室等 " type="text " required="required " value="" maxlength="24 " />
                         </label>
                         请提供<em>常住</em>地址
                     </p>
                     <p>
                         <label><span class="redstar ">＊</span>住宅邮编
-                            <input name="appiMcPostCode " pattern="^\d{6}$ " placeholder="请输入6位邮编 " type="text " required="required " value=" " maxlength="6 " />
+                            <input name="appiMcPostCode " pattern="^\d{6}$ " placeholder="请输入6位邮编 " type="text " required="required " value="" maxlength="6 " />
                         </label>
                     </p>
                     <p>
                         <label><span class="redstar ">＊</span>现址已居住时间(年)
-                            <input name="appiMcResideYear " pattern="^\d{1,2}$ " placeholder="请输入现址已居住时间（年） " type="text " required="required " value=" " maxlength="2 " />
+                            <input name="appiMcResideYear " pattern="^\d{1,2}$ " placeholder="请输入现址已居住时间（年） " type="text " required="required " value="" maxlength="2 " />
                         </label>
                     </p>
                     <p>
@@ -278,13 +278,13 @@
                     <p>
                         <label>住宅电话
                             <label>区号
-                                <input name="appiMcHPhoneProvince " placeholder="请输入3-4位区号 " type="text " value=" " maxlength="4 " />
+                                <input name="appiMcHPhoneProvince " placeholder="请输入3-4位区号 " type="text " value="" maxlength="4 " />
                             </label>
                             <label>电话号码
-                                <input name="appiMcHPhoneNo " placeholder="请输入7-8位电话号码 " type="text " value=" " maxlength="8 " />
+                                <input name="appiMcHPhoneNo " placeholder="请输入7-8位电话号码 " type="text " value="" maxlength="8 " />
                             </label>
                             <label>分机号
-                                <input name="appiMcHPhoneExt " placeholder="请输入3-4位分机号 " type="text " value=" " maxlength="4 " />
+                                <input name="appiMcHPhoneExt " placeholder="请输入3-4位分机号 " type="text " value="" maxlength="4 " />
                             </label>
                         </label>
                     </p>
@@ -316,7 +316,7 @@
                     </p>
                     <p>
                         <label><span class="redstar ">＊</span>母亲姓氏
-                            <input name="appiMcMotherName " pattern="^[\u4e00-\u9fa5a-zA-Z]{1,5}$ " placeholder="无需填写全名，仅供确认身份 " type="text " required="required " value=" " />
+                            <input name="appiMcMotherName " pattern="^[\u4e00-\u9fa5a-zA-Z]{1,5}$ " placeholder="无需填写全名，仅供确认身份 " type="text " required="required " value="" />
                         </label>
                     </p>
                     <button type="button ">上一步</button>
@@ -325,36 +325,341 @@
             </form>
         </article>
         <article role="RDD 's表单设计之页面四">
-            <strong>(页面4)</strong>
-            <h1>中国银行信用卡申请</h1>
+            <h1>中国银行信用卡申请-页四</h1>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>您的职业信息</legend>
+                    <p>
+                        <label><span class="redstar">＊</span>单位名称
+                            <input name="appiMcEmployerName" placeholder="请输入单位名称" type="text" required="required" value="" maxlength="13" />
+                        </label>
+                    </p>
+                    <fieldset>
+                        <legend> 单位地址</legend>
+                        <p>
+                            <label>
+                                <label><span class="redstar">＊</span>省/直辖市
+                                    <select name="appiMcEmplAddrState" required="required" disabled="disabled">
+                                        <option value="">请选择..</option>
+                                        <option value="安徽省">安徽省</option>
+                                        <option value="北京市" selected="selected">北京市</option>
+                                        <option value="重庆市">重庆市</option>
+                                        <option value="福建省">福建省</option>
+                                        <option value="甘肃省">甘肃省</option>
+                                        <option value="深圳市">深圳市</option>
+                                        <option value="广东省">广东省</option>
+                                        <option value="广西壮族自治区">广西壮族自治区</option>
+                                        <option value="贵州省">贵州省</option>
+                                        <option value="海南省">海南省</option>
+                                        <option value="河北省">河北省</option>
+                                        <option value="河南省">河南省</option>
+                                        <option value="黑龙江省">黑龙江省</option>
+                                        <option value="湖北省">湖北省</option>
+                                        <option value="湖南省">湖南省</option>
+                                        <option value="吉林省">吉林省</option>
+                                        <option value="苏州市">苏州市</option>
+                                        <option value="江苏省">江苏省</option>
+                                        <option value="江西省">江西省</option>
+                                        <option value="大连市">大连市</option>
+                                        <option value="辽宁省">辽宁省</option>
+                                        <option value="内蒙古自治区">内蒙古自治区</option>
+                                        <option value="宁夏回族自治区">宁夏回族自治区</option>
+                                        <option value="青海省">青海省</option>
+                                        <option value="青岛市">青岛市</option>
+                                        <option value="山东省">山东省</option>
+                                        <option value="山西省">山西省</option>
+                                        <option value="陕西省">陕西省</option>
+                                        <option value="上海市">上海市</option>
+                                        <option value="四川省">四川省</option>
+                                        <option value="天津市">天津市</option>
+                                        <option value="西藏自治区">西藏自治区</option>
+                                        <option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+                                        <option value="云南省">云南省</option>
+                                        <option value="宁波市">宁波市</option>
+                                        <option value="浙江省">浙江省</option>
+                                    </select>
+                                </label>
+                                <label><span class="redstar">＊</span>市/区
+                                    <select name="appiMcEmplAddrCity" required="required">
+                                        <option value="">请选择..</option>
+                                        <option value="房山区">房山区</option>
+                                        <option value="平谷区">平谷区</option>
+                                        <option value="东城区">东城区</option>
+                                        <option value="西城区">西城区</option>
+                                        <option value="崇文区">崇文区</option>
+                                        <option value="宣武区">宣武区</option>
+                                        <option value="朝阳区">朝阳区</option>
+                                        <option value="丰台区">丰台区</option>
+                                        <option value="石景山区">石景山区</option>
+                                        <option value="海淀区">海淀区</option>
+                                        <option value="门头沟区">门头沟区</option>
+                                        <option value="通州区">通州区</option>
+                                        <option value="顺义区">顺义区</option>
+                                        <option value="昌平区">昌平区</option>
+                                        <option value="大兴区">大兴区</option>
+                                        <option value="怀柔区">怀柔区</option>
+                                        <option value="密云县">密云县</option>
+                                        <option value="延庆县">延庆县</option>
+                                    </select>
+                                </label>
+                            </label>
+                        </p>
+                        <p>
+                            <label><span class="redstar">＊</span>单位详细地址</label>
+                            <input type="text" name="appiMcEmplAddr1" placeholder="街道/小区/楼/室等" value="" required="required" maxlength="24" />
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>单位电话</legend>
+                        <p>
+                            <label><span class="redstar">＊</span>区号
+                                <input name="appiMcEmplPhoneState" placeholder="请输入3-4位区号" type="text" value="" maxlength="4" />
+                            </label>
+                        </p>
+                        <p>
+                            <label><span class="redstar">＊</span>电话号码
+                                <input name="appiMcEmplPhoneNo" placeholder="请输入7-8位电话号码" type="text" value="" maxlength="8" />
+                            </label>
+                            <label>分机号
+                                <input name="appiMcEmplPhoneExt" placeholder="请输入3-4位分机号" type="text" value="" maxlength="4" />
+                            </label>
+                        </p>
+                    </fieldset>
+                    <p>
+                        <label><span class="redstar">＊</span>单位邮编
+                            <input name="appiMcEmplPostCode" placeholder="请输入6位单位邮编" type="text" value="" maxlength="6" />
+                        </label>
+                    </p>
+                    <p>
+                        <label><span class="redstar">＊</span>行业性质
+                            <select name="appiMcEmplIndustryType" required="required">
+                                <option value="">请选择..</option>
+                                <option value="01">医院</option>
+                                <option value="02">教育</option>
+                                <option value="03">金融/保险</option>
+                                <option value="04">公共管理与社会组织</option>
+                                <option value="05">科学研究，技术服务和地址勘察业</option>
+                                <option value="06">信息传输、计算机服务、软件和技术服务业</option>
+                                <option value="07">国际性组织</option>
+                                <option value="08">工商服务业</option>
+                                <option value="09">水利、环境与公共设施管理行业</option>
+                                <option value="10">电力，燃气及水的生产及供应业</option>
+                                <option value="11">制造业</option>
+                                <option value="12">建筑业</option>
+                                <option value="13">交通运输，仓储和邮政业</option>
+                                <option value="14">批发和零售业</option>
+                                <option value="15">房地产业</option>
+                                <option value="16">租凭及商业</option>
+                                <option value="17">文化，体育和娱乐业</option>
+                                <option value="18">采掘业</option>
+                                <option value="19">住宿和餐饮业</option>
+                                <option value="20">农业、林业、牧业、渔业</option>
+                                <option value="21">居民服务以及其他服务行业</option>
+                                <option value="22">临时工</option>
+                                <option value="23">退休</option>
+                                <option value="24">家庭妇女</option>
+                                <option value="25">学生</option>
+                                <option value="26">待业</option>
+                                <option value="27">其他</option>
+                                <option value="28">进口出口贸易业</option>
+                                <option value="29">旅游业</option>
+                                <option value="30">机关事业单位及部队</option>
+                                <option value="31">律所、会计师事务所等咨询</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label><span class="redstar">＊</span>职业信息
+                            <select name="appiMcEmplMessage" required="required">
+                                <option value="">请选择..</option>
+                                <option value="01">中国共产党中央委员会和地方各级组织负责人</option>
+                                <option value="02">国家机关及其工作机构负责人</option>
+                                <option value="03">民主党派、社会团体及工作机构负责人</option>
+                                <option value="04">事业单位负责人</option>
+                                <option value="05">企业负责人</option>
+                                <option value="11">科学研究人员</option>
+                                <option value="13">工程技术（计算机）人员</option>
+                                <option value="17">农业技术人员</option>
+                                <option value="18">飞行和船舶技术等人员</option>
+                                <option value="19">卫生专业技术人员</option>
+                                <option value="21">经济业务人员</option>
+                                <option value="22">金融业务人员</option>
+                                <option value="23">法律专业人员</option>
+                                <option value="24">教学人员</option>
+                                <option value="25">文学艺术工作人员</option>
+                                <option value="26">体育工作人员</option>
+                                <option value="27">新闻出版、文化工作人员</option>
+                                <option value="29">其他专业技术人员</option>
+                                <option value="30">会计师</option>
+                                <option value="31">行政办公人员</option>
+                                <option value="32">安全保卫和消防工作人员</option>
+                                <option value="33">邮政和电信业务人员</option>
+                                <option value="34">事业单位员工</option>
+                                <option value="39">其他办事人员和有关人员</option>
+                                <option value="40">商业、服务业人员</option>
+                                <option value="50">农、林、牧、渔、水利业生产人员</option>
+                                <option value="60">生产、运输设备操作人员及有关人员</option>
+                                <option value="X0">军人</option>
+                                <option value="Y1">学生</option>
+                                <option value="Y2">外交人员</option>
+                                <option value="Y3">私营业主</option>
+                                <option value="Y9">不便分类的其他从业人员</option>
+                                <option value="Z0">无职业活动人员</option>
+                                <option value="Z1">退休人员</option>
+                                <option value="Z2">家庭主妇</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label><span class="redstar">＊</span>经济类型
+                            <select name="appiMcEmplBizType" required="required">
+                                <option value="">请选择..</option>
+                                <option value="11">政府/事业</option>
+                                <option value="12">国企</option>
+                                <option value="13">个体/自由职业</option>
+                                <option value="14">民营</option>
+                                <option value="15">股份制</option>
+                                <option value="16">外资</option>
+                                <option value="17">军队</option>
+                                <option value="18">其他</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label><span class="redstar">＊</span>职位或职级
+                            <select name="appiMcEmplJobrole" required="required">
+                                <option value="">请选择..</option>
+                                <option value="801">厅/局级以上 /企业负责人</option>
+                                <option value="802">县处级/总经理</option>
+                                <option value="803">科级/部门经理</option>
+                                <option value="804">科员级/职员</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label><span class="redstar">＊</span>现职已工作时间（年）
+                            <input name="appiMcEmplPosiYear" placeholder="请输入现职已工作时间（年）" type="text" required="required" value="" maxlength="2" />
+                        </label>
+                    </p>
+                    <p>
+                        <label><span class="redstar">＊</span>年收入总额（万元）
+                            <input name="appiMcEmplYearEarn" pattern="^\d{1,4}$" placeholder="请输入年收入总额（万元）" type="text" required="required" value="" maxlength="4" /> (人民币万元，含奖金津贴)</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>您的联系人信息</legend>
+                    <p>
+                        <label><span class="redstar">＊</span>联系人姓名
+                            <input name="appiMcContactName" pattern="^[\u4e00-\u9fa5a-zA-Z]{1,25}$" placeholder="请输入联系人姓名" type="text" required="required" value="" maxlength="12" />
+                        </label>
+                    </p>
+                    <p>
+                        <label><span class="redstar">＊</span>与申请人的关系
+                            <select name="appiMcContactRelship" required="required">
+                                <option value="">请选择..</option>
+                                <option value="11">父母</option>
+                                <option value="12">配偶</option>
+                                <option value="13">亲戚</option>
+                                <option value="14">其他</option>
+                            </select>
+                        </label>
+                    </p>
+                    <p>
+                        <label><span class="redstar">＊</span>单位名称
+                            <input name="appiMcContactEmployer" placeholder="请输入单位名称" type="text" required="required" value="" maxlength="13" />
+                        </label>
+                    </p>
+                    <fieldset>
+                        <legend>联系电话或手机</legend>
+                        <p>
+                            <label><span class="redstar">＊</span>手机号码
+                                <input name="appiMcContactPhone" placeholder="请输入11位手机号码" type="text" required="required" value="" maxlength="11" />
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <label>区号
+                                    <input name="appiMcContactPhoneState" placeholder="请输入3-4位区号" type="text" value="" maxlength="4" />
+                                </label>
+                                <label>电话号码
+                                    <input name="appiMcContactPhoneNum" placeholder="请输入7-8位电话号码" type="text" value="" maxlength="8" />
+                                </label>
+                                <label>分机号
+                                    <input name="appiMcContactPhoneExt" placeholder="请输入3-4位分机号" type="text" value="" maxlength="4" />
+                                </label>
+                            </label>
+                        </p>
+                    </fieldset>
+                </fieldset>
+                <button type="button">上一步</button>
+                <button type="submit ">下一步</button>
+            </form>
         </article>
-        <article role="RDD's表单设计之页面五 ">
+        <article role="RDD 's表单设计之页面五 ">
             <strong>(页面5)</strong>
             <h1>中国银行信用卡申请</h1>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>服务功能选择</legend>
+                    <p>
+                        <label for=""><span class="redstar">＊</span>您的对账单发送方式选择
+                            <p>
+                                <label>E-mail
+                                    <input type="checkbox" name="appiMcBillSend" value="2" />
+                                </label>
+                                <label>手机
+                                    <input type="checkbox" name="appiMcBillSend" value="C" checked="checked" />
+                                </label>
+                                （E-mail需符合规则并且有效；未选视为默认手机账单，手机号需符合规则并且有效）
+                            </p>
+                        </label>
+                    </p>
+                    <p>
+                        <label>电子邮箱
+                            <input name="appiMcEmailAddr" placeholder="请输入电子邮箱" type="email" value="" maxlength="38" />
+                        </label>
+                    </p>
+                    <p>
+                        <label><span class="redstar">＊</span>您的卡片等重要资料寄送地址
+                            <select name="appiMcBillAddrInd">
+                                <option value="1">单位地址</option>
+                                <option value="2">家庭地址</option>
+                            </select>
+                            （未选视为“单位地址”，当月无交易则不发送对账单）
+                        </label>
+                    </p>
+                    <p>
+                        <label>刷卡消费时是否需要密码
+                            <select name=" appiMcConsume ">
+                                <option value="1 ">是</option>
+                                <option value="2 ">否</option>
+                            </select>
+                            （未选视为“是”
+                            <!-- ；如申请附属卡，则附属卡交易验证方式与主卡相同 -->）
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>银行填写栏</legend>
+                    <p>
+                        <label>IN(营销人员代码)
+                            <input name="appiBankinfoPccIn" pattern="^[0-9a-zA-Z]*$" type="text" placeholder="请营销人员输入代码" value="" maxlength="18" />
+                        </label>
+                    </p>
+                    <p>
+                        <label>CC(营销活动代号)
+                            <input name="appiBankinfoCc " pattern="^[0-9a-zA-Z]*$ " type="text " placeholder="请营销人员输入代码" maxlength="18 " />
+                        </label>
+                    </p>
+                </fieldset>
+                <button type="button">上一步</button>
+                <button type="submit">下一步</button>
+            </form>
         </article>
-        <form>
-            <p>
-                <label>Customer name:
-                    <input>
-                </label>
-            </p>
-            <fieldset>
-                <legend> Pizza Size </legend>
-                <p>
-                    <label>
-                        <input type=radio name=size> Small </label>
-                </p>
-                <p>
-                    <label>
-                        <input type=radio name=size> Medium </label>
-                </p>
-                <p>
-                    <label>
-                        <input type=radio name=size> Large </label>
-                </p>
-            </fieldset>
-        </form>
     </main>
 </body>
 
 </html>
+<!-- todo -->
+<!-- 检测input 的 type 有没有可以优化的地方 -->
+<!-- 页面一、二有的control没有设置name属性 -->
