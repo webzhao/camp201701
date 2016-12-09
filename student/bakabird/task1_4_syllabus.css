@@ -1,0 +1,9 @@
+table{
+    border: 1px solid #eee;
+    border-spacing: 0px;
+}
+
+th,td{
+    border: 1px solid #ccc;
+}
+
