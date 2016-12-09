@@ -1,0 +1,275 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=8" >
+	<title>二手车发布信息</title>
+</head>
+<body>
+	<!--发布信息开始 -->
+	<div class="main_box">
+		<div class="main">
+			<form id="formpersonal" method="post" onsubmit="return false;">
+				<h2 class="main_con"><i></i>平台严禁发布套牌车、走私车、盗抢车等非法车辆，一经发现一律冻结处理，请您按照<<平台发布规范>>发布您的信息。</h2>
+				<h3>基本信息</h3>
+				<strong>带<em>*</em>为必填</strong>	
+				<section class="form1">
+					<h4 class="form1_left"><em>*</em>车架号</h4>
+					<div class="form1_right">
+						<div class="item">
+							<div class="fl">
+								<input type="text" id="vin" name="vin" type="text" class="form1_text5" tabindex="">
+								<label id="vin_succeed" class="blank"></label>
+								<span class="clear"></span>
+								<label id="vin_error"></label>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="form1">
+					<h4 class="form1_left"><em>*</em>车主报价</h4>
+					<div class="form1_right">
+						<div class="fl">
+							<input type="text" id="minPrice" name="minPrice" type="text" class="form1_text5" tabindex="">
+							<span style="float:left;">万元</span>
+							<div class="easyui_combobox ml10" style="float:left;">
+								<span>可议价</span>
+								<i></i>
+								<input type="hidden" name="city" value="" />
+								<div class="list">
+									<a href="#" data-value="1">可议价</a>
+									<a href="#" data-value="2">不可议价</a>
+								</div>
+							</div>
+							<label id="minPrice_succeed" class="blank"></label>
+							<span class="clear"></span>
+							<label id="minPrice_error"></label>
+						</div>
+					</div>
+				</section>
+				<section class="form1">
+					<h4 class="form1_left"><em>*</em>品牌</h4>
+					<div class="form1_right">
+						<div class="fl">
+							<div style="float:left;">
+								<div class="pinp">
+									<div id="city_5">
+										<select class="prov"></select>
+										<select class="city" disabled="disabled"></select>
+									</div>
+								</div>
+								<span>变速箱</span>
+								<div class="easyui_combobox" id="sleBSX" class="sleBSX" type="select">
+									<span>请选择变速箱</span>
+									<i></i>
+									<input type="hidden" name="city" value="" />
+									<div class="list">
+										<a href="#" data-value="1">手动</a>
+										<a href="#" data-value="2">自动</a>
+										<a href="#" data-value="">手自一体</a>
+									</div>
+								</div>
+							</div>
+							<label id="sleBSX_succeed" class="blank"></label>
+							<span class="clear"></span>
+							<label id="sleBSX_error"></label>	
+						</div>
+					</div>
+				</section>
+				<section class="form1">
+					<h4 class="form1_left"><em>*</em>有无事故历史</h4>
+					<div class="form1_right">
+						<div class="fl">
+							<div style="float:left;">
+								<div class="easyui_combobox" id="acciden" class="acciden" type="select">
+									<span>事故历史</span>
+									<i></i>
+									<input type="hidden" name="city" value="" />
+									<div class="list">
+										<a href="#" data-value="1">暂无</a>
+										<a href="#" data-value="1">撞车</a>
+									</div>
+								</div>
+							</div>
+							<label id="acciden_succeed" class="blank"></label>
+							<span class="clear"></span>
+							<label id="acciden_error"></label>	
+						</div>
+					</div>
+				</section>
+				<!--颜色选择开始 -->
+				<section class="tinct">
+					<h4 class="tinct_left"><em>*</em>车辆颜色</h4>
+					<div class="tinct_right">
+						<div class="comment-level"></div>
+						<div class="comment-text-area">
+							<div class="text-area-star">
+								<label><input type="radio" name="star" value="1"/><em style="background:#000000;"></em><span>黑</span></label>
+								<label><input type="radio" name="star" value="2"/><em style="background:#ffffff;"></em><span>白</span></label>
+								<label><input type="radio" name="star" value="3"/><em style="background:#e6e6e6;"></em><span>银</span></label>
+								<label><input type="radio" name="star" value="4"/><em style="background:#d6d6d6;"></em><span>灰</span></label>
+								<label><input type="radio" name="star" value="4"/><em style="background:#ff0000;"></em><span>红</span></label>
+								<label><input type="radio" name="star" value="1"/><em style="background:#3399ff;"></em><span>蓝</span></label>
+								<label><input type="radio" name="star" value="2"/><em style="background:#ffff00;"></em><span>黄</span></label>
+								<label><input type="radio" name="star" value="3"/><em style="background:#996600;"></em><span>棕</span></label>
+								<label><input type="radio" name="star" value="4"/><em style="background:#0dcf6e;"></em><span>绿</span></label>
+								<label><input type="radio" name="star" value="4"/><em style="background:#ff6600;"></em><span>橙</span></label>
+								<label><input type="radio" name="star" value="1"/><em style="background:#cc3399;"></em><span>紫</span></label>
+								<label><input type="radio" name="star" value="2"/><em style="background:#f3eeaa;"></em><span>香槟</span></label>
+								<label><input type="radio" name="star" value="3"/><em style="background:#ffcc00;"></em><span>金</span></label>
+								<label><input type="radio" name="star" value="4"/><em style="background:#ffc0cb;"></em><span>粉红</span></label>
+								<label><input type="radio" name="star" value="4"/><span>其他</span></label>
+								<p style="text-align:left;float:left;padding-left:0;color:red;display:none;">请选择车辆颜色</p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--颜色选择结束 -->
+				<section class="form1">
+					<h4 class="form1_left"><em>*</em>上牌时间</h4>
+					<div class="form1_right">
+						<div class="fl">
+							<div style="float:left;">
+								<div class="easyui_combobox" id="registTime" class="registTime" type="select">
+									<span>上牌时间</span>
+									<i></i>
+									<input type="hidden" name="city" value="" />
+									<div class="list">
+										<a href="#" data-value="1">2013</a>
+										<a href="#" data-value="1">2014</a>
+										<a href="#" data-value="1">2015</a>
+									</div>
+								</div>
+								<span>年</span>
+							</div>
+						</div>
+						<label id="registTime_succeed" class="blank"></label>
+						<span class="clear"></span>
+						<label id="registTime_error"></label>	
+					</div>
+				</section>
+				<section class="form1">
+					<h4 class="form1_left"><em>*</em>年检到期</h4>
+					<div class="form1_right">
+						<div class="item">
+							<div class="fl">
+								<input id="time" name="time" class="form1_text5" tabindex="">
+								<label id="time_succeed" class="blank"></label>
+								<span class="clear"></span>
+								<label id="time_error"></label>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="form1">
+					<h4 class="form1_left"><em>*</em>交强险到期</h4>
+					<div class="form1_right">
+						<div class="item">
+							<div class="fl">
+								<input id="time2" name="time2" class="form1_text5" tabindex="">
+								<label id="time2_succeed" class="blank"></label>
+								<span class="clear"></span>
+								<label id="time2_error"></label>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="form1">
+					<h4 class="form1_left"><em>*</em>商业险到期</h4>
+					<div class="form1_right">
+						<div class="item">
+							<div class="fl">
+								<input id="time3" name="time3" class="form1_text5" tabindex="">
+								<label id="time3_succeed" class="blank"></label>
+								<span class="clear"></span>
+								<label id="time3_error"></label>
+							</div>
+						</div>
+					</div>
+				</section>		
+
+				<section class="form1">
+					<h4 class="form1_left"><em>*</em>标题</h4>
+					<div class="form1_right">
+						<div class="item">
+							<div class="fl">
+								<input id="publishTitle" name="publishTitle" type="text" class="form1_text5" tabindex="">
+								<label id="publishTitle_succeed" class="blank"></label>
+								<span class="clear"></span>
+								<label id="publishTitle_error"></label>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="form2">
+					<h4 class="form2_left">补充说明</h4>
+					<div class="form2_right"><textarea name="" cols="" rows="" class="form1_text3"></textarea></div>
+				</section>
+				<section class="form4">
+					<div class="form4_left"></div>
+					<div id="preview1"></div>
+					<div id="preview2"></div>
+				</section>
+				<section class="form3">
+					<h4 class="form3_left"><em>*</em>上传证件照</h4>
+					<div class="form3_right"><a href="#" class="xsz"><input name="file" type="file" onChange="preview(this,1)"></a><a href="#" class="cjm"><input name="file" type="file" onChange="preview(this,2)"></a></div>
+				</section>
+				<div class="clear"></div>
+				<section class="form4">
+					<h4 class="form4_left"><em>*</em>上传图片</h4>
+					<div class="form4_right"><input type="file" multiple id="ssi-upload3"/><p>温馨提示：只能上传房屋图片，不能包含有文字、数字、网址、名片等</p></div>
+				</section>
+				<div class="clear"></div>
+				<section class="form1">
+					<h4 class="form1_left"><em>*</em>联系人</h4>
+					<div class="form1_right">
+						<div class="item">
+							<div class="fl">
+								<input type="text" id="realname" name="realname" class="form1_text5" tabindex="7"/>
+								<label id="realname_succeed" class="blank"></label>
+								<span class="clear"></span>
+								<label id="realname_error"></label>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="form1">
+						<h4 class="form1_left"><em>*</em>手机</h4>
+						<div class="form1_right">
+							<div class="item">
+								<div class="fl">
+									<input type="text" id="mobile" name="mobile" class="form1_text5" value="" tabindex="10" />
+									<label id="mobile_succeed" class="blank"></label>
+									<span class="clear"></span>
+									<label id="mobile_error"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form1">
+						<h4 class="form1_left"><em>*</em>联系地址</h4>
+						<div class="form1_right">
+							<div class="item">
+								<div class="fl">
+									<input type="text" id="companyaddr" name="companyaddr" class="form1_text1" tabindex="12" />
+									<label id="companyaddr_succeed" class="blank"></label>
+									<span class="clear"></span>
+									<label id="companyaddr_error"></label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form1">
+						<div class="form1_left"></div>
+						<div class="form1_right">
+							<input type="button" class="form4_submit" id="registsubmit" value="提交" tabindex="8"  /></div>
+						</div>
+					</div>
+				</section>
+			</form>
+		</div>
+	</div>
+	<!--发布信息结束 -->
+</body>
+</html>
