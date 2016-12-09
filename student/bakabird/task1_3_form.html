@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RDD's表单设计</title>
+    <link rel="stylesheet" href="task1_3_form.css">
+</head>
+
+<body>
+    <main role="RDD's表单设计">
+        <aside>
+            <p>RDDcoding:<br>本来的页面就是分成了好几页的，我也就按一页一页地来临摹了。（说是优化，其实本来的页面已经做得不错，😯我也就只能临摹一下。</p>
+            <hr>
+        </aside>
+        <article role="RDD's表单设计之页面一">
+            <strong>(页面1[done])</strong>
+            <h1>中国银行信用卡申请</h1>
+            <p>尊敬的客户
+                <br>请您填写如下资料，以便我们为您选择办卡最便捷的通道。
+                <br><strong>新客户在线申请暂只面对持二代身份证的客户开放。</strong></p>
+            <form action="#">
+                <ul>
+                    <li>
+                        <label for="appiMcAddrState">请选择您所在省/市</label>
+                        <select name="appiMcAddrState" required="required">
+                            <option value="">请选择</option>
+                            <option value="4344899000">安徽省</option>
+                            <option value="4110142000">北京市</option>
+                            <option value="4508642000">重庆市</option>
+                            <option value="4355481000">福建省</option>
+                            <option value="4623251001">甘肃省</option>
+                            <option value="4487669000">深圳市</option>
+                            <option value="4447504001">广东省</option>
+                            <option value="4458051210">广西壮族自治区</option>
+                            <option value="4528882039">贵州省</option>
+                            <option value="4467806000">海南省</option>
+                            <option value="4130740999">河北省</option>
+                            <option value="4416243111">河南省</option>
+                            <option value="4232465999">黑龙江省</option>
+                            <option value="4426405000">湖北省</option>
+                            <option value="4436955000">湖南省</option>
+                            <option value="4222208000">吉林省</option>
+                            <option value="4324445000">苏州市</option>
+                            <option value="4324433001">江苏省</option>
+                            <option value="4367370001">江西省</option>
+                            <option value="4210038999">大连市</option>
+                            <option value="4211785000">辽宁省</option>
+                            <option value="4151405000">内蒙古自治区</option>
+                            <option value="4643347000">宁夏回族自治区</option>
+                            <option value="4633469000">青海省</option>
+                            <option value="4370003900">青岛市</option>
+                            <option value="4373810000">山东省</option>
+                            <option value="4141041000">山西省</option>
+                            <option value="4613016070">陕西省</option>
+                            <option value="4310303999">上海市</option>
+                            <option value="4518631001">四川省</option>
+                            <option value="4120202000">天津市</option>
+                            <option value="4540600000">西藏自治区</option>
+                            <option value="4653600000">新疆维吾尔自治区</option>
+                            <option value="4539146000">云南省</option>
+                            <option value="4335143000">宁波市</option>
+                            <option value="4335129001">浙江省</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="appiFirstName">姓</label>
+                        <input type="text" name="appiFirstName" placeholder="请输入姓" maxlength="5" required="required">
+                    </li>
+                    <li>
+                        <label for="appiFamilyName">名</label>
+                        <input type="text" name="appiFamilyName" placeholder="请输入名字" maxlength="5" required="required">
+                    </li>
+                    <li>
+                        <label for="appiMcIdNumber">身份证号码</label>
+                        <input type="text" name="appiMcIdNumber" placeholder="请输入身份证号码" maxlength="20" required="required">
+                    </li>
+                    <li>
+                        <label for="appiMcMPhone">手机号</label>
+                        <input type="text" placeholder="新客户请输入手机号" maxlength="11" name="appiMcMPhone" required="required">
+                    </li>
+                    <li>
+                        手机动态验证码
+                        <button type="button">获得手机验证码</button>
+                        <input type="text" placeholder="输入验证码" maxlength="6" required="required">
+                    </li>
+                    <li>
+                        <label for="agreement">
+                            <input type="checkbox" id="agreement">本人已阅读并同意并遵守<a href="#" target="CB">《中国银行股份有限公司信用卡领用合约》</a>法律文件。
+                        </label>
+                    </li>
+                </ul>
+                <button class="submit" type="submit">下一步</button>
+            </form>
+        </article>
+        <article role="RDD's表单设计之页面二">
+            <strong>(页面2[done])</strong>
+            <h1>中国银行信用卡申请</h1>
+            <p>尊敬的客户：
+                <br>
+                <strong>如您是他人推荐办卡，请填写以下信息</strong>
+            </p>
+            <form action="#">
+                <ul>
+                    <li>
+                        <label for="">客户经理手机号码：</label>
+                        <input type="text" placeholder="请输入客户经理手机号码" maxlength="11" name="managerPhone">
+                    </li>
+                    <li>
+                        <label for="">推荐好友手机号码：</label>
+                        <input type="text" placeholder="请输入推荐好友手机号码" name="appiRecommendPhone" maxlength="11" name>
+                    </li>
+                </ul>
+                <button type="button">上一步</button>
+                <button type="submit">下一步</button>
+            </form>
+        </article>
+        <article role="RDD's表单设计之页面三">
+            <strong>(页面3[working])</strong>
+            <h1>中国银行信用卡申请</h1>
+            <p>温馨提示：
+                <br>为了您的用卡安全，请您核对您的地址和联系信息。如需调整，请您致电我行信用卡客服热线4006695566进行修改。</p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>您的个人信息</legend>
+                    <div class="form-group">
+                        <div class="col-md-3 col-sm-3">
+                            <label class="control-label" for="appiFirstName"><span class="redstar">＊</span>姓</label>
+                            <div>
+                                <input id="appiFirstName" name="appiFirstName" pattern="^[\u4e00-\u9fa5a-zA-Z]{1,5}$" placeholder="请输入1-5个中/英文字符" class="form-control" type="text" required="required" disabled="disabled" value="杨" maxlength="5" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <label class="control-label" for="appiFamilyName"><span class="redstar">＊</span>名</label>
+                            <div>
+                                <input id="appiFamilyName" name="appiFamilyName" pattern="^[\u4e00-\u9fa5a-zA-Z]{1,5}$" placeholder="请输入1-5个中/英文字符" class="form-control" type="text" required="required" disabled="disabled" value="潍" maxlength="5" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <label class="control-label" for="appiMcTitle"><span class="redstar">＊</span>称谓</label>
+                            <div class="">
+                                <select id="appiMcTitle" name="appiMcTitle" class="form-control" required="required" disabled="disabled">
+                                    <option value="">请选择..</option>
+                                    <option value="1" selected="selected">先生</option>
+                                    <option value="2">女士</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3 col-sm-3">
+                            <label class="control-label" for="appiMcKnowAsName1"><span class="redstar">＊</span>姓名拼音</label>
+                            <div>
+                                <input id="appiMcKnowAsName1" name="appiMcKnowAsName1" placeholder="姓和名之间以空格隔开" class="form-control" type="text" required="required" value="" maxlength="28" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <label class="control-label" for="appiMcDob"><span class="redstar">＊</span>出生日期</label>
+                            <div>
+                                <input id="appiMcDob" name="appiMcDob" placeholder="格式：2015-01-15" class="form-control" type="text" required="required" disabled="disabled" value="1998-09-14" />
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-4 col-sm-4">
+                            <label class="control-label" for="appiMcIdType"><span class="redstar">＊</span>证件类型</label>
+                            <div>
+                                <select id="appiMcIdType" name="appiMcIdType" class="form-control" required="required" disabled="disabled">
+                                    <option value="1" selected="selected">身份证</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <label class="control-label" for="appiMcIdNumber"><span class="redstar">＊</span>证件号码</label>
+                            <div>
+                                <input type="text" class="form-control" id="appiMcIdNumber" name="appiMcIdNumber" placeholder="请输入证件号码" value="441********791" readOnly />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-4 col-sm-4">
+                            <label class="control-label" for="appiMcIdEnd">证件有效期至</label>
+                            <div>
+                                <input id="appiMcIdEnd" name="appiMcIdEnd" style="background-color:#FFFFFF;" placeholder="请输入证件有效期" class="form-control Wdate" type="text" onfocus="WdatePicker({isShowToday:false,dateFmt:&#39;yyyy-MM-dd&#39;,readOnly:true,minDate:&#39;%y-%M-{%d+1}&#39;})" readonly="readonly" value="" />
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-2">
+                            <label class="control-label" for="appiMcIdLongFlag">是否长期</label>
+                            <div>
+                                <select id="appiMcIdLongFlag" name="appiMcIdLongFlag" class="form-control">
+                                    <option value="">否</option>
+                                    <option value="1">是</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6"></div>
+                    </div>
+                    <label>家庭地址</label>
+                    <div class="form-group">
+                        <div class="col-md-3 col-sm-3">
+                            <label class="control-label" for="appiMcAddrState"><span class="redstar">＊</span>省\直辖市</label>
+                            <div>
+                                <select id="appiMcAddrState" name="appiMcAddrState" class="form-control" required="required" disabled="disabled">
+                                    <option value="">请选择..</option>
+                                    <option value="安徽省">安徽省</option>
+                                    <option value="北京市" selected="selected">北京市</option>
+                                    <option value="重庆市">重庆市</option>
+                                    <option value="福建省">福建省</option>
+                                    <option value="甘肃省">甘肃省</option>
+                                    <option value="深圳市">深圳市</option>
+                                    <option value="广东省">广东省</option>
+                                    <option value="广西壮族自治区">广西壮族自治区</option>
+                                    <option value="贵州省">贵州省</option>
+                                    <option value="海南省">海南省</option>
+                                    <option value="河北省">河北省</option>
+                                    <option value="河南省">河南省</option>
+                                    <option value="黑龙江省">黑龙江省</option>
+                                    <option value="湖北省">湖北省</option>
+                                    <option value="湖南省">湖南省</option>
+                                    <option value="吉林省">吉林省</option>
+                                    <option value="苏州市">苏州市</option>
+                                    <option value="江苏省">江苏省</option>
+                                    <option value="江西省">江西省</option>
+                                    <option value="大连市">大连市</option>
+                                    <option value="辽宁省">辽宁省</option>
+                                    <option value="内蒙古自治区">内蒙古自治区</option>
+                                    <option value="宁夏回族自治区">宁夏回族自治区</option>
+                                    <option value="青海省">青海省</option>
+                                    <option value="青岛市">青岛市</option>
+                                    <option value="山东省">山东省</option>
+                                    <option value="山西省">山西省</option>
+                                    <option value="陕西省">陕西省</option>
+                                    <option value="上海市">上海市</option>
+                                    <option value="四川省">四川省</option>
+                                    <option value="天津市">天津市</option>
+                                    <option value="西藏自治区">西藏自治区</option>
+                                    <option value="新疆维吾尔自治区">新疆维吾尔自治区</option>
+                                    <option value="云南省">云南省</option>
+                                    <option value="宁波市">宁波市</option>
+                                    <option value="浙江省">浙江省</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <label class="control-label" for="appiMcAddrCity"><span class="redstar">＊</span>区\市</label>
+                            <div>
+                                <select id="appiMcAddrCity" name="appiMcAddrCity" class="form-control" required="required">
+                                    <option value="">请选择..</option>
+                                    <option value="房山区">房山区</option>
+                                    <option value="平谷区">平谷区</option>
+                                    <option value="东城区">东城区</option>
+                                    <option value="西城区">西城区</option>
+                                    <option value="崇文区">崇文区</option>
+                                    <option value="宣武区">宣武区</option>
+                                    <option value="朝阳区">朝阳区</option>
+                                    <option value="丰台区">丰台区</option>
+                                    <option value="石景山区">石景山区</option>
+                                    <option value="海淀区">海淀区</option>
+                                    <option value="门头沟区">门头沟区</option>
+                                    <option value="通州区">通州区</option>
+                                    <option value="顺义区">顺义区</option>
+                                    <option value="昌平区">昌平区</option>
+                                    <option value="大兴区">大兴区</option>
+                                    <option value="怀柔区">怀柔区</option>
+                                    <option value="密云县">密云县</option>
+                                    <option value="延庆县">延庆县</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <label class="control-label" for="appiMcAddr1"><span class="redstar">＊</span>住宅详细地址</label>
+                            <div>
+                                <input id="appiMcAddr1" name="appiMcAddr1" placeholder="街道/小区/楼/室等" class="form-control" type="text" required="required" value="" maxlength="24" />请提供常住地址
+                                <p class="appiMcAddr1Tip" style="color:red;"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-4 col-sm-4">
+                            <label class="control-label" for="appiMcPostCode"><span class="redstar">＊</span>住宅邮编</label>
+                            <div>
+                                <input id="appiMcPostCode" name="appiMcPostCode" pattern="^\d{6}$" placeholder="请输入6位邮编" class="form-control" type="text" required="required" value="" maxlength="6" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <label class="control-label" for="appiMcResideYear"><span class="redstar">＊</span>现址已居住时间(年)</label>
+                            <div class="">
+                                <input id="appiMcResideYear" name="appiMcResideYear" pattern="^\d{1,2}$" placeholder="请输入现址已居住时间（年）" class="form-control" type="text" required="required" value="" maxlength="2" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <label class="control-label" for="appiMcResideSts"><span class="redstar">＊</span>住宅性质</label>
+                            <div class="">
+                                <select id="appiMcResideSts" name="appiMcResideSts" class="form-control" required="required">
+                                    <option value="">请选择..</option>
+                                    <option value="1">亲属产权</option>
+                                    <option value="2">单位宿舍</option>
+                                    <option value="3">无按揭自置</option>
+                                    <option value="4">按揭自置</option>
+                                    <option value="5">租用</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <label>住宅电话</label>
+                    <div class="form-group">
+                        <div class="col-md-4 col-sm-4">
+                            <label class="control-label" for="appiMcHPhoneProvince">区号</label>
+                            <div class="">
+                                <input id="appiMcHPhoneProvince" name="appiMcHPhoneProvince" placeholder="请输入3-4位区号" class="form-control" type="text" value="" maxlength="4" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <label class="control-label" for="appiMcHPhoneNo">电话号码</label>
+                            <div class="">
+                                <input id="appiMcHPhoneNo" name="appiMcHPhoneNo" placeholder="请输入7-8位电话号码" class="form-control" type="text" value="" maxlength="8" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <label class="control-label" for="appiMcHPhoneExt">分机号</label>
+                            <div class="">
+                                <input id="appiMcHPhoneExt" name="appiMcHPhoneExt" placeholder="请输入3-4位分机号" class="form-control" type="text" value="" maxlength="4" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3 col-sm-3">
+                            <label class="control-label" for="appiMcMaritalSts"><span class="redstar">＊</span>婚姻状况</label>
+                            <div class="">
+                                <select id="appiMcMaritalSts" name="appiMcMaritalSts" class="form-control" required="required">
+                                    <option value="">请选择..</option>
+                                    <option value="1">未婚</option>
+                                    <option value="2">已婚</option>
+                                    <option value="3">其他</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <label class="control-label" for="appiMcEducation"><span class="redstar">＊</span>教育程度</label>
+                            <div class="">
+                                <select id="appiMcEducation" name="appiMcEducation" class="form-control" required="required">
+                                    <option value="">请选择..</option>
+                                    <option value="1">研究生及以上</option>
+                                    <option value="2">大学本科</option>
+                                    <option value="3">大学专科</option>
+                                    <option value="4">高中及以下</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3 col-sm-3">
+                            <label class="control-label" for="appiMcMPhone"><span class="redstar">＊</span>手机号码</label>
+                            <div class="">
+                                <input id="appiMcMPhone" name="appiMcMPhone" pattern="^1{1}[0-9]{10}$" placeholder="请输入11位手机号码" class="form-control" type="text" required="required" disabled="disabled" value="188*****133" maxlength="11" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4">
+                            <label class="control-label" for="appiMcMotherName"><span class="redstar">＊</span>母亲姓氏</label>
+                            <div class="">
+                                <input id="appiMcMotherName" name="appiMcMotherName" pattern="^[\u4e00-\u9fa5a-zA-Z]{1,5}$" placeholder="无需填写全名，仅供确认身份" class="form-control" type="text" required="required" value="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12 col-sm-12 text-center">
+                            <div class="button_group">
+                                <input type="button" id="previousStep" class="nextStepBtn btn btn-bank btn-bank-lg" value="上一步" />
+                                <input type="submit" class="nextStepBtn btn btn-bank btn-bank-lg" value="下一步" />
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+        <article role="RDD's表单设计之页面四">
+            <strong>(页面4)</strong>
+            <h1>中国银行信用卡申请</h1>
+        </article>
+        <article role="RDD's表单设计之页面五">
+            <strong>(页面5)</strong>
+            <h1>中国银行信用卡申请</h1>
+        </article>
+    </main>
+</body>
+
+</html>
