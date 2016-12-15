@@ -1,6 +1,6 @@
 # syllabus笔记
 
-[作业](/Users/yangdawei2gwy/learning/360Front/作业1/task1_4_syllabus.html)
+[作业](/Users/yangdawei2gwy/learning/360Front/camp201701-master/student/bakabird/task1_4_syllabus.html)
 
 ## br	
 
@@ -38,3 +38,19 @@
 * default: border-spacing : 2px;
 * before:![](/Users/yangdawei2gwy/Desktop/屏幕快照 2016-12-08 下午6.39.08.png)
 * after:![](/Users/yangdawei2gwy/Desktop/屏幕快照 2016-12-08 下午6.39.20.png)
+
+
+## 疑惑
+
+1. 【js】为什么获取了 time元素 之后，它的nodeValue为空呢？
+2. 【js】都有什么方法能够剔除掉数组中的重复项？
+	*  【已用】使用`{}`，在添加的时候判断 以该值为key的数据存不存在。 `if(obj[data]){}` 
+	*  ...
+
+## 更新
+
+* 12.11:
+	* 添加了各种考试时间
+		* 【生】疑惑
+	* 添加分列区别
+	* 给考试时间添加了`<time>`
