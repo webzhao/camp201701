@@ -1,9 +1,13 @@
 *{
-	padding: 0;
-	margin: 0;
+	/*padding: 0;
+	margin: 0;*/
 	box-sizing: inherit;
 	-moz-box-sizing:inherit;
 	--webkit-box-sizing: inherit;
+}
+body,ul,li,h1,h2,h3,h4,h5,p,dl,dt,dd{
+	padding: 0;
+	margin:0;
 }
 html{
 	box-sizing: border-box;
@@ -14,11 +18,12 @@ html{
 }
 .container{
 	width:70%;
-	margin-right: auto;
-	margin-left: auto;
+	margin:20px auto 0;
+	/*margin-right: auto;*/
+	/*margin-left: auto;*/
 	background: #ccc;
 	min-height: 100px;
-	margin-top:20px;
+	/*margin-top:20px;*/
 	position: relative;
 	height:1350px;
 }
@@ -110,8 +115,9 @@ li p{
 .judge p{
 	/*height:100px;*/
 	/*border:1px solid red;*/
-	padding-left: 50px;
-	padding-top: 10px;
+	padding:10px 0 0 50px;
+	/*padding-left: 50px;
+	padding-top: 10px;*/
 	line-height: 30px;
 	text-indent: 2em;
 }
