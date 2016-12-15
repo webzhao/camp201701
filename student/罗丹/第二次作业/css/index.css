@@ -1,0 +1,174 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+	-moz-box-sizing:inherit;
+	--webkit-box-sizing: inherit;
+}
+html{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	font-family: Tahoma,Arial,"Helvetica Neue","Hiragino Sans GB",Simsun,sans-self;
+
+}
+.container{
+	width:70%;
+	margin-right: auto;
+	margin-left: auto;
+	background: #ccc;
+	min-height: 100px;
+	margin-top:20px;
+	position: relative;
+	height:1350px;
+}
+.container:before{
+	content:" ";
+	display: block;
+	clear: both;
+	height:0;
+}
+.left{
+	width:200px;
+	/*border:1px solid #000;*/
+	padding:30px 30px 30px 20px;
+	float:left;
+	background: #cdc;
+	overflow: hidden;
+	height:100%;
+}
+.right{
+     overflow: hidden;
+     padding:20px 30px;
+}
+.right ul li{
+	margin-left: 50px;
+}
+.head{
+	width:150px;
+	font-size: 0;
+	text-align: center;
+	padding:10px;
+	background: #fff;
+	/*border-radius: 150px;*/
+}
+.head img{
+	width:130px;
+}
+.information{
+	margin-top: 30px;
+	font-size: 14px;
+}
+.information ul li{
+	list-style: none;
+	height:30px;
+	line-height: 30px;
+}
+
+.skill{
+	margin-top:100px;
+	font-size: 14px;
+}
+.com{
+	background: #a00;
+	height:15px;
+	text-align: right;
+	font-size: 12px;
+	margin-top: 2px;
+}
+.skill p{
+	margin-top:10px;
+}
+.hc{
+	width:70%;
+}
+.js{
+	width:50%;
+}
+.bt{
+	width:50%;
+}
+.php{
+	width:40%;
+}
+.ew{
+	width:80%;
+}
+.en{
+	width:50%;
+
+}
+.my{
+	width:20px;
+	height:20px;
+	background: url('image/icon.jpg') -30px 200px;
+	display: inline-block;
+}
+li p{
+	display: inline-block;
+}
+.judge p{
+	/*height:100px;*/
+	/*border:1px solid red;*/
+	padding-left: 50px;
+	padding-top: 10px;
+	line-height: 30px;
+	text-indent: 2em;
+}
+.name p{
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.right>div{
+	margin-top:30px;
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+}
+.right .name{
+	margin-top: 0px;
+}
+.right ul{
+	padding-left: 40px;
+}
+.project section{
+	margin-top:20px;
+}
+.project ul li{
+	line-height: 30px;
+}
+h4{
+	margin-top:10px;
+	margin-left:50px;
+}
+h4 + div{
+  margin-top:10px;
+}
+h4 + div ul li{
+	line-height: 30px;
+}
+.information ul li>span:last-child{
+	margin-left:3px;
+}
+h3>span:last-child{
+	margin-left: 5px;
+}
+.other ul li{
+	list-style: none;
+	margin-top:10px;
+}
+.other{
+	margin-top:100px;
+}
+.other ul>li:nth-child(2n){
+	width:150px;
+}
+.other ul>li:nth-child(2n+1){
+	text-align: center;
+}
+.other ul>li:nth-child(3){
+	margin-top:100px;
+}
+.other ul li img{
+	width:100%;
+}
