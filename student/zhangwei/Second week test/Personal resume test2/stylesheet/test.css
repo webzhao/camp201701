@@ -1,0 +1,219 @@
+body,
+ul hr {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f0f0f0;
+    min-width: 960px;
+
+}
+header,
+article,
+footer {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+
+/*头部*/
+
+header {
+    margin-top: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #38f;
+    color: #fff;
+}
+
+
+/*头像*/
+
+header div.head_portrait {
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 10px 15px 0 15px;
+    border: 2px solid #38f;
+}
+
+header div.head_portrait img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*头像end*/
+
+
+/*姓名和目标*/
+
+header div.name {
+    position: absolute;
+    top: 50px;
+    display: inline-block;
+    margin-left: 15px;
+    width: 300px;
+}
+
+header div.name h1 {
+    font-size: 48px;
+}
+
+
+/*兴民和目标end*/
+
+
+/*基本信息*/
+
+header div.ess {
+    margin: 15px auto;
+}
+
+header div.ess ul {
+    overflow: hidden;
+    /*text-align: center;*/
+    width: 83%;
+    margin: 0 auto;
+}
+
+header div.ess ul li {
+    font-size: 20px;
+    float: left;
+    overflow: hidden;
+    margin: auto 45px;
+    list-style: none;
+}
+
+header div.ess ul li i {
+    margin-right: 15px;
+}
+
+
+/*基本信息end*/
+
+
+/*头部end*/
+
+
+/*主体*/
+
+article {
+    margin-top: -16px;
+    overflow: hidden;
+}
+
+
+/*主体内容块*/
+
+article section {
+    margin: 0 15px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+article section dl dt h1{
+    font-size: 2em;
+    line-height: 40px;
+    color: #38f;
+}
+
+article section dl dt h1 {
+    margin: 0;
+}
+
+article section dl dt i {
+    margin-right: 15px;
+}
+
+article section dl dd {
+    border-left: 2px solid #38f;
+    margin-left: 10px;
+    padding-left: 30px;
+    font-size: 1.4em;
+}
+
+article section dl dd span {
+    margin-right: 30px;
+}
+
+article section dl dd {
+    overflow: hidden;
+}
+
+article section dl dd li {
+    width: 300px;
+    height: 100px;
+    float: left;
+    list-style: none;
+}
+
+article section dl dd li span {
+    width: 180px;
+    height: 8px;
+    background: #ccc;
+    display: inline-block;
+    position: relative;
+}
+
+article section dl dd li span i {
+    width: 50%;
+    height: 8px;
+    background: #38f;
+    position: absolute;
+}
+article section dl{
+    margin-bottom: 0;
+}
+
+footer {
+    position: relative;
+    min-height: 60px;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    background: #38f;
+    color: #fff;
+}
+
+footer p.contact {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    right: 50px;
+    float: right;
+    margin-top:60px;
+    margin-bottom: 60px;
+    margin-right: 300px;
+
+}
+
+footer p.QR-code {
+	font-size: 20px;
+    float: left;
+    margin-top:35px;
+    margin-bottom: 35px;
+    margin-left: 350px;
+}
+
+footer p.QR-code span {
+    display: inline-block;
+    position: absolute;
+    top: 70px;
+    left: 270px;
+}
+
+footer p img {
+    width: 100px;
+    height: 100px;
+}
+
+footer p a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff
+}
