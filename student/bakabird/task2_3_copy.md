@@ -325,3 +325,15 @@ JSON.stringify(dataObj);
 	<span>城市</span>
 </p>
 ```
+
+#### Vue的组件的`template`中标签的属性设置
+
+貌似不能能够像`avalon`那样 在设置某个标签的属性的值 的时候 使用 `"字符串" + @avalon数据`
+
+**只能**直接通过变量名来引用设置在 `Vue` 中的 `data`。
+
+如：
+`<div v-bind:class="dataInVue"></div>`
+
+> 应该可以通过使用函数来比较绕地实现对数据的fix。（不过暂时没有去尝试）
+

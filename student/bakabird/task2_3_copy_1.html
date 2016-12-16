@@ -93,12 +93,48 @@
         font-size: 22px;
         vertical-align: middle;
     }
+
+    .banner {
+        width: 750px;
+        height: 400px;
+        background-size: 100% 100%;
+    }
+
+    .banner-headline {
+        padding: 0 20px;
+        position: absolute;
+        bottom: 35px;
+        width: 715px;
+    }
+
+    .banner-catagory:before {
+        position: absolute;
+        background: #000;
+        color: #dea800;
+        padding: 0 8px;
+        font-size: 12px;
+        top: -25px;
+    }
+
+    .banner-catagory-business:before {
+        content: "商业";
+    }
+
+    .banner-headline p {
+        background: #000;
+        color: #fff;
+        line-height: 40px;
+        display: inline;
+        font-size: 30px;
+    }
     </style>
 </head>
 
 <body>
     <div id="test">
         <grid v-bind:data="testdata"></grid>
+        <banner v-bind:data="testbannerdata"></banner>
+    </div>
     </div>
 </body>
 <script>
@@ -107,13 +143,22 @@ function heredoc(fn) {
     replace(/\*\/[^\/]+$/, '').trim().replace(/>\s*</g, '><')
 }
 
+function clone(myObj) {
+    if (typeof(myObj) != 'object' || myObj == null) return myObj;
+    var newObj = new Object();
+    for (var i in myObj) {
+        newObj[i] = clone(myObj[i]);
+    }
+    return newObj;
+}
+
 Vue.component("grid", {
     props: ["data"],
     template: heredoc(function() {
         /*
         <div class="grid">
             <div class="img">
-                <p class="category"><i class="iconfont icon-city" role="category-city"></i><span>城市</span></p>
+                <p class="category"><i class="iconfont" :class="data.class" role="category-city"></i><span>城市</span></p>
                 <img v-bind:src="data.src" v-bind:alt="data.text" width="245" height="185">
             </div>
             <div class="headline">
@@ -128,14 +173,33 @@ Vue.component("grid", {
     })
 })
 
+Vue.component("banner", {
+    props: ["data"],
+    template: heredoc(function() {
+        /*
+        <div class="banner" :style="data.style">
+            <div class="banner-headline banner-catagory banner-catagory-business"><p>{{data.headline}}</p></div>
+        </div>
+        */
+    })
+})
+
 var test = new Vue({
     el: "#test",
     data: {
         testdata: {
+            "class": "icon-city",
             "text": "越来越多已经长大的“年轻人”不愿离家，是你吗？丨好奇心小数据",
             "src": "http://img.qdaily.com/article/article_show/20161214194203rAwEVkHj4pSoLCRZ.jpg?imageMogr2/auto-orient/thumbnail/!368x278r/gravity/Center/crop/368x278/quality/85/format/webp/ignore-error/1"
+        },
+        testbannerdata: {
+            "style": {
+                "backgroundImage": "url(\"http://img.qdaily.com/article/banner/20161214153410dTlmbvRiEO4wHrj0.jpg?imageMogr2/auto-orient/thumbnail/!755x450r/gravity/Center/crop/755x450/quality/85/format/jpg/ignore-error/1\")"
+            },
+            "category": "商业",
+            "headline": "中国电影市场经历了希望破灭的一年，接下来又要走向何方？｜好奇心2016年度盘点",
         }
-    }
+    },
 })
 </script>
 
