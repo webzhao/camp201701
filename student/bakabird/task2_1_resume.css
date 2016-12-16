@@ -1,0 +1,110 @@
+/*task2_1_resume.css*/
+html {
+        font-family: Palatino, Helvetica, "楷体", STKaiti, KaiTi, STHeiti, sans-serif, serif, monospace;
+    }
+
+    header {
+        height: 170px;
+        padding-top: 70px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #c7c7c7;
+        overflow: hidden;
+        margin-bottom: 70px;
+    }
+
+    header>h1 {
+        font-size: 50px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        margin: 10px 0;
+        line-height: 60px;
+    }
+
+    header>h1>span {
+        letter-spacing: 0.18em;
+        font-size: 1.1em;
+    }
+
+    header>p {
+        color: #afafaf;
+        font-weight: 100;
+        margin-top: 10px;
+    }
+
+    body {
+        background: #E6E7EC;
+        width: 850px;
+        margin: 0 auto;
+    }
+
+    main {
+        width: 100%;
+    }
+
+    main p,
+    ul {
+        color: #555;
+    }
+
+    .profile {
+        padding-right: 40px;
+    }
+
+    .twoCol-left *:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .twoCol-right *:first-child {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .commonMask {
+        text-align: center;
+        padding-bottom: 30px;
+        border-bottom: 2px #c7c7c7 dashed;
+    }
+
+    .commonMask>img {
+        padding: 10px;
+        border-bottom: 1px #c7c7c7 dashed;
+    }
+
+    .contact {}
+
+    .social {}
+
+    .education {}
+
+    .experience {}
+
+    .twoCol-left {
+        float: left;
+        width: 30%;
+        box-sizing: border-box;
+    }
+    .profile>section{
+        margin-bottom: 50px;
+    }
+
+    main>.twoCol-right {
+        padding-left: 30px;
+    }
+
+    main>.twoCol-right>section {
+        border-bottom: 2px dashed #c7c7c7;
+        padding: 10px 0;
+        margin-bottom: 30px;
+    }
+
+    main>.twoCol-right>section:last-child {
+        border-bottom: none;
+    }
+
+    .twoCol-right {
+        overflow: hidden;
+        width: 70%;
+        box-sizing: border-box;
+        border-left: 2px solid #c7c7c7;
+    }
