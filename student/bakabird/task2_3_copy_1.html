@@ -5,202 +5,21 @@
     <meta charset="UTF-8">
     <title>RDD在临摹「好奇心日报-首页」</title>
     <script type="text/javascript" src="js/vue.js"></script>
-    <style>
-    html {
-        font-family: Arial, Hiragino Sans GB, 冬青黑, Microsoft YaHei, 微软雅黑, SimSun, 宋体, Helvetica, Tahoma, Arial sans-serif;
-        -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%
-    }
-
-    @font-face {
-        font-family: iconfont;
-        src: url(font/iconfont.eot?1443083280199);
-        src: url(font/iconfont.eot?1443083280199#iefix) format('embedded-opentype'), url(font/iconfont.woff?1443083280199) format('woff'), url(font/iconfont.ttf?1443083280199) format('truetype'), url(font/iconfont.svg?1443083280199#iconfont) format('svg')
-    }
-
-    .iconfont {
-        font-style: normal;
-        font-size: 16px;
-        font-family: iconfont!important;
-        -webkit-font-smoothing: antialiased;
-        -webkit-text-stroke-width: .2px;
-        -moz-osx-font-smoothing: grayscale;
-    }
-
-    body {
-        background: #ccc;
-    }
-
-    .grid {
-        width: 245px;
-        height: 280px;
-        background: #fff;
-    }
-
-    .headline {
-        width: calc(100% - 20px);
-        height: 20%;
-        padding: 10px 10px 0 10px;
-        font-size: 16px;
-        overflow: hidden;
-    }
-
-    .moreinfo {
-        height: 28px;
-        padding-right: 10px;
-        padding-left: 10px;
-        line-height: 24px;
-        color: #aaa;
-        line-height: calc(height);
-        font-size: 13px;
-    }
-
-    .moreinfo p {
-        float: right;
-        margin: 0;
-    }
-
-    .icon-city:before {
-        content: "\E694";
-    }
-
-    .icon-message:before {
-        content: "\E618";
-    }
-
-    .icon-heart:before {
-        content: "\E617";
-    }
-
-    .category {
-        position: absolute;
-        left: 15px;
-        top: 15px;
-        height: 22px;
-        line-height: 22px;
-        margin: 0;
-    }
-
-    .category span {
-        font-size: 12px;
-        color: #fff;
-        vertical-align: middle;
-    }
-
-    .category i {
-        color: #fff;
-        margin-right: 5px;
-        font-size: 22px;
-        vertical-align: middle;
-    }
-
-    .banner {
-        width: 750px;
-        height: 400px;
-        background-size: 100% 100%;
-    }
-
-    .banner-headline {
-        padding: 0 20px;
-        position: absolute;
-        bottom: 35px;
-        width: 715px;
-    }
-
-    .banner-catagory:before {
-        position: absolute;
-        background: #000;
-        color: #dea800;
-        padding: 0 8px;
-        font-size: 12px;
-        top: -25px;
-    }
-
-    .banner-catagory-business:before {
-        content: "商业";
-    }
-
-    .banner-headline p {
-        background: #000;
-        color: #fff;
-        line-height: 40px;
-        display: inline;
-        font-size: 30px;
-    }
-    </style>
+    <link rel="stylesheet" href="task2_3_copy_1_main.css">
+    <link rel="stylesheet" href="task2_3_copy_1_grids.css">
+    <link rel="stylesheet" href="task2_3_copy_1_header.css">
+    <link rel="stylesheet" href="task2_3_copy_1_footer.css">
 </head>
 
 <body>
     <div id="test">
-        <grid v-bind:data="testdata"></grid>
-        <banner v-bind:data="testbannerdata"></banner>
-    </div>
+        <qdaily-nav></qdaily-nav>
+        <main>
+            <qdaily-grid v-for="(gridData,index) in gridDatas" v-bind:data="gridData"></qdaily-grid>
+        </main>
+        <qdaily-footer></qdaily-footer>
     </div>
 </body>
-<script>
-function heredoc(fn) {
-    return fn.toString().replace(/^[^\/]+\/\*!?\s?/, '').
-    replace(/\*\/[^\/]+$/, '').trim().replace(/>\s*</g, '><')
-}
-
-function clone(myObj) {
-    if (typeof(myObj) != 'object' || myObj == null) return myObj;
-    var newObj = new Object();
-    for (var i in myObj) {
-        newObj[i] = clone(myObj[i]);
-    }
-    return newObj;
-}
-
-Vue.component("grid", {
-    props: ["data"],
-    template: heredoc(function() {
-        /*
-        <div class="grid">
-            <div class="img">
-                <p class="category"><i class="iconfont" :class="data.class" role="category-city"></i><span>城市</span></p>
-                <img v-bind:src="data.src" v-bind:alt="data.text" width="245" height="185">
-            </div>
-            <div class="headline">
-                <a>{{data.text}}</a>
-            </div>
-            <div class="moreinfo">
-                    <time>昨天</time>
-                    <p><i class="iconfont icon-message"></i> 28 <i class="iconfont icon-heart"></i> 170</p>
-            </div>
-        </div>
-        */
-    })
-})
-
-Vue.component("banner", {
-    props: ["data"],
-    template: heredoc(function() {
-        /*
-        <div class="banner" :style="data.style">
-            <div class="banner-headline banner-catagory banner-catagory-business"><p>{{data.headline}}</p></div>
-        </div>
-        */
-    })
-})
-
-var test = new Vue({
-    el: "#test",
-    data: {
-        testdata: {
-            "class": "icon-city",
-            "text": "越来越多已经长大的“年轻人”不愿离家，是你吗？丨好奇心小数据",
-            "src": "http://img.qdaily.com/article/article_show/20161214194203rAwEVkHj4pSoLCRZ.jpg?imageMogr2/auto-orient/thumbnail/!368x278r/gravity/Center/crop/368x278/quality/85/format/webp/ignore-error/1"
-        },
-        testbannerdata: {
-            "style": {
-                "backgroundImage": "url(\"http://img.qdaily.com/article/banner/20161214153410dTlmbvRiEO4wHrj0.jpg?imageMogr2/auto-orient/thumbnail/!755x450r/gravity/Center/crop/755x450/quality/85/format/jpg/ignore-error/1\")"
-            },
-            "category": "商业",
-            "headline": "中国电影市场经历了希望破灭的一年，接下来又要走向何方？｜好奇心2016年度盘点",
-        }
-    },
-})
-</script>
+<script src="js/task2_copy_1_vue.js"></script>
 
 </html>

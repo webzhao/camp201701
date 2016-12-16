@@ -1,0 +1,95 @@
+/*task2_3_copy_1_header.css*/
+
+header {
+    height: 60px;
+    background: #000;
+}
+
+.logo {
+    width: 130px;
+    height: 60px;
+    float: left;
+}
+
+nav {
+    overflow: hidden;
+    width: calc(100% - 130px);
+    height: 100%;
+    box-sizing: border-box;
+    padding-right: 50px;
+    /**/
+    color: #fff;
+    line-height: 60px;
+}
+
+nav>.nav-feature {
+    height: 100%;
+    padding: 0 20px;
+    padding-left: 10px;
+    border-right: 1px solid #5d5d5d;
+}
+
+nav>.nav-feature a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+nav>.nav-categorys {
+    height: 100%;
+    border-right: 1px solid #5d5d5d;
+}
+
+nav>.nav-categorys>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    line-height: 60px;
+    padding-left: 30px;
+}
+
+nav>.nav-categorys>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav>.nav-categorys>ul a {
+    text-decoration: none;
+    color: #666666;
+}
+
+nav>.nav-categorys li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav>.nav-other .app {
+    display: inline-block;
+    padding: 0 20px;
+    border-right: 1px solid #5d5d5d;
+}
+
+nav>.nav-other .search {
+    display: inline-block;
+    padding: 0 20px;
+    border-right: 1px solid #5d5d5d;
+}
+
+nav>.nav-other .aboutus {
+    padding-left: 15px;
+}
+
+nav>.nav-other .weibo {
+    padding-left: 10px;
+}
+
+nav>.nav-other .weixin {
+    padding-left: 10px;
+}
+
+nav>.nav-other a {
+    color: #fff;
+    line-height: 60px;
+    text-decoration: none;
+}
