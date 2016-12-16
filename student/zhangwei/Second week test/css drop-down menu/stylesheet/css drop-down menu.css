@@ -1,0 +1,69 @@
+/*容器样式*/
+nav {
+    width: 300px;
+    height: 50px;
+    margin: 30px auto;
+    border-radius: 10px;
+    background: #efefef;
+    background: linear-gradient(top, #efefef 0%, #bbb 100%);
+    background: -moz-linear-gradient(top, #efefef 0%, #bbb 100%);
+    background: -webkit-linear-gradient(top, #efefef 0%, #bbb 100%);
+    box-shadow: 0 0 9px rgba(0, 0, 0, .15);
+}
+/*菜单名*/
+nav ul.content > li {
+    line-height: 50px;
+    display: inline-block;
+    float: left;
+    width: 120px;
+    height: 50px;
+    list-style: none;
+    text-align: center;
+}
+/*当鼠标放置到菜单名时，列表出现*/
+nav ul li:hover {
+    background: #4b545f;
+    background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -webkit-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+}
+
+nav ul.content > li:hover > ul {
+    display: block;
+}
+/*二级菜单样式*/
+nav ul.content > li > ul {
+    position: relative;
+    left: 0;
+    display: none;
+    padding: 0;
+    list-style: none;
+    background: #efefef;
+    background: linear-gradient(top, #efefef 0%, #bbb 100%);
+    background: -moz-linear-gradient(top, #efefef 0%, #bbb 100%);
+    background: -webkit-linear-gradient(top, #efefef 0%, #bbb 100%);
+}
+
+nav ul.content > li > ul > li:hover > ul {
+    display: block;
+}
+
+nav ul.content > li > ul > li > ul {
+    width: 120px;
+    position: absolute;
+    top: 0;
+    left: 120px;
+    display: none;
+    overflow: hidden;
+    padding: 0;
+    list-style: none;
+    background: #efefef;
+    background: linear-gradient(top, #efefef 0%, #bbb 100%);
+    background: -moz-linear-gradient(top, #efefef 0%, #bbb 100%);
+    background: -webkit-linear-gradient(top, #efefef 0%, #bbb 100%);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
