@@ -40,16 +40,6 @@ Vue.component("mid-grid", {
     })
 })
 
-Vue.component("banner", {
-    props: ["data"],
-    template: heredoc(function() {
-        /*
-        <div class="banner" :style="data.style">
-            <div class="banner-headline banner-catagory banner-catagory-business"><p>{{data.headline}}</p></div>
-        </div>
-        */
-    })
-})
 
 Vue.component("min-grid-activity", {
     props: ["data"],
@@ -80,7 +70,7 @@ var test = new Vue({
             "text": "越来越多已经长大的“年轻人”不愿离家，是你吗？丨好奇心小数据",
             "src": "http://img.qdaily.com/article/article_show/20161214194203rAwEVkHj4pSoLCRZ.jpg?imageMogr2/auto-orient/thumbnail/!368x278r/gravity/Center/crop/368x278/quality/85/format/webp/ignore-error/1"
         },
-        testbannerdata: {
+        bannerdata: {
             "style": {
                 "backgroundImage": "url(\"http://img.qdaily.com/article/banner/20161214153410dTlmbvRiEO4wHrj0.jpg?imageMogr2/auto-orient/thumbnail/!755x450r/gravity/Center/crop/755x450/quality/85/format/jpg/ignore-error/1\")"
             },

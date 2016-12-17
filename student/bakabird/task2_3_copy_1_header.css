@@ -3,6 +3,10 @@
 header {
     height: 60px;
     background: #000;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+        width: 100vw;
 }
 
 .logo {

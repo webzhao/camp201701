@@ -1,0 +1,31 @@
+    .qusitive {
+        width: 245px;
+        height: 280px;
+        margin:5px;
+    }
+
+    .qusitive button {
+        width: 100%;
+        font-size: 16px;
+        border: none;
+        height: 32.5px;
+        background: #FFC000;
+    }
+
+    .qusitive p {
+        margin: 0;
+        line-height: 32px;
+        height: 32px;
+        width: 100%;
+        background: #fff;
+        color: #999;
+        text-align: center;
+    }
+
+    .qusitive>.radar {
+        height: 215px;
+        width: 245px;
+        background-image: url("http://ww1.sinaimg.cn/large/006uTN7Kgw1fasuydg0abj30dm0by0tm.jpg");
+        -webkit-background-size: 100%;
+        background-size: 100%;
+    }

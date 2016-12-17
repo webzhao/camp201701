@@ -6,7 +6,7 @@
     background: #fff;
     position: relative;
     float: left;
-    margin:5px;
+    margin: 5px;
 }
 
 .mid-grid {
@@ -14,6 +14,8 @@
     height: 280px;
     background: #fff;
     position: relative;
+    float: left;
+    margin: 5px;
 }
 
 .mid-grid-activity {
@@ -28,6 +30,7 @@
     padding: 0 10px;
 }
 
+.grid>.headline,
 .mid-grid>.headline {
     width: calc(100% - 20px);
     height: 20%;
@@ -36,139 +39,113 @@
     overflow: hidden;
 }
 
-/*🙂*/
-/*🙂*/
-/*🙂*/
-/*🙂*/
+
 /*🙂*/
 
-    .moreinfo {
-        height: 28px;
-        padding-right: 10px;
-        padding-left: 10px;
-        line-height: 24px;
-        color: #aaa;
-        line-height: calc(height);
-        font-size: 13px;
-    }
 
-    .moreinfo p {
-        float: right;
-        margin: 0;
-    }
+/*🙂*/
 
 
+/*🙂*/
 
-    .category {
-        position: absolute;
-        left: 15px;
-        top: 15px;
-        height: 22px;
-        line-height: 22px;
-        margin: 0;
-    }
 
-    .category span {
-        font-size: 12px;
-        color: #fff;
-        vertical-align: middle;
-    }
+/*🙂*/
 
-    .category i {
-        color: #fff;
-        margin-right: 5px;
-        font-size: 22px;
-        vertical-align: middle;
-    }
 
-    .banner {
-        width: 750px;
-        position: relative;
-        height: 400px;
-        background-size: 100% 100%;
-    }
+/*🙂*/
 
-    .banner-headline {
-        padding: 0 20px;
-        position: absolute;
-        bottom: 35px;
-        width: 715px;
-    }
+.moreinfo {
+    height: 28px;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 24px;
+    color: #aaa;
+    line-height: calc(height);
+    font-size: 13px;
+}
 
-    .banner-catagory:before {
-        position: absolute;
-        background: #000;
-        color: #dea800;
-        padding: 0 8px;
-        font-size: 12px;
-        top: -25px;
-    }
+.moreinfo p {
+    float: right;
+    margin: 0;
+}
 
-    .banner-catagory-business:before {
-        content: "商业";
-    }
+.category {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0;
+}
 
-    .banner-headline p {
-        background: #000;
-        color: #fff;
-        line-height: 40px;
-        display: inline;
-        font-size: 30px;
-    }
-    /*activity*/
+.category span {
+    font-size: 12px;
+    color: #fff;
+    vertical-align: middle;
+}
 
-    .activity-categiry {
-        position: absolute;
-        top: 15px;
-        left: 25px;
-    }
+.category i {
+    color: #fff;
+    margin-right: 5px;
+    font-size: 22px;
+    vertical-align: middle;
+}
 
-    .count {
-        position: absolute;
-        right: 20px;
-        top: 0;
-        background: rgba(0, 0, 0, 0.6);
-        width: 86px;
-        height: 106px;
-    }
 
-    .count .icon-join {
-        color: #ffc81f;
-        display: block;
-        font-size: 64px;
-        text-align: center;
-    }
+/*activity*/
 
-    .count span {
-        display: block;
-        text-align: center;
-        color: grey;
-    }
+.activity-categiry {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
 
-    .count .num {
-        color: #fff;
-    }
+.count {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 86px;
+    height: 106px;
+}
 
-    .mid-grid-activity>.activity-headline {
-        position: absolute;
-        background: -webkit-linear-gradient(bottom, #000, transparent);
-        background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .6), transparent);
-        background: linear-gradient(0deg, rgba(0, 0, 0, .6), transparent);
-        width: calc(100% - 40px);
-        padding: 0 20px;
-        bottom: 0;
-        /* left: 0; */
-        color: #fff;
-        font-size: 20px;
-    }
+.count .icon-join {
+    color: #ffc81f;
+    display: block;
+    font-size: 64px;
+    text-align: center;
+}
 
-    .activity-headline p{
-        margin:0;
-        width: 100%;
-    }
+.count span {
+    display: block;
+    text-align: center;
+    color: grey;
+}
 
-    .activity-headline>.neckline {
-        margin-top: 5px;
-        font-size: 0.7em;
-        color: #c1c1c1;
-    }
+.count .num {
+    color: #fff;
+}
+
+.mid-grid-activity>.activity-headline {
+    position: absolute;
+    background: -webkit-linear-gradient(bottom, #000, transparent);
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .6), transparent);
+    background: linear-gradient(0deg, rgba(0, 0, 0, .6), transparent);
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    bottom: 0;
+    /* left: 0; */
+    color: #fff;
+    font-size: 20px;
+}
+
+.activity-headline p {
+    margin: 0;
+    width: 100%;
+}
+
+.activity-headline>.neckline {
+    margin-top: 5px;
+    font-size: 0.7em;
+    color: #c1c1c1;
+}

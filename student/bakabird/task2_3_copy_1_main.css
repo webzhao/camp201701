@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    background: #ccc;
+    background: #eee;
     margin: 0;
     width: 100%;
     min-width: 1190px;
@@ -26,7 +26,8 @@ body {
 
 main{
     width: 1020px;
-    margin:0 auto;
+    margin:80px auto;
+    overflow: hidden;
 }
 
 .left {

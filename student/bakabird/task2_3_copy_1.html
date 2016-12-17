@@ -9,13 +9,32 @@
     <link rel="stylesheet" href="task2_3_copy_1_grids.css">
     <link rel="stylesheet" href="task2_3_copy_1_header.css">
     <link rel="stylesheet" href="task2_3_copy_1_footer.css">
+    <link rel="stylesheet" href="task2_3_copy_1_qusitive.css">
+    <link rel="stylesheet" href="task2_3_copy_1_banner.css">
+    <link rel="stylesheet" href="task2_3_copy_1_advertise.css">
+    <link rel="stylesheet" href="task2_3_copy_1_activity.css">
 </head>
 
 <body>
     <div id="test">
         <qdaily-nav></qdaily-nav>
         <main>
-            <qdaily-grid v-for="(gridData,index) in gridDatas" v-bind:data="gridData"></qdaily-grid>
+            <section class="bigHeadLine">
+                <div class="left">
+                    <qdaily-banner v-bind:data="bannerdata"></qdaily-banner>
+                </div>
+                <div class="middle">
+                    <qdaily-qusitive></qdaily-qusitive>
+                    <qdaily-adverise></qdaily-adverise>
+                </div>
+                <qdaily-grid v-for="(gridData,index) in getHeadGrids1" v-bind:data="gridData"></qdaily-grid>
+                <qdaily-nowactivity v-bind:data="actGridData"></qdaily-nowactivity>
+                <Man100></Man100>
+                <qdaily-grid v-for="(gridData,index) in getHeadGrids2" v-bind:data="gridData"></qdaily-grid>
+                <qdaily-mid-grid v-bind:data="midGridData"></qdaily-mid-grid>
+                <qdaily-grid v-for="(gridData,index) in getHeadGrids3" v-bind:data="gridData"></qdaily-grid>
+            </section>
+            <qdaily-grid v-for="(gridData,index) in getRestGrids" v-bind:data="gridData"></qdaily-grid>
         </main>
         <qdaily-footer></qdaily-footer>
     </div>
