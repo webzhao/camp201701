@@ -132,10 +132,93 @@ Vue.component("qdaily-grid", {
     })
 })
 
+Vue.component("qdaily-mid-grid", {
+    props: ["data"],
+    template: heredoc(function() {
+        /*
+        <div class="mid-grid">
+            <div class="img">
+                <p class="category"><i class="iconfont" :class="data.class" role="category-city"></i><span>城市</span></p>
+                <img v-bind:src="data.src" v-bind:alt="data.text" width="500" height="185">
+            </div>
+            <div class="headline">
+                <a>{{data.text}}</a>
+            </div>
+            <div class="moreinfo">
+                    <time>昨天</time>
+                    <p><i class="iconfont icon-message"></i> 28 <i class="iconfont icon-heart"></i> 170</p>
+            </div>
+        </div>
+        */
+    })
+})
+
+Vue.component("qdaily-qusitive", {
+    template: heredoc(function() {
+        /*
+      <div class="qusitive">
+        <div class="radar"></div>
+        <button>登录</button>
+        <p>登录查看你的好奇心指数</p>
+    </div>
+        */
+    })
+})
+
+Vue.component("qdaily-adverise", {
+    template: heredoc(function() {
+        /*
+        <div class="adverise">
+            <img src="http://www.qdaily.com/images/web/homes/download-banner-x640.png" alt="好奇心日报3.0全新改版来下载吧！" width="245" height="160">
+        </div>
+        */
+    })
+})
+
+Vue.component("qdaily-banner", {
+    props: ["data"],
+    template: heredoc(function() {
+        /*
+        <div class="banner" :style="data.style">
+            <div class="banner-headline banner-catagory banner-catagory-business"><p>{{data.headline}}</p></div>
+        </div>
+        */
+    })
+})
+
+Vue.component("qdaily-nowactivity", {
+    props: ["data"],
+    template: heredoc(function() {
+        /*
+        <div class="nowactivity" :style="data.style">
+            <div class="activity-categiry"><img v-bind:src="data.catagoryUrl" alt="activity-categiry" width="60" height="60"></div>
+            <div class="count">
+                <i class="iconfont icon-join"></i>
+                <span class="new">NEW</span>
+            </div>
+            <div class="activity-headline">
+                <p class="headline">{{data.headline}}</p>
+                <p class="neckline">{{data.neckline}}</p>
+            </div>
+        </div>
+        */
+    })
+})
+
+Vue.component("Man100", {
+    template: heredoc(function() {
+        /*
+        <div class="Man100">
+            <img src="http://www.qdaily.com/images/web/homes/100person-banner-x660.gif" alt="100个有想法的人／they made the world" width="330" height="320">
+        </div>
+        */
+    })
+})
+
 var test = new Vue({
     el: "#test",
     data: {
-       gridDatas : {
+        gridDatas: {
             "0": {
                 "class": "icon-shangye-bg",
                 "category": "商业",
@@ -666,7 +749,59 @@ var test = new Vue({
                 "time": "昨天",
                 "messNum": "7",
                 "heartNum": "18"
+            },
+            "length": "58",
+        },
+        bannerdata: {
+            "style": {
+                "backgroundImage": "url(\"http://img.qdaily.com/article/banner/20161214153410dTlmbvRiEO4wHrj0.jpg?imageMogr2/auto-orient/thumbnail/!755x450r/gravity/Center/crop/755x450/quality/85/format/jpg/ignore-error/1\")"
+            },
+            "category": "商业",
+            "headline": "中国电影市场经历了希望破灭的一年，接下来又要走向何方？｜好奇心2016年度盘点",
+        },
+        midGridData: {
+            "joinNum": "2899",
+            "class": "icon-city",
+            "text": "这个发明流行色的公司说：任何颜色都有积极的一面，你得一视同仁",
+            "src": "http://img.qdaily.com/article/article_show/2016121305421494PZeqBiwXCu5FOx.png?imageMogr2/auto-orient/thumbnail/!750x278r/gravity/Center/crop/750x278/quality/85/format/webp/ignore-error/1"
+        },
+        actGridData: {
+            "headline": "现如今，哪些关键词已经失去了（用来筛选商品）意义？",
+            "neckline": "当年你还会用来搜索或筛选东西，现在搜出来的东西根本不愿多看一眼。（题图来自：Stephen Maurice Graham）",
+            "catagoryUrl": "http://img.qdaily.com/paper_category/icon_white/20160722174309beUs7l6nN5RZkEyV.png?imageMogr2/auto-orient/thumbnail/!128x128r/gravity/Center/crop/128x128/quality/85/ignore-error/1",
+            "style": {
+                "backgroundImage": "url(\"http://img.qdaily.com/paper/paper_show/20161212130748xHGcnmNuoTBekaRb.jpg?imageMogr2/auto-orient/thumbnail/!1005x480r/gravity/Center/crop/1005x480/quality/85/format/webp/ignore-error/1\")"
             }
+        }
+    },
+    computed: {
+        getHeadGrids1: function() {
+            var headGridData = {};
+            for (var j = 0, k = 0; j < 4; j++, k++) {
+                headGridData[k] = this.gridDatas[j]
+            }
+            return headGridData;
+        },
+        getHeadGrids2: function() {
+            var headGridData = {};
+            for (var j = 4, k = 0; j < 5; j++, k++) {
+                headGridData[k] = this.gridDatas[j]
+            }
+            return headGridData;
+        },
+        getHeadGrids3: function() {
+            var headGridData = {};
+            for (var j = 5, k = 0; j < 6; j++, k++) {
+                headGridData[k] = this.gridDatas[j]
+            }
+            return headGridData;
+        },
+        getRestGrids: function() {
+            var headGridData = {};
+            for (var j = 6, k = 0; j < this.gridDatas.length; j++, k++) {
+                headGridData[k] = this.gridDatas[j]
+            }
+            return headGridData;
         }
     }
 })
