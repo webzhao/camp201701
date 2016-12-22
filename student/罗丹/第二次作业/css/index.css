@@ -1,68 +1,60 @@
 *{
-	/*padding: 0;
-	margin: 0;*/
 	box-sizing: inherit;
-	-moz-box-sizing:inherit;
-	--webkit-box-sizing: inherit;
 }
-body,ul,li,h1,h2,h3,h4,h5,p,dl,dt,dd{
+body,p,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6{
 	padding: 0;
-	margin:0;
+	margin: 0;
 }
 html{
 	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing:border-box;
 	font-family: Tahoma,Arial,"Helvetica Neue","Hiragino Sans GB",Simsun,sans-self;
+	font-size: 16px;
 
 }
 .container{
 	width:70%;
-	margin:20px auto 0;
-	/*margin-right: auto;*/
-	/*margin-left: auto;*/
-	background: #ccc;
-	min-height: 100px;
-	/*margin-top:20px;*/
+	margin:0 auto;
+	margin-top:20px;
 	position: relative;
-	height:1350px;
+	overflow: hidden;
 }
-.container:before{
-	content:" ";
+.container::before{
+	content:"";
 	display: block;
 	clear: both;
 	height:0;
 }
-.left{
-	width:200px;
-	/*border:1px solid #000;*/
-	padding:30px 30px 30px 20px;
+.side{
+	width:20%;
+	padding:30px 0 30px 20px;
 	float:left;
 	background: #cdc;
-	overflow: hidden;
-	height:100%;
+	font-size: 0.875rem;
+	padding-bottom: 100rem;
+	margin-bottom: -100rem;
 }
-.right{
+.main{
+	 background: #ccc;
      overflow: hidden;
      padding:20px 30px;
+     font-size: 1rem;
+     padding-bottom: 100rem;
+	 margin-bottom: -100rem;
 }
-.right ul li{
+.main ul li{
 	margin-left: 50px;
 }
 .head{
 	width:150px;
-	font-size: 0;
 	text-align: center;
 	padding:10px;
 	background: #fff;
-	/*border-radius: 150px;*/
 }
 .head img{
 	width:130px;
 }
 .information{
 	margin-top: 30px;
-	font-size: 14px;
 }
 .information ul li{
 	list-style: none;
@@ -72,13 +64,12 @@ html{
 
 .skill{
 	margin-top:100px;
-	font-size: 14px;
 }
 .com{
 	background: #a00;
 	height:15px;
 	text-align: right;
-	font-size: 12px;
+	font-size: 0.75rem;
 	margin-top: 2px;
 }
 .skill p{
@@ -113,28 +104,23 @@ li p{
 	display: inline-block;
 }
 .judge p{
-	/*height:100px;*/
-	/*border:1px solid red;*/
-	padding:10px 0 0 50px;
-	/*padding-left: 50px;
-	padding-top: 10px;*/
+	padding:0 10px 0 50px;
 	line-height: 30px;
 	text-indent: 2em;
 }
 .name p{
-	font-size: 12px;
 	margin-top: 10px;
 }
 
-.right>div{
+.main>div{
 	margin-top:30px;
 	border-bottom: 1px solid black;
 	padding-bottom: 10px;
 }
-.right .name{
+.main .name{
 	margin-top: 0px;
 }
-.right ul{
+.main ul{
 	padding-left: 40px;
 }
 .project section{
@@ -144,8 +130,7 @@ li p{
 	line-height: 30px;
 }
 h4{
-	margin-top:10px;
-	margin-left:50px;
+	margin:10px 0 0 50px;
 }
 h4 + div{
   margin-top:10px;
@@ -177,4 +162,82 @@ h3>span:last-child{
 }
 .other ul li img{
 	width:100%;
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+	.container{
+		width:90%;
+	}
+}
+@media screen and (min-width:767px) and (max-width: 991px){
+	.container{
+		width:95%;
+	}
+	html{
+		font-size: 14px;
+	}
+	.head{
+		width:100px;
+		padding:5px;
+	}
+	.head img{
+		width:80px;
+	}
+	.other ul>li:nth-child(2n){
+		width:100px;
+	}
+}
+@media screen and (max-width: 767px){
+	.container{
+		width:100%;
+		margin-top: 0;
+		overflow: auto;
+	}
+	.container::after{
+		content: "";
+		display: block;
+		clear: both;
+		height: 0;
+	}
+	.side{
+		width: 100%;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+	.main{
+		width:100%;
+		padding-bottom: 20px;
+		margin-bottom: 0;
+	}
+	html{
+		font-size: 14px;
+	}
+	.head{
+		width:40%;
+		float: left;
+	}
+	.head img{
+		width:100%;
+
+	}
+	.information{
+		width:55%;
+		float: right;
+		padding-left:5%;
+		margin-top: 0;
+	}
+	.skill{
+		width:100%;
+		overflow: hidden;
+		margin-top: 20px;
+	}
+	.other{
+		display: none;
+	}
+	h4{
+		margin:10px 0 0;
+	}
+	.main ul li{
+		margin-left: 0;
+	}
 }

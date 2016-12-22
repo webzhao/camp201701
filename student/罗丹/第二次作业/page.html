@@ -8,184 +8,463 @@
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 	<meta  name="author" content="">
+	<link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/page.css">
 </head>
 <body>
 <!-- header begin -->
 <header>
-	<div class="top">
-		<div class="top_list">
+	<div class="tools">
+		<div class="tools-list">
 			<ul>
-				<li class="language"><a href="">语言</a>
-					<ul>
-						<li><a href="">中文</a></li>
-						<li><a href="">ENGLISH</a></li>
-						<li><a href="">日本语</a></li>
+				<li class="language"><a href="#" id="yuyan">语言</a>
+					<ul id="change">
+						<li><a href="#">中文</a></li>
+						<li><a href="#">ENGLISH</a></li>
+						<li><a href="#">日本语</a></li>
 					</ul>
 				</li>
-				<li><a href="">绿盟云</a></li>
-				<li><a href="">如何购买</a></li>
+				<li><a href="#">绿盟云</a></li>
+				<li><a href="#">如何购买</a></li>
 			</ul>
 		</div>
 	</div>
 	<div class="title">
 		<h1><img src="image/logo.png" alt="logo" title="logo"></h1>
 		<ul>
-			<li><a href=""><img src="image/earphone.png" alt="客服" title="客服"></a></li>
-			<li class="weibo"></li>
-			<li class="weixin"></li>
+			<li><a href="#"><img src="image/earphone.png" alt="客服" title="客服"></a></li>
+			<li class="weibo" id="weibo"></li>
+			<li class="weixin" id="weixin"></li>
 		</ul>
+		<div class="qrcode" id="qrcode"><img src="image/qrcode.jpg" width="100"></div>
 	</div>
 	<div>
 		<nav class="nav">
 			<ul>
 				<li><a href="">首页</a>
-				</li><li><a href="">解决方案</a>
-				</li><li>
-				<a href="">安全产品</a></li><li>
-				<a href="">服务与支持</a></li><li>
-				<a href="">合作伙伴</a></li><li>
-				<a href="">安全研究</a></li><li>
-				<a href="">关于我们</a></li>
+				</li><li class="programme"><a href="">解决方案</a>
+					<dl>
+						<dd><a href="#">下一代威胁防御解决方案</a></dd>
+						<dd><a href="#">教育行业解决方案</a></dd>
+						<dd><a href="#">卫生医疗行业解决方案</a></dd>
+						<dd><a href="#">政府行业解决方案</a></dd>
+						<dd><a href="#">能源行业解决方案</a></dd>
+						<dd><a href="#">金融行业解决方案</a></dd>
+						<dd><a href="#">运营商行业解决方案</a></dd>
+					</dl>
+				</li><li class="product"><a href="#">安全产品</a>
+					<dl>
+					 	<dd><a href="#">检测防御类</a></dd>
+					 	<dd><a href="#">安全评估类</a></dd>
+					 	<dd><a href="#">安全监管类</a></dd>
+					 	<dd><a href="#">安全实验室类</a></dd>
+					 	<dd><a href="#">安全平台类</a></dd>				
+					</dl>
+				</li><li class="support"><a href="#">服务与支持</a>
+					<dl>
+						<dd><a href="#">客户支持</a>
+					 		<p><a href="#">售后服务</a></p>
+					 		<p><a href="#">产品生命周期公告</a></p>
+					 		<p><a href="#">软件升级</a></p>
+						</dd>
+				   	 	<dd><a href="#">安全服务</a>
+					 		<p><a href="#">安全技术服务</a></p>
+					 		<p><a href="#">安全咨询服务</a></p>
+					 		<p><a href="#">安全培训服务</a></p>
+						</dd>
+						<dd><a href="#">安全运营</a>
+							 <p><a href="#">绿盟云</a></p>
+							 <p><a href="#">绿盟安全管家服务</a></p>
+							 <p><a href="#">绿盟ADS可管理安全服务</a></p>
+							 <p><a href="#">绿盟WAF可管理安全服务</a></p>
+							 <p><a href="#">绿盟网站安全监测服务</a></p>
+						</dd>
+					</dl>
+				</li><li class="partner"><a href="#">合作伙伴</a>
+					<dl>
+						<dd>
+							 <p><a href="#">渠道合作伙伴</a></p>
+							 <p><a href="#">成员企业</a></p>	
+						</dd>
+					</dl>
+				</li><li class="research"><a href="#">安全研究</a>
+					<dl>
+						<dd><a href="#" >威胁响应</a>					 
+							<p><a href="#">业界动态</a></p>
+							<p><a href="#">紧急通告</a></p>
+							<p><a href="#">威胁情报</a></p>				
+						</dd>
+						<dd><a href="#">公告与报告</a>
+					 		<p><a href="#" title="">研究方向</a></p>					
+					 		<p><a href="#" title="">研究报告</a></p>
+					 		<p><a href="#" title="">安全漏洞</a></p>
+					   		<p><a href="#" title="">安全公告</a></p>
+							<p><a href="#" title="">金融行业月报</a></p>					
+							<p><a href="#" title="">专家视角</a></p>					
+							<p><a href="#" title="">前沿技术</a></p>
+						</dd>				
+						<dd>
+				 			<p><a href="#">安全团队</a></p>
+				 			<p><a href="#">安全活动</a></p>
+				 		</dd>
+					</dl>
+				</li><li class="about-us"><a href="#">关于我们</a>
+					<dl>
+						<dd><a href="#">走进绿盟科技</a>
+							<p><a href="#">公司概况</a></p>
+							<p><a href="#">企业刊物</a></p>
+							<p><a href="#">联系方式</a></p>
+							<p><a href="#">资质荣誉</a></p>
+							<p><a href="#">大事记</a></p>
+							<p><a href="#">部分客户</a></p>
+						</dd>
+						<dd><a href="#">新闻中心</a>
+							<p><a href="#">公司新闻</a></p>
+							<p><a href="#">市场活动</a></p>
+							<p><a href="#">邮件订阅</a></p>
+						</dd>
+						<dd><a href="#">工作机会</a>
+						 	<p><a href="#">热门招聘</a></p>						
+						 	<p><a href="#">社会招聘</a></p>
+						 	<p><a href="#">校园招聘</a></p>
+							<p><a href="#">实习生招聘</a></p>
+						</dd>
+					</dl>
+				</li>
 			</ul>
 		</nav>
 	</div>
 </header>
 <!-- header end-->
 <section class="main">
-	<div class="banner">
-		<ul class="big_img">
-			<li><a href=""><img src="image/big_report.jpg" alt="DDOS 态势报告" title="DDOS 态势报告"></a></li><li>
-			<a href=""><img src="image/big_protect.jpg" alt="提成防御能力" title="提成防御能力"></a></li><li>
-			<a href=""><img src="image/big_black_hole.png" alt="" title=""></a></li><li>
-			<a href=""><img src="image/big_sql.jpg" alt="" title=""></a></li>
+	<div id="imgs">
+		<ul class="big-img" id="big-img">
+			<li><a href="#"><img src="image/big_report.jpg" alt="DDOS 态势报告" title="DDOS 态势报告"></a></li><li>
+			<a href="#"><img src="image/big_protect.jpg" alt="提成防御能力" title="提成防御能力"></a></li><li>
+			<a href="#"><img src="image/big_black_hole.png" alt="黑洞云清晰服务" title="黑洞云清晰服务"></a></li><li>
+			<a href="#"><img src="image/big_sql.jpg" alt="专业数据库审计系统" title="专业数据库审计系统"></a></li>
 		</ul>
-		<ul class="small_img">
-			<li><a href=""><img src="image/small_report.jpg" alt="" title=""></a></li><li>
-			<a href=""><img src="image/small_protect.jpg" alt="" title=""></a></li><li>
-			<a href=""><img src="image/big_black_hole.png" alt="" title=""></a></li><li>
-			<a href=""><img src="image/small_sql.jpg" alt="" title=""></a></li>
+		<ul class="small-img" id="small-img">
+			<li><a href="javascript:void(0)"><img src="image/small_report.jpg" alt="DDOS 态势报告" title="DDOS 态势报告"></a></li><li>
+			<a href="javascript:void(0)"><img src="image/small_protect.jpg" alt="提成防御能力" title="提成防御能力"></a></li><li>
+			<a href="javascript:void(0)"><img src="image/big_black_hole.png" alt="黑洞云清晰服务" title="黑洞云清晰服务"></a></li><li>
+			<a href="javascript:void(0)"><img src="image/small_sql.jpg" alt="专业数据库审计系统" title="专业数据库审计系统"></a></li>
 		</ul>
 	</div>
 	<div class="news">
-		<div class="new">
-			<div class="info new_com">
+			<div class="info" id="info">
 				<div class="word">
 					<strong>紧急通告：</strong>
 				</div>
 				<div class="btn">
-					<a href="" class="pre btn_com"></a>
-					<a href="" class="next btn_com"></a>
+					<a href="javascript:void(0)" class="pre btn-com" id="pre" title="上一条"></a>
+					<a href="javascript:void(0)" class="next btn-com" id="next" title="下一条"></a>
 				</div>
-				<div class="message">
-					<ul>
-						<li><a href="">简要分析：Hack Team远程控制系统</a></li>
-						<li><a href="">TAC紧急应对Hack Team 0day攻击包</a></li>
-						<li><a href="">防护方案：Hack Team防止泄露事件</a></li>
-						<li><a href="">Windows HTTP.sys远程代码执行漏洞(CVE-2015-1635) (Alert2015-04)</a></li>
+				<div class="message" id="message">
+					<ul class="message-list" id="message-list">
+						<li><a href="#" title="简要分析：Hack Team远程控制系统">简要分析：Hack Team远程控制系统</a></li>
+						<li><a href="#" title="TAC紧急应对Hack Team 0day攻击包">TAC紧急应对Hack Team 0day攻击包</a></li>
+						<li><a href="#" title="防护方案：Hack Team防止泄露事件">防护方案：Hack Team防止泄露事件</a></li>
+						<li><a href="#" title="Windows HTTP.sys远程代码执行漏洞(CVE-2015-1635) (Alert2015-04)">Windows HTTP.sys远程代码执行漏洞(CVE-2015-1635) (Alert2015-04)</a></li>
 					</ul>
 				</div>
 			</div>
-		</div>
 	</div>
-	<div class="box_list">
-		<div class="company_new box_com">
+	<div class="box-list">
+		<div class="company_new box-com">
 			<h3>公司新闻</h3>
-			<div class="com_img">
-				<a href=""><img src="image/new.jpg" alt="" title=""></a>
+			<div class="com-img">
+				<a href=""><img src="image/new.jpg" alt="公司新闻" title="公司新闻"></a>
 			</div>
 			<p class="p1"><a href="">【荣誉】绿盟科技斩获NWA行业大奖</a></p>
 			<p class="p2">
-				<a href="">绿盟科技国内唯一入选2016Grantner WAF魔力象限<br></a>
-				<a href="">绿盟科技连续5年保持漏洞管理市场占有率第一</a><br>
-				<a href="">【荣誉】绿盟科技斩获NWA行业大奖</a>
+				<a href="#">绿盟科技国内唯一入选2016Grantner WAF魔力象限<br></a>
+				<a href="#">绿盟科技连续5年保持漏洞管理市场占有率第一</a><br>
+				<a href="#">【荣誉】绿盟科技斩获NWA行业大奖</a>
 			</p>
 
 		</div>
-		<div class="threaten box_com">
+		<div class="threaten box-com">
 			<h3>威胁响应</h3>
-			<div class="com_img">
-				<a href=""><img src="image/threaten.jpg"></a>
+			<div class="com-img">
+				<a href=""><img src="image/threaten.jpg" title="威胁响应" alt="威胁响应"></a>
 			</div>
 			<p class="p1"><a href="">绿盟科技与阿里云达成战略合作 共建安全新生态</a></p>
 			<p class="p2">
-				<a href="">分析分享: Hacking Team Flash 0Day<br></a>
-				<a href="">防护方案：Hacking Team数据泄露事件</a><br>
-				<a href="">简要分析：Hacking Team 远程控制系统</a>
+				<a href="#">分析分享: Hacking Team Flash 0Day<br></a>
+				<a href="#">防护方案：Hacking Team数据泄露事件</a><br>
+				<a href="#">简要分析：Hacking Team 远程控制系统</a>
 			</p>
 		</div>
-		<div class="research box_com">
+		<div class="research box-com">
 			<h3>研究报告</h3>
-			<div class="com_img">
-				<a href=""><img src="image/research.jpg" alt="" title=""></a>
+			<div class="com-img">
+				<a href=""><img src="image/research.jpg" alt="研究报告" title="研究报告"></a>
 			</div>
 			<p class="p1"><a href="">Windows HTTP.sys远程代码执行漏洞……</a></p>
 			<p class="p2">
-				<a href="">2016 Q3绿盟科技DDoS态势报告<br></a>
-				<a href="">2016 Q2 绿盟科技DDoS态势报告</a><br>
-				<a href="">2015全年DDoS威胁报告</a>
+				<a href="#">2016 Q3绿盟科技DDoS态势报告<br></a>
+				<a href="#">2016 Q2 绿盟科技DDoS态势报告</a><br>
+				<a href="#">2015全年DDoS威胁报告</a>
 			</p>
 		</div>
 	</div>
 	<div class="active">
 		<h2>展会活动</h2>
-		<div class="active_content">
+		<div class="active-content">
 			<p>绿盟科技举办国内RSAC2015热点研讨会（第七...</p>
-			<div class="active_message">
-				<a href=""><img src="image/active.png" width="112" height="85" alt="" title=""></a>
-			</div>
-			<div class="xq">
-				<p><a href="">详情</a><br><br>
-					2016 05-07
-				</p>
+			<div class="active-message">
+				<img src="image/active.png" width="112" height="85" alt="活动图片" title="活动图片">
+				<p><a href="#">详情</a><br>2016 05-07</p>
 			</div>
 		</div>
 
 	</div>
 	<div class="foot">
-		<div class="foot_content">
+		<div class="foot-content">
 			<dl>
 				<dt>按访问者</dt>
-				<dd><a href="">政府</a></dd>
-				<dd><a href="">运营商</a></dd>
-				<dd><a href="">金融</a></dd>
-				<dd><a href="">能源</a></dd>
-				<dd><a href="">合作伙伴</a></dd>
-				<dd><a href="">新闻媒体</a></dd>
-				<dd><a href="">求职</a></dd>
+				<dd><a href="#">政府</a></dd>
+				<dd><a href="#">运营商</a></dd>
+				<dd><a href="#">金融</a></dd>
+				<dd><a href="#">能源</a></dd>
+				<dd><a href="#">合作伙伴</a></dd>
+				<dd><a href="#">新闻媒体</a></dd>
+				<dd><a href="#">求职</a></dd>
 
 			</dl>
 			<dl>
 				<dt>关于我们</dt>
-				<dd><a href="">公司概况</a></dd>
-				<dd><a href="">工作机会</a></dd>
-				<dd><a href="">大事记</a></dd>
-				<dd><a href="">部分客户</a></dd>
-				<dd><a href="">公司荣誉</a></dd>
-				<dd><a href="">诚聘英才</a></dd>
+				<dd><a href="#">公司概况</a></dd>
+				<dd><a href="#">工作机会</a></dd>
+				<dd><a href="#">大事记</a></dd>
+				<dd><a href="#">部分客户</a></dd>
+				<dd><a href="#">公司荣誉</a></dd>
+				<dd><a href="#">诚聘英才</a></dd>
 			</dl>
 			<dl>
 				<dt>常用链接</dt>
-				<dd><a href="">产品综述</a></dd>
-				<dd><a href="">检测预防类产品</a></dd>
-				<dd><a href="">安全评估类产品</a></dd>
-				<dd><a href="">安全监管类产品</a></dd>
-				<dd><a href="">技术解决方案</a></dd>
-				<dd><a href="">业务解决方案</a></dd>
-				<dd><a href="">各项资源</a></dd>
+				<dd><a href="#">产品综述</a></dd>
+				<dd><a href="#">检测预防类产品</a></dd>
+				<dd><a href="#">安全评估类产品</a></dd>
+				<dd><a href="#">安全监管类产品</a></dd>
+				<dd><a href="#">技术解决方案</a></dd>
+				<dd><a href="#">业务解决方案</a></dd>
+				<dd><a href="#">各项资源</a></dd>
 			</dl>
 			<dl>
 				<dt>相关网站</dt>
-				<dd><a href="">售后服务</a></dd>
-				<dd><a href="">软件升级</a></dd>
-				<dd><a href="">绿盟云</a></dd>
-				<dd><a href="">绿盟科技博客</a></dd>
+				<dd><a href="#">售后服务</a></dd>
+				<dd><a href="#">软件升级</a></dd>
+				<dd><a href="#">绿盟云</a></dd>
+				<dd><a href="#">绿盟科技博客</a></dd>
 			</dl>
 		</div>
 	</div>
 </section>
 <footer>
-	<p>@2016 NSFOCUS 绿盟科技 WWW.NSFOCUS.COM All Right Reserved.<img src="image/beian.png" width="20" height="20" alt="公安" title="公安"><a href="" id="fo">京公网安备 11010802021605号</a> 京ICP备14004349号 京ICP证110355号</p>
+	<div class="footer-content">
+		<ul>
+			<li><a href="#">法律声明</a></li>
+			<li><a href="#">联系我们</a></li>
+			<li><a href="#">售前支持</a></li>
+			<li><a href="#">售后支持</a></li>
+			<li><a href="#">投资者关系</a></li>
+		</ul>
+		<p>@2016 NSFOCUS 绿盟科技 <a href="#">WWW.NSFOCUS.COM</a> All Right Reserved.<img src="image/beian.png" width="20" height="20" alt="公安" title="公安"><a href="#">京公网安备 11010802021605号</a> 京ICP备14004349号 京ICP证110355号</p>
+	</div>
+	
 </footer>
 </body>
+<script type="text/javascript">
+	window.onload = function(){
+        
+        //语言切换
+        var yuyan = document.getElementById("yuyan");
+
+        yuyan.addEventListener("click",function(){
+
+           var change = document.getElementById("change");
+
+           if(change.style.display == "block"){
+
+           		change.style.display = "none";
+
+           }
+
+           else{
+
+           		change.style.display = "block";
+
+           }
+        });
+
+
+        //运动框架
+        function getStyle(obj,name){
+         if(obj.currentStyle){
+             return obj.currentStyle[name];    
+          } else{
+              return getComputedStyle(obj,false)[name];
+          }
+      }
+  
+  		function startMove(obj, json, fnEnd) {
+    	 	clearInterval(obj.timer);
+    	 	obj.timer = setInterval(function() {
+         	var bStop = true;
+         	for (var attr in json) {
+             	var cur = 0;
+           	 	if (attr == "opacity") {
+                 	cur = Math.round(parseFloat(getStyle(obj, attr)) * 100);
+             	}
+             	else {
+                 	cur = parseInt(getStyle(obj, attr))
+            	}
+            	 var speed = (json[attr] - cur) / 10;
+            	 speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+            	 if (cur !== json[attr]) {
+                 bStop = false;
+            	 };
+
+             	if (attr == "opacity") {
+                 	obj.style.opacity = (speed + cur) / 100;
+                	obj.style.filter = 'alpha(opacity:' + (speed + cur) + ')';
+             	}
+             	else {
+                	obj.style[attr] = cur + speed + 'px';
+             	}
+        	 }
+       	    if (bStop) {
+            	clearInterval(obj.timer);
+            	if (fnEnd){
+            		fnEnd();
+             	} 
+        	}
+     	}, 30)
+ 	  }
+
+       //图片轮播
+ 	   var wrap = document.getElementById('imgs');
+       var content = document.getElementById('big-img');
+       var tips = document.getElementById('small-img');
+       var aLi = tips.getElementsByTagName('li');
+       var now = 0;
+       var imgWidth = 1086;//图片宽度
+       
+       for (var i = 0; i < aLi.length; i++) {
+          aLi[0].className = 'current';                //初始化
+          content.style.left = 0 +'px';
+          aLi[i].index = i;     					   //自定义属性
+          aLi[i].onclick = function() {
+              now = this.index;
+              play();
+          }
+      }
+ 
+     	function play() {
+         	for (var j = 0; j < aLi.length; j++) {
+            	 aLi[j].className = '';
+         	}
+        	 aLi[now].className = 'current';
+
+        	 startMove(content, {
+            	 left: -imgWidth * now, 
+        	 });
+     	}
+ 	
+     	function autoPlay() {
+         	now++;
+      		if (now == aLi.length) {
+          		now = 0;
+      		}
+      		play();
+  		}
+ 		 var timer = setInterval(autoPlay, 2000);
+ 		 wrap.onmouseover = function(){                  
+      		clearInterval(timer);                       
+ 		 }
+ 		 wrap.onmouseout = function(){
+     		timer = setInterval(autoPlay,2000);
+    	 }
+
+
+
+    	//紧急通告轮播
+        var info = document.getElementById("info");
+    	var message = document.getElementById("message");
+    	var msgContent = document.getElementById("message-list");
+    	var lis = msgContent.getElementsByTagName("li");
+    	var pre = document.getElementById("pre");
+    	var next = document.getElementById("next");
+    	var width = 400;
+    	var nowIndex = 0;
+
+    	function msgPlay(){
+    		// console.log(getStyle(msgContent,'left'));
+    		startMove(msgContent,{
+    			left: -width * nowIndex,
+    		});
+    	}
+
+    	function msgAutoPlay(){
+    		nowIndex++;
+    		if(nowIndex == lis.length){
+    			nowIndex = 0;
+    		}
+    		msgPlay();
+    	}
+
+    	var time = setInterval(msgAutoPlay,3000);
+    	info.onmouseover = function(){
+    		clearInterval(time);
+    	}
+    	info.onmouseout = function(){
+    		time = setInterval(msgAutoPlay,3000);
+    	}
+
+    	pre.onclick = function(){
+    		nowIndex -- ;
+    		if(nowIndex < 0){
+    			nowIndex = lis.length-1;
+    		}
+    		startMove(msgContent,{
+    			left: -width * nowIndex,
+    		});
+    		msgPlay();
+    	}
+
+    	next.onclick = function(){
+    		nowIndex ++ ;
+    		if(nowIndex == lis.length){
+    			nowIndex = 0
+    		}
+    		startMove(msgContent,{
+    			left: -width * nowIndex,
+    		});
+    		msgPlay();
+    	} 
+
+
+
+    	//二维码
+    	var weibo = document.getElementById("weibo");
+    	var weixin = document.getElementById("weixin");
+
+    	var qrcode = document.getElementById("qrcode");
+
+    	function addEvent(obj){
+    		obj.onmouseover = function(){
+    			qrcode.style.display = "block";
+    		}
+    		obj.onmouseout = function(){
+    			qrcode.style.display = "none";
+    		}
+    	}
+
+    	addEvent(weibo);
+    	addEvent(weixin);
+    	   	 
+	}
+</script>
 </html>
