@@ -1,0 +1,122 @@
+.dtitle{
+	margin-top: 20px;
+}
+.directmail-title{
+	width:960px;
+	height:520px;
+	margin:0 auto;
+	background: url(../image/directmail_title.jpg);
+	background-size: cover;
+}
+.direct-shop{
+	width:960px;
+	height:907px;
+	margin: 0 auto;
+	position: relative;
+}
+.shop-container{
+	width:100%;
+	height:100%;
+	background: url(../image/directmail_list.jpg);
+	background-size: cover;
+}
+.access{
+	width:100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+	/*border:1px solid #000;*/
+}
+.access-item{
+	display: block;
+	position: absolute;
+	/*border:1px solid #000;*/
+}
+.item1{
+	width:307px;
+	height:440px;
+	left:20px;
+	top:64px;
+}
+.item2{
+	width:295px;
+	height:225px;
+	left:337px;
+	top:64px;
+}
+.item3{
+	width:295px;
+	height:225px;
+	left:643px;
+	top:64px;
+}
+.item4{
+	width:295px;
+	height:205px;
+	left:337px;
+	top:299px;
+}
+.item5{
+	width:295px;
+	height:205px;
+	left:643px;
+	top:299px;
+}
+.item6{
+	width:515px;
+	height:328px;
+	left:20px;
+	top:516px;
+}
+.item7{
+	width:388px;
+	height:328px;
+	left:550px;
+	top:516px;
+}
+.more{
+	width:960px;
+	margin: 0 auto;
+}
+.more-item{
+	width:226px;
+	float: left;
+	margin-right: 18px;
+}
+.item-img{
+	height:291px;
+	width:100%;
+}
+.no-right{
+	margin-right:0;
+}
+.asrc{
+	display: block;
+	width:100%;
+	height:285px;
+	background-size: cover !important;
+}
+.desc{
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	width:100%;
+	height:40px;
+	line-height: 40px;
+	font-size: 12px;
+}
+.jiage{
+	padding-top: 10px;
+}
+.price{
+	font-size: 24px;
+	color:#FF3366;
+	font-weight: bold;
+}
+.preprice{
+	text-decoration: line-through;
+	font-size: 14px;
+	margin-left: 30px;
+}
