@@ -1,0 +1,115 @@
+
+.slide-list{
+	width:1200px;
+	margin: 0 auto;
+}
+
+.slide-content{
+	width:896px;
+	top:100%;
+	height:468px;
+	float:right;
+	overflow: hidden;
+	position: relative;
+	padding-top:5px;
+
+}
+.slide-img{
+	width:10000px;
+	height:100%;
+	position: absolute;
+	left:0;
+}
+.slide-img > li{
+	width:896px;
+	height:100%;
+	background-size: cover !important;
+	float: left;
+}
+.slide-btn{
+	position: absolute;
+	bottom: 20px;
+	width:200px;
+	left:50%;
+	margin-left: -50px;
+}
+.slide-btn > li{	
+	width:10px;
+	height:10px;
+	border-radius: 100%;
+	background: #fff;
+}
+.current{
+	background: blue !important;
+}
+.ad-box{
+	padding-top:20px;
+	width:1200px;
+	margin:0 auto;
+}
+.item{
+	float:left;
+	margin-right: 20px;
+}
+.last-item{
+	margin-right:0;
+}
+.brand-wrap{
+	width:1200px;
+	margin: 0 auto;
+}
+.title{
+	text-align: center;
+	padding:50px 0 20px 0;
+}
+.brand-item{
+	float:left;
+}
+.item-first{
+	width:284px;
+	margin-right:20px
+}
+.item-title > li{
+	float: left;
+}
+
+.item-last{
+	width:590px;
+}
+.brand-other > li{
+	float:left;
+}
+.theme-container{
+	width:1200px;
+	margin: 0 auto;
+}
+.item-container{
+	width:258px;
+	height:220px;
+	float: left;
+	padding:10px;
+
+}
+.item-container a{
+	display: block;
+	float: left;
+	padding:10px;
+}
+.theme-a{
+	font-size: 0;
+}
+.theme-b{
+	margin-top: 20px;
+}
+.a-img{
+	margin-left: 18px;
+}
+.b-img{
+	margin-left: 20px;
+}
+.theme-img{
+	font-size: 0;
+}
+.a-first{
+	margin-left: 0;
+}

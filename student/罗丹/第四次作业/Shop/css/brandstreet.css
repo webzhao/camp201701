@@ -1,0 +1,111 @@
+.brandstreet-img{
+	width:209px;
+	height:160px;
+	border-right:1px  solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.no-border{
+	border-right:0;
+}
+.brandstreet-title{
+	width:1200px;
+	margin: 30px auto 0 auto;
+	border:1px solid #ccc;
+}
+.bigbrand{
+	height:322px;
+	width:360px;
+	border-right: 1px solid #ccc;
+}
+.src{
+	float: left;
+	background-size: cover !important;
+}
+.src > a{
+	display: block;
+	height:100%;
+	width:100%;
+}
+.bottom{
+	border-bottom: 0;
+}
+.all{
+	float: left;
+	position: relative;
+}
+.all-brand{
+	display: block;
+	height:30px;
+	width:100px;
+	background:#000;
+	text-align: center;
+	line-height: 30px;
+	position: absolute;
+	top:50%;
+	margin-top: -15px;
+	left:50%;
+	margin-left: -50px;
+	position: relative;
+}
+.all-brand:link,
+.all-brand:hover,
+.all-brand:active,
+.all-brand:visited{
+	color: #fff;
+}
+.all-brand::after{
+	content:"";
+	display: block;
+	height:0;
+	width:0;
+	border:6px solid transparent;
+	border-left-color: #fff;
+	position: absolute;
+	top:50%;
+	margin-top: -6px;
+	right:0;
+}
+.brandstreet-content{
+	width:1200px;
+	margin: 0 auto;
+}
+.item-title{
+	text-align: center;
+	padding: 50px 0 30px 0;
+}
+.item-main{
+	width:360px;
+	height:768px;
+}
+.item-img{
+	width:190px;
+	margin-left: 20px;
+	padding-bottom: 49px;
+	float:left;
+}
+.asrc{
+	display: block;
+	width:100%;
+	height:285px;
+	background-size: cover !important;
+}
+.desc{
+	overflow: hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	width:100%;
+	height:50px;
+	line-height: 50px;
+	font-size: 12px;
+}
+.price{
+	font-size: 24px;
+	color:#FF3366;
+	font-weight: bold;
+}
+.preprice{
+	text-decoration: line-through;
+	font-size: 14px;
+	margin-left: 10px;
+}
