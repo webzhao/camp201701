@@ -1,0 +1,29 @@
+._01main{ background:url("../imges/01main.png") top left no-repeat; }
+._01main_r6_c2{ width:30px; height:25px; background-position:-10px -10px; }
+._01main_r2_c10{ width:18px; height:18px; background-position:-10px -45px; }
+._01main_r2_c4{ width:11px; height:17px; background-position:-10px -73px; }
+._01main_r3_c15{ width:16px; height:16px; background-position:-10px -100px; }
+._01main_r10_c11{ width:16px; height:15px; background-position:-10px -126px; }
+._01main_r11_c8{ width:8px; height:14px; background-position:-31px -73px; }
+._01main_r8_c13{ width:28px; height:13px; background-position:-10px -151px; }
+._01main_r11_c6{ width:15px; height:13px; background-position:-10px -174px; }
+.icon:before{
+    content: '';
+    position: relative;
+    display: inline-block;
+    background: url("../imges/01main.png") top left no-repeat;
+    margin-right:10px;
+}
+.icon-user:before{
+    width:11px;
+    height:17px;
+    background-position:-10px -73px;
+    vertical-align: sub;
+}
+.icon-basket:before{
+    width:18px;
+    height:18px;
+    background-position:-10px -45px;
+    vertical-align: sub;
+
+}
