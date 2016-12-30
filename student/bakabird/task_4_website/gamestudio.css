@@ -3,25 +3,39 @@
     left: 0;
     top: 0;
     width: 150px;
-    overflow: auto;
-    background: #000;
+    overflow: hidden;
+    background: #1d1d24;
     height: auto;
     bottom: 0;
-    box-shadow: 0px 2px 2px 0px dark;
+    z-index: 2;
+    /*☐ 有点奇怪为啥必须得设置这个之后才能够看到阴影。*/
+    box-shadow: 2px 0px 20px 0px #101024;
 }
 
 .gamestudio__serach {
     height: 60px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     position: fixed;
     top: 0;
     z-index: 2;
-    background: #1B181B;
+    background: #111116;
 }
 
 .gamestudio__serach input {
-    width: 150px;
-    background: #1B181B;
+    width: 130px;
+    background: #2a2a2b;
+    color: #666;
+    padding: 0 10px;
     border-radius: 10px;
+    border: none;
+}
+
+.gamestudio__serach input:focus~i {
+    display: none;
 }
 
 .gamestudio__list {
@@ -29,24 +43,27 @@
     top: 60px;
     left: 0;
     right: 0;
+    bottom: 30px;
     display: flex;
-    background: #0B0B0E;
+    background: #15171c;
     flex-direction: column;
 }
 
 .gamestudio__grid {
     width: 100%;
-    height: 140px;
+    height: calc( 100% /5);
 }
 
 .gamestudio__icon {
     width: 90px;
     height: 90px;
-    margin: 15px;
+    margin-top: calc((100% - 90px) / 4);
+    margin-bottom: calc((100% - 90px) / 4);
+    margin-left: 30px;
     background-image: url(game_icon/nai.png);
     background-size: 100% auto;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     transition: background .4s;
 }
 
@@ -72,4 +89,24 @@
 
 .gamestudio__icon--arashi {
     background-image: url(game_icon/arashi.png);
+}
+
+.gamestudio__icon--sousuo {
+    position: absolute;
+    color: #525252;
+    left: 15px;
+    bottom: 22px;
+}
+
+.gamestudio__icon--jiantou {
+    color: #393C48;
+    font-size: 12px;
+}
+
+.gamestudio__next {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    background: #111116;
+    bottom: 0;
 }

@@ -12,7 +12,7 @@
     height: 60px;
     position: absolute;
     top: 0;
-    background: #232425;
+    background: #18171f;
     width: 100%;
     display: flex;
 }
@@ -62,14 +62,13 @@
     box-shadow: 2px 7px 20px 0px rgba(0, 0, 0, 0.3) inset;
 }
 
-
-}
 .dashbd__accu {
     width: 100px;
     position: absolute;
     right: 0;
     height: 60px;
 }
+
 .dashbd__nav {
     position: absolute;
     left: 0;
@@ -78,6 +77,28 @@
     display: flex;
     justify-content: center;
 }
+
 .dashbd__area {
     margin: 0 10px;
+}
+
+.dashbd__icon {
+    font-size: 50px;
+}
+
+.dashbd__icon-icon07 {
+    font-size: 45px;
+    position: relative;
+    top: 3px;
+}
+
+.dashbd__icon-store {
+    position: relative;
+    bottom: 6px;
+}
+
+.dashbd__icon-tool-copy {
+    font-size: 46px;
+    position: relative;
+    top: 2px;
 }
