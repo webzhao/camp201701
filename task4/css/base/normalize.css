@@ -1,0 +1,25 @@
+*{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: "微软雅黑";
+
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%;
+}
+body{
+  margin: 0;
+  background-color: rgb(211,211,211);
+
+  -moz-osx-font-smoothing:grayscale;
+  -webkit-font-smoothing:antialiased;
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
