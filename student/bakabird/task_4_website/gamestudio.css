@@ -47,18 +47,16 @@
     display: flex;
     background: #15171c;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .gamestudio__grid {
     width: 100%;
-    height: calc( 100% /5);
 }
 
 .gamestudio__icon {
     width: 90px;
     height: 90px;
-    margin-top: calc((100% - 90px) / 4);
-    margin-bottom: calc((100% - 90px) / 4);
     margin-left: 30px;
     background-image: url(game_icon/nai.png);
     background-size: 100% auto;
@@ -109,4 +107,67 @@
     width: 100%;
     background: #111116;
     bottom: 0;
+}
+
+@media screen and (max-height:625px) {
+    .gamestudio__icon {
+        width: 70px;
+        height: 70px;
+    }
+    .gamestudio {
+        width: 130px;
+    }
+    .gamestudio__serach {
+        width: 130px;
+    }
+    .gamestudio__serach input {
+        width: 110px;
+    }
+    .gamestudio__icon {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .gamestudio {
+        left: -150px;
+    }
+}
+
+@media screen and (max-height:495px) {
+    .gamestudio__icon {
+        width: 50px;
+        height: 50px;
+    }
+    .gamestudio {
+        width: 100px;
+    }
+    .gamestudio__serach {
+        width: 100px;
+    }
+    .gamestudio__serach input {
+        width: 90px;
+    }
+    .gamestudio__icon {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-height:350px) {
+    .gamestudio__icon {
+        width: 30px;
+        height: 30px;
+    }
+    .gamestudio {
+        width: 60px;
+    }
+    .gamestudio__serach {
+        width: 60px;
+    }
+    .gamestudio__serach input {
+        width: 40px;
+    }
+    .gamestudio__icon {
+        margin-left: 15px;
+    }
 }

@@ -35,28 +35,39 @@
 .dashbd__detail {
     position: absolute;
     bottom: 20px;
-    top: 150px;
+    top: 130px;
     height: auto;
     width: 100%;
-    padding: 0 50px;
+    padding: 0 30px;
     box-sizing: border-box;
 }
 
 .dashbd__tabs {
     display: flex;
-    height: 20px;
+    height: 30px;
+    position: relative;
+    left: 30px;
 }
 
 .dashbd__tab {
-    width: 50px;
-    height: 20px;
+    width: auto;
+    min-width: 60px;
+    height: 30px;
+    text-align: center;
+    background: #1d1f35;
+    margin-right: 5px;
+    margin-top: 2px;
+    color: #626097;
+    line-height: 30px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 6px 0px #111522 inset;
 }
 
 .dashbd__content {
     position: absolute;
-    top: 20px;
+    top: 30px;
     bottom: 0;
-    width: calc(100% - 100px);
+    width: calc(100% - 60px);
     height: auto;
     background: #242531;
     box-shadow: 2px 7px 20px 0px rgba(0, 0, 0, 0.3) inset;
@@ -64,6 +75,8 @@
 
 .dashbd__accu {
     width: 100px;
+    display: flex;
+    align-items: center;
     position: absolute;
     right: 0;
     height: 60px;
@@ -86,19 +99,72 @@
     font-size: 50px;
 }
 
-.dashbd__icon-icon07 {
-    font-size: 45px;
+.dashbd__icon--game {}
+
+.dashbd__icon--discuss {
+    font-size: 35px;
     position: relative;
-    top: 3px;
+    bottom: 5px;
 }
 
-.dashbd__icon-store {
+.dashbd__icon--shop {
     position: relative;
-    bottom: 6px;
+    font-size: 36px;
 }
 
-.dashbd__icon-tool-copy {
-    font-size: 46px;
+.dashbd__icon--maker {
+    font-size: 38px;
     position: relative;
-    top: 2px;
+}
+
+.dashbd__icon--cube {
+    font-size: 32px;
+    display: none;
+}
+
+.dashbd__accuinfo {
+    color: #a7a7a7;
+}
+
+@media screen and (max-width:720px) {
+    .dashbd__accuinfo {
+        display: none;
+    }
+    .dashbd__accu {
+        width: 42px;
+    }
+    .dashbd__nav {
+        right: 50px;
+    }
+}
+
+@media screen and (max-height:625px) {
+    .dashbd {
+        left: 130px;
+    }
+}
+
+@media screen and (max-height:495px) {
+    .dashbd {
+        left: 100px;
+    }
+}
+
+@media screen and (max-height:350px) {
+    .dashbd {
+        left: 60px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .dashbd {
+        left: 0;
+    }
+    .dashbd__icon--cube {
+        font-size: 32px;
+        display: block;
+    }
+    .dashbd__btn:not(:last-child) {
+        margin-right: 0px;
+    }
 }
