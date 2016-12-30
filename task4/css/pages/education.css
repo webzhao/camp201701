@@ -1,9 +1,0 @@
-@import "../base/normalize.css";
-@import "../modules/layout.css";
-
-.main{
-   background-color:  hsla(32, 97%, 46%,1);
-}
-.main section dd{
-  background-color: hsla(32, 97%, 49%,1);
-}
