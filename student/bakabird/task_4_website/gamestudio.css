@@ -1,0 +1,75 @@
+.gamestudio {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    overflow: auto;
+    background: #000;
+    height: auto;
+    bottom: 0;
+    box-shadow: 0px 2px 2px 0px dark;
+}
+
+.gamestudio__serach {
+    height: 60px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background: #1B181B;
+}
+
+.gamestudio__serach input {
+    width: 150px;
+    background: #1B181B;
+    border-radius: 10px;
+}
+
+.gamestudio__list {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    display: flex;
+    background: #0B0B0E;
+    flex-direction: column;
+}
+
+.gamestudio__grid {
+    width: 100%;
+    height: 140px;
+}
+
+.gamestudio__icon {
+    width: 90px;
+    height: 90px;
+    margin: 15px;
+    background-image: url(game_icon/nai.png);
+    background-size: 100% auto;
+    border: none;
+    border-radius: 5px;
+    transition: background .4s;
+}
+
+.gamestudio__icon:hover {
+    background-position: 0px -90px;
+}
+
+.gamestudio__icon--shonaiiroi {
+    background-image: url(game_icon/shonaiiroi.png);
+}
+
+.gamestudio__icon--fixmi {
+    background-image: url(game_icon/fixmi.png);
+}
+
+.gamestudio__icon--mojunoio {
+    background-image: url(game_icon/mojunoio.png);
+}
+
+.gamestudio__icon--yumeniji {
+    background-image: url(game_icon/yumeniji.png);
+}
+
+.gamestudio__icon--arashi {
+    background-image: url(game_icon/arashi.png);
+}

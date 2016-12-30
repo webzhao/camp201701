@@ -1,0 +1,21 @@
+.btn {}
+
+.btn--start {
+    background: linear-gradient(bottom, rgb(0, 96, 40) 3%, rgb(0, 147, 110) 94%);
+    background: -o-linear-gradient(bottom, rgb(0, 96, 40) 3%, rgb(0, 147, 110) 94%);
+    background: -ms-linear-gradient(bottom, rgb(0, 96, 40) 3%, rgb(0, 147, 110) 94%);
+    background: -moz-linear-gradient(bottom, rgb(0, 96, 40) 3%, rgb(0, 147, 110) 94%);
+    background: -webkit-linear-gradient(bottom, rgb(0, 96, 40) 3%, rgb(0, 147, 110) 94%);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 45px;
+    width: 200px;
+    height: 80px;
+}
+
+.btn--store {}
+
+.btn--Discuss {}
+
+.btn--maker {}

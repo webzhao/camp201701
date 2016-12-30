@@ -1,0 +1,83 @@
+.dashbd {
+    overflow: hidden;
+    background: #1c1c1c;
+    height: 100vh;
+    width: auto;
+    right: 0;
+    position: absolute;
+    left: 150px;
+}
+
+.dashbd__topbar {
+    height: 60px;
+    position: absolute;
+    top: 0;
+    background: #232425;
+    width: 100%;
+    display: flex;
+}
+
+.dashbd__screen {
+    position: absolute;
+    bottom: 0;
+    top: 60px;
+    height: auto;
+    width: 100%;
+    background: #30333F;
+}
+
+.dashbd__start {
+    position: absolute;
+    left: 50px;
+    top: 25px;
+}
+
+.dashbd__detail {
+    position: absolute;
+    bottom: 20px;
+    top: 150px;
+    height: auto;
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.dashbd__tabs {
+    display: flex;
+    height: 20px;
+}
+
+.dashbd__tab {
+    width: 50px;
+    height: 20px;
+}
+
+.dashbd__content {
+    position: absolute;
+    top: 20px;
+    bottom: 0;
+    width: calc(100% - 100px);
+    height: auto;
+    background: #242531;
+    box-shadow: 2px 7px 20px 0px rgba(0, 0, 0, 0.3) inset;
+}
+
+
+}
+.dashbd__accu {
+    width: 100px;
+    position: absolute;
+    right: 0;
+    height: 60px;
+}
+.dashbd__nav {
+    position: absolute;
+    left: 0;
+    right: 100px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.dashbd__area {
+    margin: 0 10px;
+}
