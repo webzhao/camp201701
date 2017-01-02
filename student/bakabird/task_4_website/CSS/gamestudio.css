@@ -38,16 +38,38 @@
     display: none;
 }
 
-.gamestudio__list {
+.gamestudio__lists {
     position: absolute;
     top: 60px;
     left: 0;
     right: 0;
     bottom: 30px;
+}
+
+.gamestudio__list {
+    position: absolute;
+    left: 0;
+    right: 0;
     display: flex;
     background: #15171c;
     flex-direction: column;
     justify-content: space-around;
+    transition: top .42s, bottom .42s;
+}
+
+.gamestudio__list-last {
+    top: -100%;
+    bottom: 100%;
+}
+
+.gamestudio__list-now {
+    top: 0;
+    bottom: 0;
+}
+
+.gamestudio__list-next {
+    top: 100%;
+    bottom: -100%;
 }
 
 .gamestudio__grid {
@@ -58,7 +80,7 @@
     width: 90px;
     height: 90px;
     margin-left: 30px;
-    background-image: url(game_icon/nai.png);
+    background-image: url(../game_icon/nai.png);
     background-size: 100% auto;
     border: none;
     border-radius: 15px;
@@ -70,23 +92,23 @@
 }
 
 .gamestudio__icon--shonaiiroi {
-    background-image: url(game_icon/shonaiiroi.png);
+    background-image: url(../game_icon/shonaiiroi.png);
 }
 
 .gamestudio__icon--fixmi {
-    background-image: url(game_icon/fixmi.png);
+    background-image: url(../game_icon/fixmi.png);
 }
 
 .gamestudio__icon--mojunoio {
-    background-image: url(game_icon/mojunoio.png);
+    background-image: url(../game_icon/mojunoio.png);
 }
 
 .gamestudio__icon--yumeniji {
-    background-image: url(game_icon/yumeniji.png);
+    background-image: url(../game_icon/yumeniji.png);
 }
 
 .gamestudio__icon--arashi {
-    background-image: url(game_icon/arashi.png);
+    background-image: url(../game_icon/arashi.png);
 }
 
 .gamestudio__icon--sousuo {
