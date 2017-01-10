@@ -1,0 +1,123 @@
+@import url("layout.css");
+@import url("icon.css");
+
+.shop--lists{
+	min-height: 500px;
+	font-size: 10px;
+	float: left;
+	width: 90%;
+	
+	margin:0 5%;
+	position: relative;
+}
+.lists{
+	float: left;
+	width: 100%;
+	padding: 0 2%;
+	height: 11.5em;
+	line-height: 10.5em;
+	border-bottom: 1px solid #c0c0c0;
+    margin-bottom:10px;
+}
+
+.lists__tab{
+	height: 3em;
+	line-height: 3em;
+}
+.list{
+	line-height: inherit;
+	font-size: 1.2em;
+	color: #5f5f5f;
+	float: left;
+	margin-left: 1em;
+	text-align: center;
+	position: relative;
+}
+.lists__img{
+	width: 9.5em;
+}
+
+.lists__img img{
+	width: 100px;
+	height: 100px;
+	margin-top: .2em;
+}
+
+.lists__title,
+.lists__color{
+	width: 20em;
+}
+.lists__size,
+.lists__num,
+.lists__amount{
+	width: 9.5em;
+}
+.lists__delete{
+	width: 5em;
+}
+.lists__delete span{
+	display: inline-block;
+	cursor: pointer;
+	font-size: 2em;
+	transform: rotate(45deg);
+}
+.lists__num input{
+	width: 18px;
+}
+.count{
+	position: absolute;
+    right: 33px;
+    top: 38%;
+    height: 27px;
+    line-height: 11px;
+}
+.add,
+.down{
+	width: 11px;
+	height: 11px;
+	background: #000;
+	color: #fff;
+	margin-bottom:2px; 
+	cursor: pointer;
+}
+.sum{
+	float: left;
+	width: 100%;
+	font-size: 1.2em;
+	line-height: 4em;
+	background: #f8f8f8;
+	margin-top: -10px;
+	text-align: right;
+	padding: 0 5%;
+}
+.sum__num{
+	margin-left: 5px;
+	color: #F58135;
+}
+
+.cut--img{
+	float: left;
+	width: 100%;
+	height: 100px;
+	text-align: center;
+}
+.cut--img img{
+	display: block;
+	margin: 30px auto;
+}
+input[type="submit"]{
+	margin:10px 0;
+}
+
+.settle{
+	margin:10px auto;
+	overflow: hidden;
+	height: 25px;
+	width: 120px;
+	/*float: left;*/
+	font-size: 14px;
+}
+.settle dt,dd{
+	float: left;
+	margin-right: 10px;
+}

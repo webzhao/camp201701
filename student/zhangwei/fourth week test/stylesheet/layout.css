@@ -2,7 +2,7 @@
 
 html,body{
     width: 100%;
-    min-width: 1345px;
+    min-width: 1260px;
 }
 a{
     color: #000;
@@ -47,17 +47,23 @@ i {
     display: inline-block;
     overflow: hidden;
 }
+.box-check:last-child{
+    margin-right: 0;
+}
 .box-check{
     background: #c0c0c0;
     float: left;
     margin-right: 10px;
+}
+.box-check:last-child{
+    margin-right: 0;
 }
 .box-check a{
     width: 100%;
     height: 100%;
     display: inline-block;
     color: #Fff;
-    line-height: 3em;
+    line-height: 4em;
 }
 .box-thumbnail__content{
     position:absolute;
@@ -84,7 +90,7 @@ i {
     cursor: pointer;
 }
 .nav > li.big-list{
-    width: 12em;
+    width: 9em;
     margin-right: 4em;
 }
 .nav > li a{
@@ -127,6 +133,10 @@ i {
 .banner--jum{
     padding: 0 6em;
     min-height: 40em;
+}
+.banner--jum__xl{
+    padding: 0 6em;
+    min-height: 15em;
 }
 .jum__center{
     text-align: center;
@@ -224,18 +234,27 @@ i {
     font-size: 2em;
     color: #4b4b4b;
 }
+.form--content__bgcolor{
+    background:rgba(95, 95, 95, 0.25)
+}
 .form{
     width: 570px;
-    height: 56px;
+    /*height: 56px;*/
     margin: 0 auto;
     margin-top: 2em;
+}
+.form label{
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #5f5f5f;
 }
 .form span{
     float: left;
     height: 53px;
     background: #f7f7f7;
 }
-.form span input[type="text"]{
+.form  input[type="text"]{
     width: 475px;
     font-size: 2em;
     padding: 14px 8px;
@@ -243,10 +262,10 @@ i {
     background: #f7f7f7;
     outline: 0;
 }
-.form span input[type="text"]:hover{
+.form  input[type="text"]:hover{
     border: 1px solid rgba(245, 129, 53, 0.75);
 }
-.form span input[type="text"]:focus{
+.form  input[type="text"]:focus{
     border: 1px solid rgba(245, 129, 53, 0.75);
 }
 /*底部*/
@@ -260,7 +279,7 @@ footer{
     box-sizing: border-box;
 }
 .column dl{
-    width:252px;
+    width:240px;
     height: 180px;
     margin-right: 20px;
     float: left;
