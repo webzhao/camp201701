@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>新教员注册</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet/form.css">
+    <script src="javaScript/html5.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="imges/qdjjlogo.png" alt="家教网logo">
+        <nav>
+            <a href="http://www.qdjj.net/login.asp">注册</a>
+            <a href="http://www.qdjj.net/member/register.asp">登陆</a>
+            <a href="#">收藏本站</a>
+        </nav>
+    </header>
+    <article>
+        <table border="1" cellspacing="0">
+            <caption>
+                <h1>新教员注册</h1>
+            </caption>
+            <thead>
+                <tr>
+                    <th colspan="2">
+                        <p>您的注册资料越详细就越有利于家长和学员检索，也就越容易获得家长的预约，所以请您务必如实详细地填写。 其中红色星号（<strong>*</strong>）为必填。我们已对您的个人信息做保密处理，您的信息是安全的。 您选择的是大学生身份,若有误请
+                            <a href="#">返回</a>更改</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">
+                        <h4>基本资料</h4></td>
+                </tr>
+                <form action="register_2_post.asp" method="post">
+                    <tr>
+                        <th>
+                            <label for="name">
+                                <p><strong>*</strong>姓名：</p>
+                            </label>
+                        </th>
+                        <td>
+                            <input id="name" type="text" name="name" required placeholder="请输入姓名">
+                            <p>注意：姓名应与身份证完全一致，本网站将对你的姓名严格保密，只显示您的姓，如“张教员”。此部分将在认证时严格审查，一经填写不得修改，与证件不符者将不能通过认证！</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="id">
+                                <p><strong>*</strong>身份证/护照：</p>
+                            </label>
+                        </th>
+                        <td>
+                            <input type="text" id="id" name="id" required pattern="[0-9]{15}|[0-9]{18}" title="请输入18或15位身份证号">
+                            <p>(此项将严格保密，不对外公开)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="sex">
+                                <p><strong>*</strong>性别:</p>
+                            </label>
+                        </th>
+                        <td>
+                            <select id="sex" name="sex">
+                                <option value="男">男</option>
+                                <option value="女">女</option>
+                                <option selected="selected">请选择</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="time">
+                                <p><strong>*</strong>出生年月:</p>
+                            </label>
+                        </th>
+                        <td>
+                            <input id="time" type="date" value="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="subject">
+                                <p><strong>*</strong>专业：</p>
+                            </label>
+                        </th>
+                        <td>
+                            <input type="text" id="subject" name="subject" placeholder="请填写专业">
+                            <p>请如实填写专业全名，以学生证为准。此部分将在认证时严格审查，与证件不符者将不能通过认证！</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="xl">
+                                <p>目前（最高）学历:</p>
+                            </label>
+                        </th>
+                        <td>
+                            <select id="xl" name="xl">
+                                <option value="本科">本科</option>
+                                <option value="研究生">研究生</option>
+                                <option value="硕士">硕士</option>
+                                <option value="博士">博士</option>
+                                <option value="专科">专科</option>
+                                <option value="专科以下">专科以下</option>
+                                <option selected="selected">请选择</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="nowid">
+                                <p>目前身份：</p>
+                            </label>
+                        </th>
+                        <td>
+                            <select id="nowid" name="nowid">
+                                <option value="在读大一">在读大一</option>
+                                <option value="在读大二">在读大二</option>
+                                <option value="在读大三">在读大三</option>
+                                <option value="在读大四">在读大四</option>
+                                <option value="在读研究生">在读研究生</option>
+                                <option value="在读博士">在读博士</option>
+                                <option selected="selected">请选择</option>
+                            </select>
+                            <p>请及时更新自己的身份，暑假期间注册，请选择下一学期的身份</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="formjg">
+                                <p>籍贯（生源地）：</p>
+                            </label>
+                        </th>
+                        <td>
+                            <select id="formjg" name="formjg">
+                                <option value=山东>山东</option>
+                                <option value=北京>北京</option>
+                                <option value=天津>天津</option>
+                                <option value=上海>上海</option>
+                                <option value=重庆>重庆</option>
+                                <option value=安徽>安徽</option>
+                                <option value=江苏>江苏</option>
+                                <option value=浙江>浙江</option>
+                                <option value=福建>福建</option>
+                                <option value=甘肃>甘肃</option>
+                                <option value=广东>广东</option>
+                                <option value=广西>广西</option>
+                                <option value=贵州>贵州</option>
+                                <option value=海南>海南</option>
+                                <option value=河北>河北</option>
+                                <option value=河南>河南</option>
+                                <option value=黑龙江>黑龙江</option>
+                                <option value=湖北>湖北</option>
+                                <option value=湖南>湖南</option>
+                                <option value=吉林>吉林</option>
+                                <option value=江西>江西</option>
+                                <option value=辽宁>辽宁</option>
+                                <option value=内蒙>内蒙</option>
+                                <option value=宁厦>宁厦</option>
+                                <option value=青海>青海</option>
+                                <option value=山西>山西</option>
+                                <option value=陕西>陕西</option>
+                                <option value=四川>四川</option>
+                                <option value=西藏>西藏</option>
+                                <option value=香港>香港</option>
+                                <option value=新疆>新疆</option>
+                                <option value=云南>云南</option>
+                            </select>
+                            <p>（并非指当前所在地）</p>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="school">
+                                <p>毕业/就读高校：</p>
+                            </label>
+                        </th>
+                        <td>
+                            <input type="text" list="university" name="university" placeholder="请选择" id="school">
+                            <datalist id="university">
+                                <option value="" selected="selected">—请选择—</option>
+                                <option value="太原科技大学">太原科技大学</option>
+                                <option value="太原理工大学">太原理工大学</option>
+                                <option value="太原中北大学">太原中北大学</option>
+                                <option value="山西大学">山西大学</option>
+                            </datalist>
+                            <p>若列表中无选项，请在文本框中填写</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h4>联系方式</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="tel">
+                                <p><strong>*</strong>手机/小灵通：</p>
+                            </label>
+                        </th>
+                        <td>
+                            <input type="text" id="tel" name="tel" required pattern="[0-9]{11}" title="请输入11位正确手机号" placeholder="请输入11位正确手机号">
+                            <p>请留下正确联系方式，换号时请及时更新联系方式</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="home">
+                                <p> 目前住所：</p>
+                            </label>
+                        </th>
+                        <td>
+                            <select id="home" name="home">
+                                <option value="" selected>—请选择—</option>
+                                <option value="太原万柏林区">太原万柏林区</option>
+                                <option value="太原杏花岭区">太原杏花岭区</option>
+                                <option value="太原迎泽区">太原迎泽区</option>
+                                <option value="太原尖草坪区">太原尖草坪区</option>
+                            </select>
+                            <p>选择离您的住所最近的地点</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="email">
+                                <p><strong>*</strong>Email：</p>
+                            </label>
+                        </th>
+                        <td>
+                            <input id="email" name="email" type="email" placeholder="请填写邮箱">
+                            <p>(为通知合适您的家教及找回密码，请认真填写)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="qq">
+                                <p><strong>*</strong>QQ:</p>
+                            </label>
+                        </th>
+                        <td>
+                            <input type="text" id="qq" name="qq" placeholder="请填写qq">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="home2">
+                                <p><strong>*</strong>详细地址：</p>
+                            </label>
+                        </th>
+                        <td>
+                            <input type="text" name="home2" id="home2" class="home2" placeholder="详细地址">
+                            <p>(以方便我们给您寄送家教相关资料及协议等。)</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h4>家教信息</h4></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="language">
+                                <p>普通话：</p>
+                            </label>
+                        </th>
+                        <td>
+                            <select name="language" id="language">
+                                <option value="标准">标准</option>
+                                <option value="一般" selected>一般 </option>
+                                <option value="较差">较差</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="language1">
+                                <p>外语：</p>
+                            </label>
+                        </th>
+                        <td>
+                            <select name="language1" id="language1">
+                                <option value="英语" selected>英语</option>
+                                <option value="日语">日语</option>
+                                <option value="韩语">韩语</option>
+                                <option value="法语">法语</option>
+                                <option value="德语">德语</option>
+                                <option value="西班牙语">西班牙语</option>
+                                <option value="葡萄牙语">葡萄牙语</option>
+                                <option value="阿拉伯语">阿拉伯语</option>
+                                <option value="俄语">俄语</option>
+                                <option value="其他">其他</option>
+                            </select>
+                            <select name="language1_level" id="language1_level">
+                                <option value="一级">一级</option>
+                                <option value="二级">二级</option>
+                                <option value="三级">三级</option>
+                                <option value="四级">四级</option>
+                                <option value="六级">六级</option>
+                                <option value="专四">专四</option>
+                                <option value="专八">专八</option>
+                                <option value="精通">精通</option>
+                                <option value="熟练">熟练</option>
+                                <option value="一般" selected>一般</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="myself">
+                                <p><strong>*</strong>自我描述与特长展示</p>
+                            </label>
+                        </th>
+                        <td>
+                            <textarea id="myself" class="myself" name="myself" cols="50" rows="10"></textarea>
+                            <p>全面展示你的实力和优势特长，增加你简历的含金量！例如：在比赛中得过什么重要奖项，获得过什么奖学金，取得什么样的高考成绩，有哪些能证明你能力的资格证书之类。 不得少于50字，不得超过500字。家长选择你的重要依据，请认真填写！</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="exp">
+                                <p><strong>*</strong>家教经历（教学成果）：</p>
+                            </label>
+                        </th>
+                        <td>
+                            <textarea id="exp" class="exp" name="exp" cols="50" rows="10"></textarea>
+                            <p>这些内容是对您教学水平最有力和最直接的反映！是学员选择您的一项重要依据。字数500字以内。最好说明辅导时间、学生年级、辅导效果。可参考以下形式：2008年10月-12月，市南区初三学生英语，期终考试从全班第30名上升至第10名，英语从60分提升到80分。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p><strong>*</strong>可辅导的科目（不超过10项）：</p>
+                        </th>
+                        <td>
+                            <h5>教员在选择中考、高考、雅思、新概念等有难度的科目时应量力而行，最好有实际辅导经验。</h5>
+                            <br>
+                            <h4>-----小学-----</h4>
+                            <br>
+                            <label>
+                                <input type="checkbox" name="cando" value="小学语文">小学语文</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="小学数学">小学数学</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="小学英语">小学英语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="小学奥数">小学奥数</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="小学全科">小学全科</label>
+                            <br>
+                            <br>
+                            <h4>-----初中-----</h4>
+                            <br>
+                            <label>
+                                <input type="checkbox" name="cando" value="初中语文">初中语文</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="初中数学">初中数学</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="初中英语">初中英语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="初中物理">初中物理</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="初中化学">初中化学</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="初中生物">初中生物</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="初中政治">初中政治</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="初中地理">初中地理</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="初中历史">初中历史</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="初中全科">初中全科</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="中考语文">中考语文</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="中考数学">中考数学</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="中考英语">中考英语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="中考物理">中考物理</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="中考化学">中考化学</label>
+                            <br>
+                            <br>
+                            <h4>-----高中-----</h4>
+                            <br>
+                            <label>
+                                <input type="checkbox" name="cando" value="高一高二语文">高一高二语文</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高一高二英语">高一高二英语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高一高二数学">高一高二数学</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高一高二物理">高一高二物理</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高一高二化学">高一高二化学</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高一高二地理">高一高二地理</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高一高二生物">高一高二生物</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高考语文">高考语文</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高考英语">高考英语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高考数学 ">高考数学</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高考物理 ">高考物理</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高考化学 ">高考化学</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高考数理化 ">高考数理化</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高考美术 ">高考美术</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高考理综 ">高考理综</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高考文综 ">高考文综</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高考心理辅导 ">高考心理辅导</label>
+                            <br>
+                            <br>
+                            <h4>-----大学-----</h4>
+                            <br>
+                            <label>
+                                <input type="checkbox" name="cando" value="高等数学">高等数学</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="考研数学">考研数学</label>
+                            <br>
+                            <br>
+                            <h4>-----英语-----</h4>
+                            <br>
+                            <label>
+                                <input type="checkbox" name="cando" value="英语口语">英语口语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="新概念英语">新概念英语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="牛津英语">牛津英语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="英语四级">英语四级</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="英语六级">英语六级</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="GRE">GRE</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="托福">托福</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="雅思">雅思</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="初级商务英语">初级商务英语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="高级商务英语">高级商务英语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="剑桥英语">剑桥英语</label>
+                            <br>
+                            <br>
+                            <h4>-----小语种-----</h4>
+                            <br>
+                            <label>
+                                <input type="checkbox" name="cando" value="日语">日语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="法语">法语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="德语">德语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="韩语">韩语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="俄语">俄语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="西班牙语">西班牙语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="葡萄牙语">葡萄牙语</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="阿拉伯语">阿拉伯语</label>
+                            <br>
+                            <br>
+                            <h4>-----艺术-----</h4>
+                            <br>
+                            <label>
+                                <input type="checkbox" name="cando" value="摄影">摄影</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="书法">书法</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="美术">美术</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="漫画">漫画</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="中国画">中国画</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="西洋画">西洋画</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="交谊舞">交谊舞</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="芭蕾舞">芭蕾舞</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="声乐（美声）">声乐（美声)</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="声乐（民族）">声乐（民族)</label>
+                            <br>
+                            <br>
+                            <h4>-----乐器-----</h4>
+                            <br>
+                            <label>
+                                <input type="checkbox" name="cando" value="钢琴">钢琴</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="电子琴">电子琴</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="小提琴">小提琴</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="大提琴">大提琴</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="长笛">长笛</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="吉它">吉它</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="手风琴">手风琴</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="萨克斯">萨克斯</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="打击乐">打击乐</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="小号">小号</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="大号">大号</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="圆号">圆号</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="二胡">二胡</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="笛子">笛子</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="琵琶">琵琶</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="古筝">古筝</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="古琴">古琴</label>
+                            <br>
+                            <br>
+                            <h4>-----计算机-----</h4>
+                            <br>
+                            <label>
+                                <input type="checkbox" name="cando" value="计算机基本操作">计算机基本操作</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="数据库">数据库</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="网页设计与制作">网页设计与制作</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="计算机应用能力">计算机应用能力</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="Linux或Unix">Linux或Unix</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="网站开发">网站开发</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="图像处理软件">图像处理软件</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="动画制作">动画制作</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="程序设计">程序设计</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="程序设计高级">程序设计高级</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="微软证书">微软证书</label>
+                            <br>
+                            <br>
+                            <h4>-----棋类/体育-----</h4>
+                            <br>
+                            <label>
+                                <input type="checkbox" name="cando" value="围棋">围棋</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="中国象棋">中国象棋</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="国际象棋">国际象棋</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="中国武术散打">中国武术散打</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="拳击">拳击</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="截拳道">截拳道</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="跆拳道">跆拳道</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="空手道">空手道</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="瑜珈">瑜珈</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="滑冰旱冰">滑冰旱冰</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="游泳">游泳</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="乒乓球">乒乓球</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="羽毛球">羽毛球</label>
+                            <label>
+                                <input type="checkbox" name="cando" value="网球">网球</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="havetime">
+                                <p>可授课时间</p>
+                            </label>
+                        </th>
+                        <td>
+                            <input id="havetime" name="havetime" type="text" value="授课无时间限制">
+                            <p>（请注意及时更新授课时间）</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p>辅导方式：</p>
+                        </th>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="fangfa" value="教员上门">教员上门</label>
+                            <label>
+                                <input type="checkbox" name="fangfa" value="学员上门">学员上门</label>
+                            <label>
+                                <input type="checkbox" name="fangfa" value="网上辅导">网上辅导</label>
+                            <label>
+                                <input type="checkbox" name="fangfa" value="可协商">可协商</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <p>薪酬要求：</p>
+                        </th>
+                        <td>
+                            <textarea cols="50" rows="10" id="money" name="money">执行青岛家教网薪水标准</textarea>
+                            <p>默认为接受青岛家教网的课时费标准（查看详细的报酬标准&lt;变成链接&gt;)，如果不同意，也可以在表中列出自己的薪酬要求，如：小学**元/时、小学奥数**元/时、初一**元/时、高三**元/时、钢琴**元/时、陪读**元/月。</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="submit">
+                            <input type="submit" value="提交">
+                        </td>
+                    </tr>
+                </form>
+            </tbody>
+        </table>
+    </article>
+</body>
+
+</html>

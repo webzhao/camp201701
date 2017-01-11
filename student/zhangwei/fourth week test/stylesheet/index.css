@@ -1,0 +1,58 @@
+@import "icon.css";
+@import "layout.css";
+/*九宫格*/
+.sudoku{
+    width: 90%;
+    padding: 0 3em;
+    font-size: 10px;
+    margin: 20px 6%;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.sudoku--box{
+    width:267px;
+    height: 267px;
+    float: left;
+    background: #d1d1d1;
+    color: #fff;
+    text-align: center;
+}
+.sudoku--box h3{
+    width: 10em;
+    display: inline-block;
+    margin-top: 40%;
+}
+.sudoku--box p{
+    width: 14em;
+    display: inline-block;
+    margin-top: 30%;
+    margin-bottom: 5%;
+
+}
+.sudoku--box span{
+     display: block;
+ }
+.sudoku--box__gl{
+    height: 534px;
+}
+.sudoku--box__gl h3{
+    margin-top: 75%;
+}
+.sudoku a:nth-child(2n){
+    background: #bbb;
+}
+.sudoku a:nth-child(8){
+    margin-left: -1068px;
+    margin-top: 267px;
+}
+.sudoku a:nth-child(9){
+    margin-left: -801px;
+    margin-top: 267px;
+}
+.sudoku a:nth-child(10){
+    margin-left: -534px;
+    margin-top: 267px;
+}

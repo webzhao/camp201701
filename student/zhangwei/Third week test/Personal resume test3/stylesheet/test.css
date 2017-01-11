@@ -1,0 +1,260 @@
+body,
+ul hr {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f0f0f0;
+    /*min-width: 960px;
+*/
+}
+
+header,
+article,
+footer {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background: #fff;
+    font-size: 10px;
+}
+
+
+/*头部*/
+
+header {
+    margin-top: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: #38f;
+    color: #fff;
+}
+
+
+/*头像*/
+
+header div.head_portrait {
+    display: inline-block;
+    width: 150px;
+    height: 200px;
+    margin: 10px 15px 0 15px;
+    border: 2px solid #38f;
+    background: url(../imges/mao.jpeg) no-repeat;
+    background-size: 100% 100%
+}
+
+
+/*header div.head_portrait img {
+    width: 100%;
+    height: 100%;
+}*/
+
+
+/*头像end*/
+
+
+/*姓名和目标*/
+
+header div.name {
+    position: absolute;
+    top: 50px;
+    display: inline-block;
+    margin-left: 15px;
+    width: 300px;
+}
+
+header div.name h1 {
+    font-size: 4.8em;
+}
+
+
+/*兴民和目标end*/
+
+
+/*基本信息*/
+
+header div.ess {
+    margin: 15px auto;
+}
+
+header div.ess ul {
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+
+/*基本信息end*/
+
+
+/*头部end*/
+
+
+/*主体*/
+
+article {
+    margin-top: -16px;
+    overflow: hidden;
+}
+
+
+/*主体内容块*/
+
+article section {
+    margin: 0 15px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+article section dl dt h1 {
+    font-size: 2em;
+    line-height: 40px;
+    color: #38f;
+}
+
+article section dl dt h1 {
+    margin: 0;
+}
+
+article section dl dt i {
+    margin-right: 15px;
+}
+
+article section dl dd {
+    border-left: 2px solid #38f;
+    margin-left: 10px;
+    padding-left: 30px;
+    font-size: 1.4em;
+}
+
+article section dl dd span {
+    margin-right: 30px;
+}
+
+article section dl dd {
+    overflow: hidden;
+}
+
+article section dl dd li {
+    width: 300px;
+    height: 100px;
+    float: left;
+    list-style: none;
+}
+
+article section dl dd li span {
+    width: 180px;
+    height: 8px;
+    background: #ccc;
+    display: inline-block;
+    position: relative;
+}
+
+article section dl dd li span i {
+    width: 50%;
+    height: 8px;
+    background: #38f;
+    position: absolute;
+}
+
+article section dl {
+    margin-bottom: 0;
+}
+
+
+/*底部*/
+footer{
+    background: #38f;
+    color: #fff;
+}
+footer ul{
+    margin:0;
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+    padding-top:20px;
+}
+footer ul li{
+   margin-bottom: 20px; 
+
+}
+footer ul li img{
+     width: 100px;
+    height: 100px;
+    vertical-align: middle;
+}
+footer ul li a{
+    color: #fff;
+}
+
+/*响应式*/
+
+@media (max-width: 1024px) {
+    header,
+    article,
+    footer {
+        width: 100% margin: 0;
+    }
+    article section dl dd li {
+        width: 50%;
+    }
+    article section dl dd li span {
+        width: 50%;
+    }
+}
+
+@media (max-width: 685px) {
+    header,
+    article,
+    footer {
+        width: 100%;
+        margin: 0;
+    }
+    header div.ess ul {
+        flex-direction: column;
+        align-items:center;
+        font-size: 1.5em;
+    }
+    header div.ess ul li p {
+        margin: .2em 0;
+    }
+    header div.head_portrait {
+        width: 75px;
+        height: 100px;
+    }
+    header div.name {
+        margin-top: -35px;
+        width: 235px;
+        text-align: center;
+    }
+    header div.name h1 {
+        font-size: 2em;
+    }
+     article section dl dd li {
+        width: 100%;
+    }
+    article section dl dd li span {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    header div.name {
+        /*margin: 0;*/
+        width: 196px;
+        text-align: center;
+    }
+}
+
+header div.ess ul li {
+    font-size: 20px;
+    list-style: none;
+    flex-grow: 1;
+}
+
+header div.ess ul li i {
+    margin-right: 15px;
+}

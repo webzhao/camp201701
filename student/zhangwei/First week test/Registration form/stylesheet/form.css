@@ -1,0 +1,64 @@
+ body,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ body {
+     width: 100%;
+     min-width: 960px;
+     background: #d8dfdf;
+ }
+ header{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top:30px!important;
+ }
+ header img{
+    margin-left: 10px;
+ }
+ header,
+ article {
+     width: 700px;
+     height: 100%;
+     margin: auto;
+     background: #fff;
+ }
+ nav {
+    text-align: right;
+ }
+ table {
+     width: 90%;
+     margin: 0 auto 30px;
+ }
+ 
+ tbody th {
+     width: 67px;
+ }
+ 
+ tbody th p {
+     font-size: 12px;
+ }
+ 
+ tbody td p {
+     font-size: 12px;
+     color: #006aff;
+ }
+ 
+ strong {
+     color: red;
+ }
+ 
+ input[type='submit'] {
+     width: 80px;
+     height: 40px;
+     text-align: center;
+ }
+ 
+ td.submit {
+     text-align: center;
+ }

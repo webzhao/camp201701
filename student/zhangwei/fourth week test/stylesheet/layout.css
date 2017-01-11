@@ -1,0 +1,303 @@
+/*全局样式*/
+
+html,body{
+    width: 100%;
+    min-width: 1260px;
+}
+a{
+    color: #000;
+    font-size: 1em;
+}
+i {
+    display: inline-block;
+    cursor: pointer;
+}
+/*快速浮动*/
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+/*隐藏/显示*/
+.hide{
+    display: none;
+}
+.show {
+    display: block;
+}
+/*导航栏模块可复用*/
+.navbar{
+    width: 100%;
+    padding: 30px 5%;
+    font-size: 10px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+.box-square{
+    width: 42px;
+    height: 42px;
+    position: relative;
+    background: #000;
+    color: #fff;
+}
+.box-check__content{
+    margin: 20px;
+    display: inline-block;
+    overflow: hidden;
+}
+.box-check:last-child{
+    margin-right: 0;
+}
+.box-check{
+    background: #c0c0c0;
+    float: left;
+    margin-right: 10px;
+}
+.box-check:last-child{
+    margin-right: 0;
+}
+.box-check a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    color: #Fff;
+    line-height: 4em;
+}
+.box-thumbnail__content{
+    position:absolute;
+    bottom: 10px;
+    right:150px;
+    float: left;
+}
+.box-thumbnail{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    margin-left:15px;
+    float: left;
+}
+.nav{
+    overflow: hidden;
+}
+.nav > li{
+    float: left;
+    width: 6em;
+    margin-right:2em;
+    font-size: 1.4em;
+    line-height: 3em;
+    cursor: pointer;
+}
+.nav > li.big-list{
+    width: 9em;
+    margin-right: 4em;
+}
+.nav > li a{
+    color: inherit;
+    font-size: inherit;
+}
+.nav > li:hover{
+    color: #aaaaaa;
+}
+/*可复用的分割线*/
+.cut-off{
+    width: 90%;
+    height: 1px;
+    background: rgba(0,0,0,.1);
+    position: absolute;
+    bottom: 0;
+}
+/*导航栏模块*/
+/*导航栏样式*/
+.logo{
+    margin-right: 50px;
+}
+.logo-txt{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.icon-search{
+    padding: 13px;
+}
+.banner {
+    width: 90%;
+    margin: 30px 5% 30px 5%;
+    font-size: 10px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+/*巨幕*/
+.banner--jum{
+    padding: 0 6em;
+    min-height: 40em;
+}
+.banner--jum__xl{
+    padding: 0 6em;
+    min-height: 15em;
+}
+.jum__center{
+    text-align: center;
+}
+.jum__left{
+    text-align: left;
+}
+.jum__center h1{
+    font-size: 7.2em;
+    margin-bottom: .5em;
+}
+.jum__center p{
+    font-size: 2.4em;
+    margin-bottom: 2em;
+    letter-spacing: -1px;
+    color: #4b4b4b;
+}
+/*轮播图*/
+.banner--carousel{
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #d1d1d1;
+}
+.carousel__Picture-show{
+    height: 440px;
+    width: 200%;
+}
+.carousel__Picture-show ul{
+    width: 100%;
+    height: 100%;
+}
+.carousel__Picture-show li{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background: #4b4b4b;
+
+}
+/*按钮*/
+.btn{
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: inherit;
+    line-height: inherit;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+.btn-xl{
+    font-size: 1.44em;
+    line-height: 1.44em;
+}
+.btn-gl{
+    padding:10px 16px;
+    font-size: 1.8em;
+    line-height: 1.8em;
+}
+.btn-blank{
+    width: 100%;
+    font-size: 2.5em;
+}
+.btn-submit{
+    font-size: 2em;
+    border-radius: 0;
+    width: 95px;
+    padding: 15px;
+    border: 0;
+}
+.btn-submit:hover{
+    box-shadow: 1px 1px 1px rgba(245, 129, 53, 0.75);
+}
+.btn-warning{
+    background: #F58135;
+    color: #fff;
+}
+
+/**/
+.form--content{
+    width: 90%;
+    margin: 30px 5% 30px 5%;
+    font-size: 10px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+    text-align: center;
+}
+.form--content h3{
+    font-size: 3.6em;
+    font-weight: 900;
+    line-height: 3.2em;
+}
+.form--content p{
+    font-size: 2em;
+    color: #4b4b4b;
+}
+.form--content__bgcolor{
+    background:rgba(95, 95, 95, 0.25)
+}
+.form{
+    width: 570px;
+    /*height: 56px;*/
+    margin: 0 auto;
+    margin-top: 2em;
+}
+.form label{
+    display: inline-block;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #5f5f5f;
+}
+.form span{
+    float: left;
+    height: 53px;
+    background: #f7f7f7;
+}
+.form  input[type="text"]{
+    width: 475px;
+    font-size: 2em;
+    padding: 14px 8px;
+    border: 0;
+    background: #f7f7f7;
+    outline: 0;
+}
+.form  input[type="text"]:hover{
+    border: 1px solid rgba(245, 129, 53, 0.75);
+}
+.form  input[type="text"]:focus{
+    border: 1px solid rgba(245, 129, 53, 0.75);
+}
+/*底部*/
+footer{
+    width: 90%;
+    padding: 4em 1em 2em 9em;
+    margin: 0 5%;
+    font-size: 10px;
+    float: left;
+    position: relative;
+    box-sizing: border-box;
+}
+.column dl{
+    width:240px;
+    height: 180px;
+    margin-right: 20px;
+    float: left;
+    font-size: 1.4em;
+    border-right:1px solid #c0c0c0;
+}
+.column dl:last-child{
+    margin-right: 0;
+    border-right:0;
+}
+.column dl dt{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.column dl dd{
+    font-size: 1em;
+    line-height: 2;
+}
+.column dl dd:hover{
+    color: #aaaaaa;
+}
