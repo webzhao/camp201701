@@ -25,7 +25,7 @@ function get_promotion_time_data() {
         out_flag = 28;
     }
 
-    // 准备工作已经完成，开始制造数据
+    // 准备工作已经完成，开始制造数据f
     while (time_step < 28) {
         let object_temp = {};
         let time_temp2 = new Date(2017, 1, 1 + time_step);
