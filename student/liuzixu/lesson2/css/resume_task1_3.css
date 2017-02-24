@@ -101,6 +101,8 @@ body{
   height: 20vh;
   width:100vw;
   background-color: lightgreen;
+  text-align: right;
+  line-height:20vh;
 }
 .right-part dl dt:hover{
   height: 25vh;
@@ -125,9 +127,9 @@ body{
   background-color: rgb(124, 55, 138);
 }
 .right-part dl dt>div{
-  position: absolute;
-  top:35%;
-  right: 7%;
+  /*position: absolute;*/
+  /*top:35%;*/
+  /*right: 7%;*/
   color: white;
   font-weight: bold;
   letter-spacing: 2px;
