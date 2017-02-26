@@ -1,0 +1,37 @@
+/*task2_3_copy_1_banner.css*/
+
+.banner {
+    width: 755px;
+    position: relative;
+    height: 450px;
+    margin:5px;
+    background-size: 100% 100%;
+}
+
+.banner-headline {
+    padding: 0 20px;
+    position: absolute;
+    bottom: 35px;
+    width: 715px;
+}
+
+.banner-catagory:before {
+    position: absolute;
+    background: #000;
+    color: #dea800;
+    padding: 0 8px;
+    font-size: 12px;
+    top: -25px;
+}
+
+.banner-catagory-business:before {
+    content: "商业";
+}
+
+.banner-headline p {
+    background: #000;
+    color: #fff;
+    line-height: 40px;
+    display: inline;
+    font-size: 30px;
+}

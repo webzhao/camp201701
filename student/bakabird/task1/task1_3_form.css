@@ -1,0 +1,26 @@
+main{
+    width: 100vw;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/*Grouping Elemet   */
+article{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/*button*/
+.submit{
+    padding: 0;
+}
+.submit>a{
+    display: block;
+    width: 50px;
+}
+
+
+/*drees*/
+.redstar{
+    color: #d27575;
+}

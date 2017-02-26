@@ -1,0 +1,195 @@
+.gamestudio {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    overflow: hidden;
+    background: #1d1d24;
+    height: auto;
+    bottom: 0;
+    z-index: 2;
+    /*☐ 有点奇怪为啥必须得设置这个之后才能够看到阴影。*/
+    box-shadow: 2px 0px 20px 0px #101024;
+}
+
+.gamestudio__serach {
+    height: 60px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background: #111116;
+}
+
+.gamestudio__serach input {
+    width: 130px;
+    background: #2a2a2b;
+    color: #666;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.gamestudio__serach input:focus~i {
+    display: none;
+}
+
+.gamestudio__lists {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
+
+.gamestudio__list {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    background: #15171c;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: top .42s, bottom .42s;
+}
+
+.gamestudio__list-last {
+    top: -100%;
+    bottom: 100%;
+}
+
+.gamestudio__list-now {
+    top: 0;
+    bottom: 0;
+}
+
+.gamestudio__list-next {
+    top: 100%;
+    bottom: -100%;
+}
+
+.gamestudio__grid {
+    width: 100%;
+}
+
+.gamestudio__icon {
+    width: 90px;
+    height: 90px;
+    margin-left: 30px;
+    background-image: url(../game_icon/nai.png);
+    background-size: 100% auto;
+    border: none;
+    border-radius: 15px;
+    transition: background .4s;
+}
+
+.gamestudio__icon:hover {
+    background-position: 0px -90px;
+}
+
+.gamestudio__icon--shonaiiroi {
+    background-image: url(../game_icon/shonaiiroi.png);
+}
+
+.gamestudio__icon--fixmi {
+    background-image: url(../game_icon/fixmi.png);
+}
+
+.gamestudio__icon--mojunoio {
+    background-image: url(../game_icon/mojunoio.png);
+}
+
+.gamestudio__icon--yumeniji {
+    background-image: url(../game_icon/yumeniji.png);
+}
+
+.gamestudio__icon--arashi {
+    background-image: url(../game_icon/arashi.png);
+}
+
+.gamestudio__icon--sousuo {
+    position: absolute;
+    color: #525252;
+    left: 15px;
+    bottom: 22px;
+}
+
+.gamestudio__icon--jiantou {
+    color: #393C48;
+    font-size: 12px;
+}
+
+.gamestudio__next {
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    background: #111116;
+    bottom: 0;
+}
+
+@media screen and (max-height:625px) {
+    .gamestudio__icon {
+        width: 70px;
+        height: 70px;
+    }
+    .gamestudio {
+        width: 130px;
+    }
+    .gamestudio__serach {
+        width: 130px;
+    }
+    .gamestudio__serach input {
+        width: 110px;
+    }
+    .gamestudio__icon {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .gamestudio {
+        left: -150px;
+    }
+}
+
+@media screen and (max-height:495px) {
+    .gamestudio__icon {
+        width: 50px;
+        height: 50px;
+    }
+    .gamestudio {
+        width: 100px;
+    }
+    .gamestudio__serach {
+        width: 100px;
+    }
+    .gamestudio__serach input {
+        width: 90px;
+    }
+    .gamestudio__icon {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-height:350px) {
+    .gamestudio__icon {
+        width: 30px;
+        height: 30px;
+    }
+    .gamestudio {
+        width: 60px;
+    }
+    .gamestudio__serach {
+        width: 60px;
+    }
+    .gamestudio__serach input {
+        width: 40px;
+    }
+    .gamestudio__icon {
+        margin-left: 15px;
+    }
+}

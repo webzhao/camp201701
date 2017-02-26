@@ -1,0 +1,23 @@
+table{
+    border: 1px solid #eee;
+    border-spacing: 0px;
+}
+
+th,td{
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 0 20px;
+}
+
+table ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+.lightgrey{
+    background: #f5f5f5;
+}
+
+time{
+    color: rgb(102, 101, 179);
+}

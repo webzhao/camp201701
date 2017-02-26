@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>RDD制作的下拉菜单</title>
+    <style>
+    body{
+        margin: 0;
+    }
+        .menu,.menu div{
+            width: 80vw;
+            height: 50px;
+            background: #ccc;
+            clear: both;
+            float: left;
+          text-align: center;
+          line-height: 50px;
+          color: #555;
+        }
+        .menu{
+            position: absolute;
+            top: 0;
+            height: auto;
+            overflow: auto;
+            border-radius: 20px;
+            left:10vw;
+        }
+        .first~div{
+            display: none;
+            border-top: 2px solid #777;
+        }
+        .first~div:hover{
+            background: #aaa;
+            color: #111;
+        }
+        .menu:hover .first~div{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu" role="这只是一个属于RDD的菜单而已">
+        <div class="first">我是一个菜单</div>
+        <div>我在玩躲猫猫</div>
+        <div>我也是！</div>
+        <div>给你发现了！</div>
+        <div>Ewwwwww</div>
+        <div>Todo</div>
+        <div>一个会出现左菜单</div>
+        <div>一个会出现右菜单</div>
+        <div>一个会出现下菜单</div>
+        <div>一个出现上菜单</div>
+    </div>
+</body>
+</html>

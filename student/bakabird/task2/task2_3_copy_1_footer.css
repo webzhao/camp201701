@@ -1,0 +1,61 @@
+/*task2_3_copy_1_footer.css*/
+
+footer {
+    width: 100%;
+    height: 330px;
+    background: #000;
+    clear: both;
+}
+
+.footer-body {
+    height: 75%;
+    padding: 20px 70px 0;
+}
+
+.footer-body .search input {
+    width: 180px;
+    background: #000;
+    border: 1px solid #838383;
+}
+
+.lotslinks ul {
+    display: inline-block;
+    width: calc(100% / 5.1);
+    padding: 0;
+    vertical-align: top;
+    margin: 0;
+}
+
+.lotslinks ul li {
+    list-style-type: none;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+.copyright {
+    height: 25%;
+    background: #222;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    padding-top: 10px;
+}
+
+.setmiddle {
+    position: relative;
+    width: 400px;
+    margin: 0 auto;
+    font-size: 13px;
+    color: #fff;
+}
+
+.setmiddle>i {
+    position: absolute;
+    font-size: 40px;
+}
+
+.setmiddle>p {
+    margin: 0;
+    color: #cecece;
+    text-indent: 40px;
+}

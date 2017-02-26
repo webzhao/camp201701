@@ -1,0 +1,151 @@
+/*task2_3_copy_1_grids.css*/
+
+.grid {
+    width: 245px;
+    height: 280px;
+    background: #fff;
+    position: relative;
+    float: left;
+    margin: 5px;
+}
+
+.mid-grid {
+    width: 500px;
+    height: 280px;
+    background: #fff;
+    position: relative;
+    float: left;
+    margin: 5px;
+}
+
+.mid-grid-activity {
+    background-size: 100% 100%;
+}
+
+.mid-grid>.headline>a {
+    background: #000;
+    color: #fff;
+    font-size: 20px;
+    line-height: 27px;
+    padding: 0 10px;
+}
+
+.grid>.headline,
+.mid-grid>.headline {
+    width: calc(100% - 20px);
+    height: 20%;
+    padding: 10px 10px 0 10px;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+
+/*🙂*/
+
+
+/*🙂*/
+
+
+/*🙂*/
+
+
+/*🙂*/
+
+
+/*🙂*/
+
+.moreinfo {
+    height: 28px;
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 24px;
+    color: #aaa;
+    line-height: calc(height);
+    font-size: 13px;
+}
+
+.moreinfo p {
+    float: right;
+    margin: 0;
+}
+
+.category {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    height: 22px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.category span {
+    font-size: 12px;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.category i {
+    color: #fff;
+    margin-right: 5px;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+
+/*activity*/
+
+.activity-categiry {
+    position: absolute;
+    top: 15px;
+    left: 25px;
+}
+
+.count {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 86px;
+    height: 106px;
+}
+
+.count .icon-join {
+    color: #ffc81f;
+    display: block;
+    font-size: 64px;
+    text-align: center;
+}
+
+.count span {
+    display: block;
+    text-align: center;
+    color: grey;
+}
+
+.count .num {
+    color: #fff;
+}
+
+.mid-grid-activity>.activity-headline {
+    position: absolute;
+    background: -webkit-linear-gradient(bottom, #000, transparent);
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .6), transparent);
+    background: linear-gradient(0deg, rgba(0, 0, 0, .6), transparent);
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    bottom: 0;
+    /* left: 0; */
+    color: #fff;
+    font-size: 20px;
+}
+
+.activity-headline p {
+    margin: 0;
+    width: 100%;
+}
+
+.activity-headline>.neckline {
+    margin-top: 5px;
+    font-size: 0.7em;
+    color: #c1c1c1;
+}

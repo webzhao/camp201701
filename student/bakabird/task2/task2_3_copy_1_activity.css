@@ -1,0 +1,61 @@
+/*task2_copy_1_activity.css*/
+
+.nowactivity {
+    position: relative;
+    width: 670px;
+    height: 320px;
+    float: left;
+    margin: 5px;
+}
+
+.nowactivity .activity-categiry {
+    position: absolute;
+    left: 30px;
+    top: 25px;
+}
+
+.nowactivity .activity-headline {
+    width: 100%;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.61);
+    position: absolute;
+    bottom: 0;
+}
+
+.nowactivity .activity-headline p {
+    margin: 0;
+}
+
+.nowactivity .activity-headline .headline {
+    font-size: 20px;
+    color: #fff;
+}
+
+.nowactivity .activity-headline .neckline {
+    color: #b6b6b6;
+}
+
+.count {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 86px;
+    height: 106px;
+}
+
+.count .icon-join {
+    color: #ffc81f;
+    display: block;
+    font-size: 64px;
+    text-align: center;
+}
+
+.count span {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px 0;
+    color: #ffc71f;
+}

@@ -1,0 +1,70 @@
+.dashbd__btn {
+    border: none;
+    background: rgba(255, 255, 255, 0);
+    width: 60px;
+    height: 60px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.dashbd__btn:not(:last-child) {
+    margin-right: 15px;
+}
+
+.dashbd__btn:hover>i {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.btn--start {
+    background: linear-gradient(bottom, rgb(0, 96, 40) 3%, rgb(0, 147, 110) 94%);
+    background: -o-linear-gradient(bottom, rgb(0, 96, 40) 3%, rgb(0, 147, 110) 94%);
+    background: -ms-linear-gradient(bottom, rgb(0, 96, 40) 3%, rgb(0, 147, 110) 94%);
+    background: -moz-linear-gradient(bottom, rgb(0, 96, 40) 3%, rgb(0, 147, 110) 94%);
+    background: -webkit-linear-gradient(bottom, rgb(0, 96, 40) 3%, rgb(0, 147, 110) 94%);
+    border: none;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 30px;
+    width: 200px;
+    height: 80px;
+}
+
+.btn--start:hover {
+    color: rgba(255, 255, 255, .8);
+}
+
+.btn--next {
+    width: 100%;
+    height: 100%;
+    background: #111116;
+    border: none;
+}
+
+.btn--user {
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    border: none;
+    background: rgb(255, 255, 255);
+    background-image: url(../灰一元.png);
+    background-size: 100%;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.dashbd__btn--cube {
+    display: none;
+}
+
+.dashbd__btn--game {}
+
+.dashbd__btn--store {}
+
+.dashbd__btn--Discuss {}
+
+.dashbd__btn--maker {}
+
+@media screen and (max-width:600px) {
+    .dashbd__btn--cube {
+        display: block;
+    }
+}
