@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>UI组件--弹框</title>
+    <script src="http://jsbin.com/a.js"></script>
+    <style media="screen">
+      .dialog-white__container{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        animation: back .3s ease-in 1 forwards;
+      }
+      .dialog-white__container.show{
+        display: block;
+      }
+      @keyframes back {
+        from {background-color: rgba(100,100,100,0)}
+        to {background-color: rgba(100,100,100,0.7)}
+      }
+      .dialog-white__container .dialog-white__inner{
+        height: 180px;
+        width: 350px;
+        border-radius: 15px;
+        background-color: white;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-top: -90px;
+        margin-left: -175px;
+      }
+    </style>
+    <script type="text/javascript" src="UIcomponent.js"></script>
+  </head>
+  <body>
+    <div class="dialog-white" id="my-dialog">
+      <div class="dialog-white__controller">
+        <input class="dialog-white__controller-input" type="text" placeholder="input the content here..." />
+        <button class="dialog-white__controller-button" type="button" name="button">弹!</button>
+      </div>
+      <div class="dialog-white__container">
+        <div class="dialog-white__inner">
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

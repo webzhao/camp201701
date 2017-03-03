@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jq-imitate.js"></script>
+    <script src="https://code.jquery.com/jquery-1.7.2.js"></script>
+    <style media="screen">
+      .colored-list .colored-list_item--red{
+        color:red;
+      }
+      .colored-list .colored-list_item--fontBig{
+        font-size:25px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="colored-list">
+      <li>item1</li>
+      <li>item2</li>
+      <li>item3</li>
+      <li>item4</li>
+      <li>item5</li>
+    </ul>
+    <button class="btn" id="bb">批量变红并放大</button>
+  </body>
+</html>
+
+
+
+<!-- window.onload = function (){
+  const btn = $('.btn');
+  const list = $('.colored-list');
+  console.log(btn);
+  btn.onclick  = function(){
+    console.log('ASDFGHJKGFDSFGHJKL');
+    list.addClass1(function(index,curClass){
+      return 'colored-list_item--red';
+    });
+    //.addClass();
+  };
+  Element.prototype.addClass1 = function(val){
+    console.log(val);
+    if(jQuery.isFunction(val)){
+      console.log(this);
+      this.each(function(eleIndex){
+        this[eleIndex].addClass(val.bind(this,eleIndex,this[eleIndex].className));
+      });
+    }
+    if(val && (typeof val === 'string')){
+      console.log('is string');
+    }
+  }
+} -->

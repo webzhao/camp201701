@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+    window.onload=function(){
+          const [insertBtn, deleteBtn, updateBtn]
+        = Array.from(document.querySelectorAll('#buttons button'));
+
+      const datalist = document.getElementById('datalist');
+      const rowtext = document.getElementById('rowtext');
+
+      function getAllCheckedRows(){
+        return Array.from(datalist.querySelectorAll('li input:checked'))
+              .map(el=>el.parentNode.parentNode);
+      }
+
+      function createNewRow(){
+            var row = document.createElement('li');
+            row.className='fade1';
+            row.innerHTML = `<label><input type="checkbox"/>${rowtext.value}</label>`;
+            return row;
+          }
+
+          insertBtn.addEventListener('click', evt=>{
+            var checkedRows = getAllCheckedRows();
+            if(checkedRows.length){
+              checkedRows.forEach(row=>
+                 row.insertAdjacentElement('afterend',createNewRow()));
+            }else{
+              datalist.appendChild(createNewRow());
+            }
+          });
+
+          deleteBtn.addEventListener('click', evt=>{
+            var checkedRows = getAllCheckedRows();
+            if(checkedRows.length){
+              checkedRows.forEach(row=>{row.className='fade2';setTimeout(()=>{row.remove();},700);});
+            }
+          });
+
+          updateBtn.addEventListener('click', evt=>{
+            var checkedRows = getAllCheckedRows();
+            if(checkedRows.length){
+              checkedRows.forEach(row=>row.childNodes[0].childNodes[1].textContent = rowtext.value);
+            }
+          });
+        }
+    </script>
+    <style media="screen">
+      html{
+        font-size: 20px;
+      }
+
+      input,button{
+        font-size: 20px;
+      }
+
+      ul{
+        list-style-type:none;
+      }
+      .fade1{
+        animation:fade-in .5s ease-in 1;
+      }
+      .fade2{
+        animation:fade-out .5s ease-in 1 forwards;
+      }
+      @keyframes fade-in{
+        from {opacity:0}
+        to {opacity:1}
+      }
+      @keyframes fade-out{
+        from {opacity:1}
+        to {opacity:0}
+      }
+
+      ul>li:hover{
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="buttons">
+  <button>insert</button>
+  <button>delete</button>
+  <button>update</button>
+  <input id="rowtext" value="new row"/>
+</div>
+<ul id="datalist">
+  <li><label><input type="checkbox"/>row 1</label></li>
+  <li><label><input type="checkbox"/>row 2</label></li>
+  <li><label><input type="checkbox"/>row 3</label></li>
+  <li><label><input type="checkbox"/>row 4</label></li>
+  <li><label><input type="checkbox"/>row 5</label></li>
+  <li><label><input type="checkbox"/>row 6</label></li>
+</ul>
+  </body>
+</html>
