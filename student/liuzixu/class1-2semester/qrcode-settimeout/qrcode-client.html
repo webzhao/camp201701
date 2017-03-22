@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="http://s4.qhres.com/static/6026082b2fdaf405.js"></script>
+    <script type="text/javascript">
+    window.onload = function (){
+        const qrcode = document.getElementById("qrcode");
+        function poll(){
+        const xhr = new XMLHttpRequest(),
+            method = "GET",
+            url = "http://localhost:9999/qrcode";
+
+        xhr.open(method, url, true);
+
+        xhr.onreadystatechange = function () {
+          if(xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+            let data = JSON.parse(xhr.responseText);
+            let url = `http://localhost:9999/check/${data.code}`;
+            qrcode.innerHTML = '';
+            new QRCode(qrcode, url);
+            qrcode.parentNode.href = url;
+            //下面这句是新加的哦！！！
+            setTimeout(poll,data.time);
+          }
+        };
+
+        xhr.send();
+        }
+        poll();
+        // setInterval(poll,1000);
+
+      }
+    </script>
+  </head>
+  <body>
+    <a href="###">
+      <div id="qrcode"></div>
+    </a>
+  </body>
+</html>

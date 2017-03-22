@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="bind-twoway-packing.js"></script>
+    <style media="screen">
+      ul li{
+        padding: 5px;
+      }
+      ul *, button {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <label for="name">姓名</label>
+        <input id="name" name="name" type="text"/></li>
+      <li>
+        <label for="age">年龄</label>
+        <select id="age" name="age">
+          <option>80后</option>
+          <option>90后</option>
+          <option>00后</option>
+          <option>其他</option>
+        </select>
+      </li>
+    </ul>
+    <button id="confirm" type="submit">提交</button>
+  </body>
+</html>

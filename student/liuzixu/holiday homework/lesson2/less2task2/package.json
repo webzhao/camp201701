@@ -1,0 +1,22 @@
+{
+  "name": "url2obj",
+  "version": "1.0.0",
+  "description": "this module will convert your url to obj",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lzxxxxx/test-module.git"
+  },
+  "keywords": [
+    "lzx"
+  ],
+  "author": "lzxxx",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lzxxxxx/test-module/issues"
+  },
+  "homepage": "https://github.com/lzxxxxx/test-module#readme"
+}
